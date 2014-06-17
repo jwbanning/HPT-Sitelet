@@ -1,0 +1,2005 @@
+/*/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+.left{float:left;}
+.right{float:right;}
+.clear{clear:both;}
+
+body {line-height: 1;}
+
+ol,
+ul {list-style: none;}
+
+blockquote,
+q {quotes: none;}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {text-decoration: none;}
+
+a:active,
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+.ir {
+  overflow: hidden;
+  *text-indent: -9999px;
+  background-color: transparent;
+  border: 0;
+}
+
+.ir:before {
+  display: block;
+  width: 0;
+  height: 150%;
+  content: "";
+}
+
+/**
+ * Helper Styles
+ */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  border: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix,
+.cf {
+  zoom: 1;
+}
+
+.clearfix:before,
+.cf:before {
+  display: block;
+  content: '';
+}
+
+.clearfix:after,
+.cf:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.btn,
+button,
+.btn-cta,
+.button {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  padding: 5px 10px;
+  margin: 0;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+  background-color: #b95e04;
+  border: none;
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+       -o-border-radius: 2px;
+          border-radius: 2px;
+  zoom: 1;
+}
+
+.btn:hover,
+button:hover,
+.btn-cta:hover,
+.button:hover,
+.btn:focus,
+button:focus,
+.btn-cta:focus,
+.button:focus,
+.btn:active,
+button:active,
+.btn-cta:active,
+.button:active {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #a05103;
+}
+
+.btn-blue {
+  background-color: #037dae;
+}
+
+.btn-blue:hover,
+.btn-blue:focus,
+.btn-blue:active {
+  background-color: #036b95;
+}
+
+.btn-grn {
+  background-color: #008600;
+}
+
+.btn-grn:hover,
+.btn-grn:focus,
+.btn-grn:active {
+  background-color: #006d00;
+}
+
+.btn-gray {
+  background-color: #dde0e3;
+}
+
+.btn-gray:hover,
+.btn-gray:focus,
+.btn-gray:active {
+  cursor: default;
+  background-color: #dde0e3;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.list > li {
+  margin: 0 0 0 16px;
+}
+
+.list.list-bullet {
+  list-style-type: disc;
+}
+
+.list.list-square {
+  list-style-type: square;
+}
+
+.list.list-roman {
+  list-style-type: lower-roman;
+}
+
+/*
+ * Fonts
+ */
+
+@font-face {
+  font-family: 'CharlesModern';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/EOT/CharlesModern-Light.eot');
+  src: url('../fonts/EOT/CharlesModern-Light.eot%3F') format('embedded-opentype'), url('../fonts/WOFF/CharlesModern-Light.woff') format('woff'), url('../fonts/TTF/CharlesModern-Light.ttf') format('truetype'), url('../fonts/SVG/CharlesModern-Light.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'CharlesModern';
+  font-style: italic;
+  font-weight: 300;
+  src: url('../fonts/EOT/CharlesModern-LightItalic.eot');
+  src: url('../fonts/EOT/CharlesModern-LightItalic.eot%3F') format('embedded-opentype'), url('../fonts/WOFF/CharlesModern-LightItalic.woff') format('woff'), url('http://make.co/clients/thirdrail/hpt-sitelet/build20140502/fonts/TTF/CharlesModern-LightItalic.ttf') format('truetype'), url('../fonts/SVG/CharlesModern-LightItalic.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'CharlesModern';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/EOT/CharlesModern-Regular.eot');
+  src: url('../fonts/EOT/CharlesModern-Regular.eot%3F') format('embedded-opentype'), url('../fonts/WOFF/CharlesModern-Regular.woff') format('woff'), url('../fonts/TTF/CharlesModern-Regular.ttf') format('truetype'), url('../fonts/SVG/CharlesModern-Regular.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'CharlesModern';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/EOT/CharlesModern-Italic.eot');
+  src: url('../fonts/EOT/CharlesModern-Italic.eot%3F') format('embedded-opentype'), url('../fonts/WOFF/CharlesModern-Italic.woff') format('woff'), url('http://make.co/clients/thirdrail/hpt-sitelet/build20140502/fonts/TTF/CharlesModern-Italic.ttf') format('truetype'), url('../fonts/SVG/CharlesModern-Italic.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'CharlesModern';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/EOT/CharlesModern-Bold.eot');
+  src: url('../fonts/EOT/CharlesModern-Bold.eot%3F') format('embedded-opentype'), url('../fonts/WOFF/CharlesModern-Bold.woff') format('woff'), url('http://make.co/clients/thirdrail/hpt-sitelet/build20140502/fonts/TTF/CharlesModern-Bold.ttf') format('truetype'), url('../fonts/SVG/CharlesModern-Bold.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'CharlesModern';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/EOT/CharlesModern-BoldItalic.eot');
+  src: url('../fonts/EOT/CharlesModern-BoldItalic.eot%3F') format('embedded-opentype'), url('../fonts/WOFF/CharlesModern-BoldItalic.woff') format('woff'), url('http://make.co/clients/thirdrail/hpt-sitelet/build20140502/fonts/TTF/CharlesModern-BoldItalic.ttf') format('truetype'), url('../fonts/SVG/CharlesModern-BoldItalic.svg') format('svg');
+}
+
+@media (max-width: 767px) {
+  .desktop-only {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+@media only print and (max-width: 768px) {
+  body {
+    max-width: 320px;
+  }
+}
+
+.row {
+  zoom: 1;
+}
+
+.row:before {
+  display: block;
+  content: '';
+}
+
+.row:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.col-sm-1,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-lg-1,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4 {
+  position: relative;
+  min-height: 1px;
+}
+
+@media (min-width: 568px) {
+  .col-sm-1,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4 {
+    float: left;
+  }
+  .col-sm-last {
+    margin-right: 0 !important;
+  }
+  .row > .last {
+    margin-right: 0 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4 {
+    float: left;
+  }
+  .col-md-last {
+    margin-right: 0 !important;
+  }
+}
+
+@media (min-width: 968px) {
+  .col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4 {
+    float: left;
+  }
+  .col-lg-last {
+    margin-right: 0 !important;
+  }
+}
+
+/* --------------------------------------------------------
+
+  Base Site Styles
+
+-------------------------------------------------------- */
+
+body {
+  min-width: 320px;
+  margin: 0;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.3;
+  color: #333;
+  -webkit-text-size-adjust: 100%;
+}
+
+sup {
+  position: relative;
+  top: -5px;
+  font-size: .66em;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+i {
+  font-style: italic;
+}
+
+a,
+.link-style {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover,
+.link-style:hover,
+a:focus,
+.link-style:focus,
+a:active,
+.link-style:active {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+p {
+  margin: 10px 0 10px;
+}
+
+/* --------------------------------------------------------
+
+  Icon Styling
+
+-------------------------------------------------------- */
+
+.icon-sprite {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  overflow: hidden;
+  *text-indent: -9999px;
+  background: url('http://make.co/clients/thirdrail/hpt-sitelet/build20140502/images/icons-sprite.png') no-repeat;
+  background-color: transparent;
+  border: 0;
+  zoom: 1;
+}
+
+.icon-sprite:before {
+  display: block;
+  width: 0;
+  height: 150%;
+  content: "";
+}
+
+.icon-sprite :hover,
+.icon-sprite :focus,
+.icon-sprite :active {
+  cursor: pointer;
+  background-color: #ccc;
+}
+
+.icon-mobile {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  width: 40px;
+  height: 40px;
+  background: url('http://make.co/clients/thirdrail/hpt-sitelet/build20140502/images/sprite-global-mobile.png') no-repeat;
+  zoom: 1;
+}
+
+.icon-mobile.email {
+  background-position: 3px -8px;
+}
+
+.icon-mobile.branch {
+  background-position: 3px -131px;
+}
+
+.icon-mobile.phone {
+  background-position: 3px -744px;
+}
+
+.icon-mobile.video {
+  background-position: 3px -253px;
+}
+
+.icon-mobile.youtube {
+  width: 40px;
+  height: 40px;
+  background-position: 0 -367px;
+}
+
+.icon-mobile.twitter {
+  width: 40px;
+  height: 40px;
+  background-position: 0 -491px;
+}
+
+.icon-mobile.facebook {
+  width: 40px;
+  height: 40px;
+  background-position: 0 -613px;
+}
+
+.icon-global {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  vertical-align: middle;
+  background: url('../images/sprite-global.png') no-repeat;
+  zoom: 1;
+}
+
+.icon-global.email {
+  width: 20px;
+  height: 15px;
+  background-position: 0 -544px;
+}
+
+.icon-global.branch {
+  width: 20px;
+  height: 14px;
+  background-position: 0 -237px;
+}
+
+.icon-global.phone {
+  width: 20px;
+  height: 20px;
+  background-position: 0 -190px;
+}
+
+.icon-global.video {
+  width: 20px;
+  height: 18px;
+  margin-left: 5px;
+  background-position: 0 -592px;
+}
+
+.icon-global.arrow-right {
+  width: 12px;
+  height: 12px;
+  margin-left: 4px;
+  background-position: 0 -1184px;
+}
+
+.icon-global.pdf {
+  position: relative;
+  top: -1px;
+  width: 12px;
+  height: 12px;
+  background-position: 0 -1552px;
+}
+
+/* --------------------------------------------------------
+
+  Layout Element Styles
+
+-------------------------------------------------------- */
+
+.body-container {
+  padding: 35px 0 0;
+  border: 1px solid #d7d7d7;
+  *zoom: 1;
+}
+
+.content-container {
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.pageHeadlineCntr {
+  margin: 0 0 30px;
+}
+
+.pageHeadlineCntr h3 {
+  margin: 0 0 0.5em;
+  font-family: 'CharlesModernLight', 'Helvetica', Arial, sans-serif;
+  font-family: 'CharlesModern', 'Helvetica', Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+.pageHeadlineCntr .overviewIntro {
+  margin: 0 0 1em;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #333;
+}
+
+.site-body {
+  position: relative;
+  font-size: 12px;
+  line-height: 1.4;
+  *zoom: 1;
+}
+
+.site-body h2 {
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.site-body .sub-head {
+  margin: 15px 0 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.schwab-logo h1 {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  float: left;
+  zoom: 1;
+}
+
+.schwab-logo h1 img {
+  float: left;
+}
+
+.logo-cobrand {
+  float: left;
+  padding-top: 20px;
+  margin-left: 10px;
+}
+
+.logo-cobrand img {
+  position: relative;
+  top: 2px;
+  max-height: 57px;
+}
+
+.icon-login-dropdown {
+  padding-right: 16px;
+  line-height: 20px;
+  background-position: right -1294px;
+}
+
+.icon-login-dropdown.nav-arrow {
+  background-position: right -1245px;
+}
+
+.get-started-header {
+  position: absolute;
+  top: 16px;
+  right: 14px;
+}
+
+/* --------------------------------------------------------
+
+  Contact Overlay
+
+-------------------------------------------------------- */
+
+.contact-concierge-cntr p {
+  margin-bottom: 8px;
+  line-height: 1.48;
+}
+
+.contact-us-bg {
+  position: relative;
+  z-index: 1000;
+  display: block;
+  height: 24px;
+  background: url(http://make.co/clients/thirdrail/hpt-sitelet/build20140502/images/contact-overlay-top.png) no-repeat 0 0;
+}
+
+.contact-overlay-btm {
+  position: absolute;
+  top: 23px;
+  left: 0;
+  z-index: 99;
+  display: none;
+  width: 350px;
+  padding-bottom: 18px;
+  background: url(http://make.co/clients/thirdrail/hpt-sitelet/build20140502/images/contact-overlay-btm.png) no-repeat 0 bottom;
+}
+
+.contact-overlay-top {
+  z-index: 99;
+  display: block;
+  padding: 0;
+  padding: 10px 12px 5px;
+  background: url(http://make.co/clients/thirdrail/hpt-sitelet/build20140502/images/contact-overlay-body-cntr.png) no-repeat 0 0;
+}
+
+.contact-overlay-top .contact-hdln {
+  display: block;
+  padding-bottom: 3px;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-bottom: 3px solid #005cb3;
+}
+
+.contact-overlay-top .closeTrigger {
+  float: right;
+  cursor: pointer;
+}
+
+.contact-overlay-top .closeIcon {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  padding-right: 15px;
+  line-height: 1.4;
+  background: url(http://make.co/clients/thirdrail/hpt-sitelet/build20140502/images/circle-blue-close-icon.gif) no-repeat right 3px;
+  zoom: 1;
+}
+
+.contact-concierge-cntr .phoneEmph {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.contact-concierge-cntr {
+  display: block;
+  padding: 10px 15px 10px;
+  margin: 15px 0 15px;
+  line-height: 20px;
+  background: #eaeaea;
+}
+
+.contact-more-ways {
+  padding-left: 15px;
+  line-height: 1.8;
+}
+
+.contact-concierge-cntr .contactStdLH + p {
+  margin-bottom: 0;
+}
+
+.contact-concierge-cntr .phoneIcon {
+  padding-left: 20px;
+  margin-bottom: 12px;
+  background: url(http://make.co/clients/thirdrail/hpt-sitelet/build20140502/images/contact-check-icons.png) no-repeat 0 -93px;
+}
+
+.contact-concierge-cntr .concierge-hdln {
+  margin-bottom: 3px;
+}
+
+.contact-overlay-top .phone {
+  padding-left: 25px;
+  background: url(http://make.co/clients/thirdrail/hpt-sitelet/build20140502/images/contact-phone-lg-sprite.png) no-repeat 0 5px;
+}
+
+.contact-overlay-top .email {
+  padding-left: 18px;
+  background: url(http://make.co/clients/thirdrail/hpt-sitelet/build20140502/images/contact-phone-lg-sprite.png) no-repeat -1px -65px;
+}
+
+.contact-overlay-top .branch {
+  padding-left: 20px;
+  background: url(http://make.co/clients/thirdrail/hpt-sitelet/build20140502/images/contact-phone-lg-sprite.png) no-repeat 0 -137px;
+}
+
+.contact-overlay-top .appoint {
+  padding-left: 20px;
+  background: url(http://make.co/clients/thirdrail/hpt-sitelet/build20140502/images/contact-phone-lg-sprite.png) no-repeat 0 -191px;
+}
+
+.contact-more-ways .branch {
+  margin-left: 20px;
+}
+
+/* --------------------------------------------------------
+
+  Right Rail
+
+-------------------------------------------------------- */
+
+.rail-block {
+  *background: #fff;
+}
+
+.rail-block h3 {
+  padding: 2px 10px 1px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.rail-block.rail-contact h3 {
+  background-color: #71808a;
+}
+
+.rail-block.rail-helpful h3 {
+  background-color: #277795;
+}
+
+.rail-block.rail-faq h3 {
+  background-color: #429ec2;
+}
+
+.rail-block .rail-content {
+  padding: 8px 10px;
+}
+
+.rail-content .phone-call {
+  padding: 0 4px 0 20px;
+  font-size: 18px;
+  background: url(../images/sprite-global.png) no-repeat 0 -186px;
+}
+
+.rail-content .phone-call + p {
+  padding: 0 8px 0 20px;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.rail-content .att-direct-dial {
+  padding: 8px 4px 8px 20px;
+  font-size: 12px;
+  line-height: 1.3;
+  background: #f4f6f7;
+}
+
+/* --------------------------------------------------------
+
+  Header List
+
+-------------------------------------------------------- */
+
+.hdr-list {
+  float: left;
+  margin: 15px 0 0 160px;
+}
+
+.hdr-list > li {
+  position: relative;
+  display: inline-block;
+  float: left;
+  padding: 0;
+  margin: 0;
+  line-height: 24px;
+}
+
+.hdr-list > li > a {
+  margin: 0 18px;
+}
+
+.hdr-list .first {
+  border-left: medium none;
+}
+
+.nav-contact-us {
+  z-index: 1000;
+}
+
+.nav-contact-us .contactTrigger {
+  margin: 0 24px 0 12px;
+}
+
+.hm-footer-link-cntr {
+  padding: 10px 0 0 0;
+  background-color: #f5f5f5;
+}
+
+.footer-link-group a {
+  display: block;
+  padding: 8px 20px 8px 10px;
+  color: #333;
+}
+
+.footer-link-group .link-header {
+  padding-left: 10px;
+  margin-left: 0;
+  font-weight: bold;
+}
+
+/* --------------------------------------------------------
+
+  Mobile Only Styles - Non-responsive elements
+
+-------------------------------------------------------- */
+
+.contact-us-mobile {
+  margin-top: 6px;
+  margin-bottom: 20px;
+  text-align: center;
+  zoom: 1;
+}
+
+.contact-us-mobile:before {
+  display: block;
+  content: '';
+}
+
+.contact-us-mobile:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.contact-us-mobile i {
+  margin-bottom: 5px;
+}
+
+.contact-us-mobile li {
+  float: left;
+  width: 33%;
+}
+
+.contact-us-mobile span {
+  display: block;
+}
+
+.helpful-links-mobile {
+  position: relative;
+  margin-top: 10px;
+}
+
+.helpful-links-mobile .video {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.helpful-links-mobile .helpful-content {
+  padding: 2px 0 0 50px;
+}
+
+/* --------------------------------------------------------
+
+  Connect with Schwab
+
+-------------------------------------------------------- */
+
+.footer-connect {
+  padding: 20px 10px 0;
+  margin-top: 10px;
+  font-size: 18px;
+  background: #fff;
+}
+
+.footer-connect .hdln-connect {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.footer-connect .icon-mobile {
+  margin-right: 10px;
+}
+
+.brokerage-box {
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+.disclosure {
+  padding: 20px 10px 0 10px;
+}
+
+.disclosure-furl {
+  padding: 10px 20px 9px 45px;
+  background: #dde2e5 url(../images/sprite-global.png) no-repeat 19px -650px;
+}
+
+.disclosure-furl.furl-open {
+  background-position: 19px -714px;
+}
+
+.copyright {
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+/* --------------------------------------------------------
+
+  Get Started Styling
+
+-------------------------------------------------------- */
+
+.page-intro {
+  margin-top: -15px;
+}
+
+.page-intro .col-sm-2 {
+  float: left;
+  width: 48%;
+  *width: 47.5%;
+  margin-right: 4%;
+}
+
+.page-intro .col-sm-2.last {
+  margin-right: 0;
+}
+
+.page-intro .intro-wrapper {
+  min-height: 105px;
+  padding: 15px;
+  font-size: 12px;
+  cursor: pointer;
+  background: #eee;
+  border: 1px solid #ccc;
+}
+
+.page-intro .intro-wrapper h3 {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.page-intro .intro-wrapper:hover,
+.page-intro .intro-wrapper:focus,
+.page-intro .intro-wrapper:active {
+  background: #e1e1e1;
+}
+
+.page-intro .intro-wrapper .link-style:hover {
+  text-decoration: none;
+}
+
+.account-setup {
+  display: none;
+  margin-top: 20px;
+}
+
+.login {
+  display: none;
+}
+
+.login-form {
+  padding: 15px;
+  margin-top: 20px;
+  background: #e4e8eb;
+}
+
+.login-form .col-2-sm {
+  position: relative;
+  float: left;
+  width: 48.5%;
+  *width: 48.4%;
+  margin: 0 3% 0 0;
+  margin-bottom: 6px;
+}
+
+.login-form .col-2-sm.last {
+  margin-right: 0;
+}
+
+.login-form legend {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.login-form input[type="submit"] {
+  float: right;
+}
+
+.login-form input[type="text"] {
+  display: block;
+  width: 96%;
+  padding: 3% 2%;
+  border: 1px solid #ccc;
+}
+
+.login-form .form-label {
+  position: absolute;
+  top: 22.5%;
+  left: 3%;
+  font-size: 11px;
+  color: #bbb;
+}
+
+.login-form .access-hide {
+  left: -9999px !important;
+}
+
+.login-form-link {
+  display: inline-block;
+  *display: block;
+  float: left;
+  *float: none;
+  max-width: 70%;
+  margin: 9px 0 2px;
+  clear: left;
+  font-size: 11px;
+  line-height: 1;
+  *zoom: 1;
+}
+
+.getStarted {
+  margin-bottom: 25px;
+}
+
+.getStartedAttn {
+  padding-top: 15px;
+  border-top: 1px solid #ccc;
+}
+
+.questionsCntr h4 {
+  margin: 0 20px 8px 0;
+  font-size: 1.1em;
+  line-height: 1.4;
+}
+
+.questionHdln {
+  position: relative;
+  display: block;
+  padding-left: 32px;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.questionHdln .questionNumber {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #fff;
+  text-align: center;
+  background: #037dae;
+}
+
+.questionHdln .link-style {
+  font-size: 12px;
+}
+
+.questionChoices {
+  margin: 0 0 0 32px;
+}
+
+.questionChoices label {
+  display: inline-block;
+  padding-left: 3px;
+  margin: 0 14px 0 0;
+  line-height: 1.7;
+}
+
+.questionGrey .questionHdln {
+  font-weight: normal;
+  color: #666;
+  background: #c6c6c6;
+}
+
+.questionGrey .questionNumber {
+  background-position: 0 -64px;
+}
+
+.questionCntr {
+  margin: 0 0 22px;
+}
+
+.questionCntr input {
+  margin-left: 0;
+}
+
+.formSubmit {
+  min-width: 100px;
+}
+
+.resultCntr {
+  display: none;
+  margin-top: 25px;
+  outline: none;
+}
+
+.resultCntr h2 {
+  margin-bottom: 18px;
+  font-family: 'CharlesModernLight', 'Helvetica', Arial, sans-serif;
+  font-family: 'CharlesModern', 'Helvetica', Arial, sans-serif;
+  font-size: 24px;
+}
+
+.resultItem {
+  display: none;
+}
+
+.resultItem .row > div {
+  margin-bottom: 10px;
+}
+
+.moreDetails {
+  display: none;
+  padding: 10px 15px 3px 15px;
+  margin: 10px 0 8px;
+  font-size: 12px;
+  background: #F2F2F2;
+}
+
+.howTABCntr {
+  margin-bottom: 20px;
+}
+
+.howToApply {
+  margin-bottom: 15px;
+}
+
+.howToApply h3 {
+  margin: 0 0 18px;
+  font-size: 1.2em;
+}
+
+.answerBox {
+  position: relative;
+  padding: 15px;
+  background: #f4f5f9;
+}
+
+.answerBox .btn {
+  margin-bottom: 10px;
+}
+
+.answerBoxHgt > b {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.answerBox .stdP {
+  line-height: 1.3;
+}
+
+.answerDirections {
+  font-size: 12px;
+}
+
+.btn.apply-link {
+  margin-bottom: 6px;
+}
+
+.international-links {
+  font-size: 12px;
+}
+
+/**********************************************************
+ *
+ *
+ *
+ * Small Size Media Query
+ *
+ *
+ *
+ *********************************************************/
+
+@media (min-width: 568px) {
+  .pageHeadlineCntr h3 {
+    font-size: 31px;
+    letter-spacing: -1px;
+  }
+  .pageHeadlineCntr .overviewIntro {
+    font-size: 18px;
+  }
+  .content-container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .rail-block h3 {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .rail-block .rail-content {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .page-intro .intro-wrapper {
+    min-height: 88px;
+    font-size: 14px;
+  }
+  .page-intro .intro-wrapper h3 {
+    font-size: 16px;
+  }
+  .login-form .form-label {
+    top: 27%;
+  }
+  .footer-connect .icon-mobile {
+    width: 25px;
+    height: 26px;
+    background: url('../images/sprite-global.png') no-repeat;
+  }
+  .footer-connect .icon-mobile.youtube {
+    margin-right: 0;
+    background-position: 0 -120px;
+  }
+  .footer-connect .icon-mobile.twitter {
+    background-position: 0 -60px;
+  }
+  .footer-connect .icon-mobile.facebook {
+    background-position: 0 0;
+  }
+  .resultItem .col-sm-3 {
+    width: 32.33%;
+    margin-right: 1.5%;
+  }
+  .answerBox {
+    min-height: 260px;
+  }
+  .hm-footer-link-cntr > .col-sm-2 {
+    width: 50%;
+    margin-bottom: 15px;
+  }
+  .hm-footer-link-cntr {
+    position: relative;
+    padding: 20px 20px 0 20px;
+    zoom: 1;
+  }
+  .hm-footer-link-cntr:before {
+    display: block;
+    content: '';
+  }
+  .hm-footer-link-cntr:after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+  .hm-footer-link-cntr b {
+    font-size: 14px;
+    color: #333;
+  }
+  .hm-footer-link-cntr .phone {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+  .footer-link-group {
+    margin-bottom: 25px;
+  }
+  .footer-link-group a {
+    display: block;
+    padding: 0;
+    margin-bottom: 10px;
+    line-height: 1.3;
+    color: #0066cc;
+  }
+  .footer-link-group .link-header {
+    padding: 0;
+    font-weight: bold;
+    color: #333;
+  }
+  .contact-us-mobile span {
+    display: inline-block;
+    margin-left: 8px;
+    line-height: 40px;
+    vertical-align: top;
+    *zoom: 1;
+  }
+  .footer-legal-cntr {
+    position: relative;
+    padding: 20px 0 0;
+  }
+  .footer-legal-cntr p {
+    margin: 0 0 10px;
+    font-size: 11px;
+    line-height: 1.3;
+  }
+  .contactMoreWays {
+    padding-top: 6px;
+    border-top: 1px solid #d3d3d3;
+  }
+  .contactMoreWays .stdP a {
+    margin-bottom: 0;
+    color: #0066cc;
+  }
+  .footer-contact-hdln {
+    padding: 0 0 8px;
+    margin: 0 0 10px;
+    font-weight: bold;
+    border-bottom: 4px solid #037DAE;
+  }
+  .footer-contact-cntr {
+    width: 680px;
+  }
+  .footer-contact-cntr .stdP {
+    margin: 0 0 2px;
+  }
+  .contact-concierge-cntr .phoneEmph {
+    font-size: 20px;
+    line-height: 24px;
+    background-position: 0 -93px;
+  }
+  .contact-concierge-cntr {
+    display: block;
+    padding: 6px 15px 10px;
+    margin: 15px 0 15px;
+    line-height: 20px;
+    background: #eaeaea;
+  }
+  .contact-more-ways {
+    padding-left: 15px;
+  }
+  .footer-social-cntr {
+    float: right;
+    width: 225px;
+    height: 70px;
+    margin-top: -340px;
+    background-color: #fff;
+  }
+  .footer-social-cntr span {
+    display: block;
+    padding: 11px 0 0 18px;
+  }
+  .footer-ttc {
+    margin-top: 44px;
+  }
+  .fbLike {
+    float: right;
+    width: 54px;
+    height: 24px;
+    margin: 14px 24px 10px 0;
+    text-indent: -99999px;
+    background: url(http://make.co/clients/thirdrail/hpt-sitelet/build20140502/images/fb-like.gif) no-repeat 0 0;
+  }
+  .disclosure-furl {
+    display: none;
+  }
+  .disclosure {
+    display: block !important;
+    padding: 0 20px;
+  }
+  .footer-connect {
+    position: absolute;
+    right: 25%;
+    bottom: 30px;
+    width: 25%;
+    padding: 0;
+    margin-top: 0;
+    background: transparent;
+  }
+  .footer-connect .hdln-connect {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .footer-connect .icon-mobile {
+    margin-right: 18px;
+  }
+  .footer-quick-links {
+    margin-bottom: 30px;
+  }
+  .copyright {
+    padding: 0 20px;
+  }
+}
+
+/**********************************************************
+ *
+ *
+ *
+ * Tablet Size Media Query
+ *
+ *
+ *
+ *********************************************************/
+
+@media (min-width: 590px) {
+  .btn,
+  button,
+  .btn-cta,
+  .button {
+    padding-right: 14px;
+    padding-left: 14px;
+    font-size: 14px;
+  }
+  .body-container {
+    padding: 35px 0 0;
+    margin-top: -22px;
+  }
+  .site-body {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  .site-body .content.col-md-12 {
+    float: left;
+    width: 566px;
+    margin-right: 10px;
+  }
+  .site-body .right-rail.col-md-4 {
+    float: left;
+    width: 190px;
+  }
+  .moreDetails .moreDetailsBtm {
+    right: -360px;
+    left: auto;
+    width: 456px;
+    background: url(http://make.co/clients/thirdrail/hpt-sitelet/build20140502/images/more-details-btm.png) no-repeat 0 bottom;
+  }
+  .moreDetails.radio-yes .moreDetailsBtm {
+    right: -360px;
+    left: auto;
+    background-image: url(http://make.co/clients/thirdrail/hpt-sitelet/build20140502/images/more-details-btm.png);
+  }
+  .moreDetails .moreDetailsCntr {
+    background: url(http://make.co/clients/thirdrail/hpt-sitelet/build20140502/images/more-details-top.png) no-repeat 1px 0;
+  }
+  .moreDetails .more-details-content {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .questionHdln {
+    font-size: 14px;
+  }
+  .content-container {
+    padding-right: 15px;
+    padding-left: 25px;
+  }
+  .rail-block .rail-content {
+    padding: 8px 0 8px 8px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d7d7d7;
+  }
+  .rail-block h3 {
+    padding-left: 8px;
+  }
+  .answerBox {
+    min-height: 316px;
+  }
+  .resultItem .col-md-3 {
+    width: 170px;
+  }
+  .hm-footer-link-cntr > .col-md-4 {
+    width: 174px;
+    margin-right: 10px;
+  }
+  .sprite-g {
+    display: -moz-inline-stack;
+    display: inline-block;
+    *display: inline;
+    background-image: url('../images/sprite-global.png');
+    background-repeat: no-repeat;
+    zoom: 1;
+  }
+  .footer {
+    margin: 12px 0;
+    font-size: 10px;
+  }
+  .footer-connect .sprite-g {
+    float: left;
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+    text-indent: -9999px;
+  }
+  .fb-icon {
+    background-position: 0 0;
+  }
+  .tw-icon {
+    background-position: 0 -60px;
+  }
+  .ytube-icon {
+    background-position: 0 -120px;
+  }
+  .footer-connect {
+    right: 47px;
+    bottom: 30px;
+    width: 280px;
+  }
+  .disclosure {
+    padding: 0;
+  }
+  .copyright {
+    padding: 0;
+  }
+  .footer-legal-cntr .brokerage-box {
+    font-size: 14px;
+  }
+  .account-setup {
+    display: block !important;
+  }
+  .login {
+    display: none !important;
+  }
+}
+
+/**********************************************************
+ *
+ *
+ *
+ * Desktop Size Media Query
+ *
+ *
+ *
+ *********************************************************/
+
+@media (min-width: 968px) {
+  .site-body .content.col-lg-12 {
+    float: left;
+    width: 766px;
+    margin-right: 10px;
+  }
+  .hdr-list {
+    margin: 15px 0 0 231px;
+  }
+  .answerBox {
+    min-height: 260px;
+  }
+  .resultItem .col-lg-3 {
+    width: 215px;
+  }
+  .hm-footer-link-cntr > .col-lg-4 {
+    width: 222px;
+    margin-bottom: 0;
+  }
+  .footer-connect {
+    right: 102px;
+    bottom: 30px;
+  }
+}
+
+@media print {
+  body {
+    width: 1000px;
+  }
+}
+
+.mobile-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url('../images/nav-collapsed.png') no-repeat center center;
+}
+
+/*.mobile-nav:hover,
+.mobile-nav:focus,
+.mobile-nav:active {
+  cursor: pointer;
+  background-color: #ececec;
+}
+*/
+.schwab-logo h1 {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  float: left;
+  zoom: 1;
+}
+
+.schwab-logo img {
+  float: left;
+}
+
+.nav-l2 .nav-hidden {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .nav-list-cntr {
+    position: absolute;
+    top: 0;
+    left: -250px;
+    display: block;
+    width: 250px;
+    font-size: 12px;
+    line-height: 1.3em;
+  }
+  .nav-l1 .nav-hidden {
+    display: none;
+  }
+  .nav-next:hover,
+  .nav-next:focus,
+  .nav-next:active {
+    cursor: pointer;
+  }
+  .trigger-cntr {
+    display: inline-block;
+    /*padding-right: 27px;
+    background: url('../images/sprite-global.png') no-repeat right -1396px;*/
+  }
+  .nav-l1 > li > .nav-item {
+    text-transform: uppercase;
+  }
+  .nav-item:hover,
+  .nav-item:focus,
+  .nav-item:active {
+    text-decoration: none;
+    background-color: #ececec;
+    border-right: 1px #d7d7d7 solid;
+  }
+  .nav-l1 .furl-open > a {
+    background-color: #ececec;
+    border-left: 10px solid #ccc;
+  }
+  .nav-l1 > li > .furl-open,
+  .nav-l1 > li > .furl-open + ul li > a {
+    border-left: 10px solid #ccc;
+  }
+  .nav-l2 .nav-active > a {
+    background-color: #ececec;
+    border-left: 10px solid #037dae !important;
+  }
+  .nav-l1 ul {
+    overflow: hidden;
+  }
+  .nav-item > span {
+    display: block;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+  }
+  .nav-list-cntr .furl-open {
+    font-weight: bold;
+  }
+  .nav-l1 > li > a > span {
+    border-top: 1px solid #ccc;
+  }
+  .nav-l1 > li > a > span {
+    padding-left: 25px;
+  }
+  .nav-l1 > li > .furl-open > span {
+    padding-left: 15px;
+  }
+  .nav-l2 li > a {
+    border-left: 10px solid transparent;
+  }
+  .nav-l2 > li > a > span {
+    padding-left: 25px;
+  }
+  .nav-ls li a > span {
+    padding-left: 35px;
+  }
+  .nav-ls li li a > span {
+    padding-left: 45px;
+  }
+  .nav-ls li li li a > span {
+    padding-left: 55px;
+  }
+  .nav-l1 > li > .furl-open {
+    border-bottom: 1px solid #ccc;
+  }
+  .schwab-logo h1 {
+    height: 50px;
+  }
+  .schwab-logo img {
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+  }
+  .hdr-list {
+    display: none;
+  }
+  .nav-item,
+  .nav-item-cta {
+    display: block;
+    color: #333;
+  }
+  .nav-item-cta {
+    padding: 10px 15px 10px 15px;
+    border-top: 1px solid #ccc;
+  }
+  .nav-active > .nav-item {
+    background-color: #ececec;
+  }
+  .nav-item-cta .btn-cta {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .nav-item-cta .btn-cta {
+    display: inline-block;
+    width: 100px;
+    padding: 6px 0;
+  }
+  .nav-item-cta .btn-org {
+    margin-right: 14px;
+  }
+  header .site-cntr {
+    padding-bottom: 10px;
+  }
+  .web-break {
+    display: none;
+  }
+  .logo-cobrand img {
+    display: none;
+  }
+  body {
+    position: relative;
+    left: 0;
+  }
+  .nav-list-cntr {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+  .nav-list-cntr {
+    position: relative;
+    top: -18px;
+    display: block;
+    height: 30px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #d7d7d7;
+  }
+  .nav-l1 {
+    padding-left: 90px;
+  }
+  .nav-l1 li {
+    float: left;
+    padding: 0;
+    margin: 0;
+  }
+  .nav-l1 .nav-item {
+    display: -moz-inline-stack;
+    display: inline-block;
+    *display: inline;
+    color: #333;
+    zoom: 1;
+  }
+  .nav-l1 > li > .nav-item {
+    border-bottom: 5px solid transparent;
+  }
+  .nav-l1 > li > .nav-item:hover,
+  .nav-l1 > li > .nav-item:focus,
+  .nav-l1 > li > .nav-item:active {
+    text-decoration: none;
+    color: #006082;
+    border-bottom: 5px solid #006082;
+  }
+  .nav-l1 > .nav-active > .nav-item,
+  .nav-l1 > .nav-active > .nav-item:hover,
+  .nav-l1 > .nav-active > .nav-item:focus,
+  .nav-l1 > .nav-active > .nav-item:active {
+    font-weight: bold;
+    color: #005F83;
+    border-bottom: 5px solid #005f83;
+  }
+  .nav-l1 li .nav-item {
+    padding: 10px 12px;
+  }
+  .nav-l1 > li > .nav-item {
+    padding: 5px 10px;
+    font-weight: bold;
+    color: #666;
+    text-transform: uppercase;
+  }
+  .nav-l1 > li > .active {
+    text-decoration: none;
+    color: #006082;
+    border-bottom: 5px solid #006082;
+  }
+  .nav-item span {
+    display: -moz-inline-stack;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+  }
+  .nav-l2,
+  .nav-ls {
+    position: absolute;
+    bottom: -37px;
+    left: 0;
+  }
+  .nav-l2 > .nav-active > .nav-item,
+  .nav-l2 a:focus,
+  .nav-l2 a:hover,
+  .nav-l2 a:active,
+  .nav-ls a:focus,
+  .nav-ls a:hover,
+  .nav-ls a:active {
+    text-decoration: none;
+    background-color: #f5f5f5;
+  }
+  .logo-cobrand {
+    float: right;
+  }
+  .logo-cobrand img {
+    max-width: 50px;
+  }
+  .nav-item,
+  .nav-item-cta {
+    display: -moz-inline-stack;
+    display: inline-block;
+    *display: inline;
+    border: none;
+    zoom: 1;
+  }
+  .mobile-login {
+    display: none;
+  }
+  .get-started {
+    position: absolute;
+    right: 0;
+    bottom: -31px;
+    font-weight: normal;
+    color: #fff;
+  }
+  .get-started a {
+    padding: 3px 15px;
+  }
+  .btn-grn {
+    display: none;
+  }
+  .logo-cobrand {
+    padding: 0;
+    margin-top: 5px;
+  }
+  .header-eq-block {
+    display: -moz-inline-stack;
+    display: inline-block;
+    *display: inline;
+    width: 45px;
+    margin-left: 6px;
+    font-size: 10px;
+    line-height: 11px;
+    zoom: 1;
+  }
+  .mobile-visible {
+    display: none;
+  }
+  .nav-l2 {
+    display: none;
+  }
+  .nav-active .nav-l2 {
+    display: block;
+  }
+}
+/*
+@media (min-width: 768px) and (max-width: 967px) {
+  .nav-l1 {
+    padding-left: 78px;
+  }
+  .schwab-logo img {
+    width: 65px;
+  }
+}*/
+
+@media (min-width: 968px) {
+  .nav-l1 li .nav-item {
+    padding: 10px 17px;
+  }
+  .nav-l1 > li > .nav-item {
+    padding: 5px 21px;
+  }
+  .logo-cobrand img {
+    width: auto;
+    max-width: none;
+    max-height: none;
+  }
+  .logo-cobrand {
+    margin-top: 0;
+  }
+  .header-eq-block {
+    font-size: 13px;
+    line-height: 1;
+  }
+}
+*/

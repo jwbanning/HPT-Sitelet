@@ -1,0 +1,150 @@
+/*CSS that is specific to the getting started page. */
+
+/*GLOBALS to GETTING STARTED*/
+  #GS-Wrapper{
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Arial';
+  }
+  .module{
+    padding: 0 15px;
+  }
+
+  h1{
+    font-size: 26px;
+    font-family: 'Arial';
+  }
+  p{
+    line-height: 17px;
+    font-family:'Arial';
+    font-size: 11px;
+  }
+
+/*SECTION BREAKS*/
+  .color{
+    width:100%;
+    padding: 20px 0;
+
+/*TO DO REMOVE*/
+    background-color: yellow;
+  }
+  .color .module h3{
+    font-size: 19px;
+  }
+  .color .module p{
+    font-size: 11px;
+    letter-spacing: 0.8px;
+  }
+  .filledHeader{
+      font-size: 15px;
+      font-family: 'Charles';
+      /*TO DO REMOVE*/
+  }
+  .filledHeader h3{
+    background-color: #425563;
+    color:#fff;
+    padding: 0 15px;
+    line-height: 28px;
+    font-family:'Charles';
+  }
+/*to DO CHANGE CLASS*/
+  .filledHeader .something{
+    color:#111111;
+    padding: 0 15px;
+  }
+/*contactContainer*/
+    #contactContainer{
+    
+    }
+    #contactContainer h3{
+      font-size: 15px;
+      line-height:20px;
+    }
+    #contactContainer ul li{
+    
+    }
+    #contactContainer ul {
+      width: 100%;
+      height: 36px;
+      margin: 16px 0;
+    }
+    #contactContainer ul li{
+      display:inline;
+    }
+    #contactContainer ul li div{
+      width: 36px;
+      float: left;
+      height: 100%;
+      margin-right:24px;
+    }
+    #contactContainer .phone {
+      background: url('../images/connect_fb.jpg') no-repeat;
+    }
+    #contactContainer .find {
+      background: url('../images/connect_fb.jpg') no-repeat;
+    }
+    #contactContainer .login {
+      background: url('../images/connect_fb.jpg') no-repeat;
+    }
+
+/*LinksContainer*/
+    #linksContainer{
+      background-color: #e4e4e4
+    }
+    #linksContainer ul{
+      padding:12px 0;
+    }
+    #linksContainer ul li{
+      line-height: 24px;
+    }
+    #linksContainer ul li a{
+      color: #111111;
+      font-family: 'Arial';
+      font-weight: bold;
+    }
+/*ConnectsWith Container*/
+    #connectWithContainer{
+      margin: 24px 0;
+    }
+    #connectWithContainer h3{
+      font-size: 15px;
+      line-height:20px;
+    }
+    #connectWithContainer ul {
+      width: 100%;
+      height: 36px;
+      margin: 16px 0;
+    }
+    #connectWithContainer ul li{
+      display:inline;
+    }
+    #connectWithContainer ul li div{
+      width: 36px;
+      float: left;
+      height: 100%;
+      margin-right:24px;
+    }
+    #connectWithContainer .fb {
+      background: url('../images/connect_fb.jpg') no-repeat;
+    }
+    #connectWithContainer .tw {
+      background: url('../images/connect_tw.jpg') no-repeat;
+    }
+    #connectWithContainer .yt {
+      background: url('../images/connect_yt.jpg') no-repeat;
+    }
+
+/*UNIQUE*/
+  .boxy{
+    border: solid 1px #686868;
+    padding: 10px;
+    border-radius: 2px;
+    margin:0 auto;
+  }
+  .boxy span{
+   margin:0 auto;
+   text-align: center;
+   display: block;
+   color:#333;
+   font-weight: bold;
+  }
