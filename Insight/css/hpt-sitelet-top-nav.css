@@ -1,0 +1,775 @@
+/* --------------------------------------------------------
+
+  HTP Sitelet Top Navigation Bar - Responsive
+
+
+  	...Begin old main.css Education Page boilerplate code
+
+-------------------------------------------------------- */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+.clear{clear:both;}
+
+ol, ul {list-style: none;}
+
+a {text-decoration: none;}
+a:active, a:focus, a:hover {
+  text-decoration: none;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.3;
+  color: #333;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+
+/* --------------------------------------------------------
+
+  Nav Specific code
+
+-------------------------------------------------------- */
+
+.mobile-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url('../images/nav-collapsed.png') no-repeat center center;
+}
+
+.schwab-logo h1 {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  float: left;
+  zoom: 1;
+}
+
+.schwab-logo img {
+  float: left;
+}
+
+.nav-l2 .nav-hidden {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .nav-list-cntr {
+    position: absolute;
+    top: 0;
+    left: -250px;
+    display: block;
+    width: 250px;
+    font-size: 12px;
+    line-height: 1.3em;
+  }
+  .nav-l1 .nav-hidden {
+    display: none;
+  }
+  .nav-next:hover,
+  .nav-next:focus,
+  .nav-next:active {
+    cursor: pointer;
+  }
+  .trigger-cntr {
+    display: inline-block;
+    /*padding-right: 27px;
+    background: url('../images/sprite-global.png') no-repeat right -1396px;*/
+  }
+  .nav-l1 > li > .nav-item {
+    text-transform: uppercase;
+  }
+  .nav-item:hover,
+  .nav-item:focus,
+  .nav-item:active {
+    text-decoration: none;
+    background-color: #ececec;
+    border-right: 1px #d7d7d7 solid;
+  }
+  .nav-l1 .furl-open > a {
+    background-color: #ececec;
+    border-left: 10px solid #ccc;
+  }
+  .nav-l1 > li > .furl-open,
+  .nav-l1 > li > .furl-open + ul li > a {
+    border-left: 10px solid #ccc;
+  }
+  .nav-l2 .nav-active > a {
+    background-color: #ececec;
+    border-left: 10px solid #037dae !important;
+  }
+  .nav-l1 ul {
+    overflow: hidden;
+  }
+  .nav-item > span {
+    display: block;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+  }
+  .nav-list-cntr .furl-open {
+    font-weight: bold;
+  }
+  .nav-l1 > li > a > span {
+    border-top: 1px solid #ccc;
+  }
+  .nav-l1 > li > a > span {
+    padding-left: 25px;
+  }
+  .nav-l1 > li > .furl-open > span {
+    padding-left: 15px;
+  }
+  .nav-l2 li > a {
+    border-left: 10px solid transparent;
+  }
+  .nav-l2 > li > a > span {
+    padding-left: 25px;
+  }
+  .nav-ls li a > span {
+    padding-left: 35px;
+  }
+  .nav-ls li li a > span {
+    padding-left: 45px;
+  }
+  .nav-ls li li li a > span {
+    padding-left: 55px;
+  }
+  .nav-l1 > li > .furl-open {
+    border-bottom: 1px solid #ccc;
+  }
+  .schwab-logo h1 {
+    height: 50px;
+  }
+  .schwab-logo img {
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+  }
+  .hdr-list {
+    display: none;
+  }
+  .nav-item,
+  .nav-item-cta {
+    display: block;
+    color: #333;
+  }
+  .nav-item-cta {
+    padding: 10px 15px 10px 15px;
+    border-top: 1px solid #ccc;
+  }
+  .nav-active > .nav-item {
+    background-color: #ececec;
+  }
+  .nav-item-cta .btn-cta {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .nav-item-cta .btn-cta {
+    display: inline-block;
+    width: 100px;
+    padding: 6px 0;
+  }
+  .nav-item-cta .btn-org {
+    margin-right: 14px;
+  }
+  header .site-cntr {
+    padding-bottom: 10px;
+  }
+  .web-break {
+    display: none;
+  }
+  .logo-cobrand img {
+    display: none;
+  }
+  body {
+    position: relative;
+    left: 0;
+  }
+  .nav-list-cntr {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+  .nav-list-cntr {
+    position: relative;
+    top: -18px;
+    display: block;
+    height: 30px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #d7d7d7;
+  }
+  .nav-l1 {
+    padding-left: 90px;
+  }
+  .nav-l1 li {
+    float: left;
+    padding: 0;
+    margin: 0;
+  }
+  .nav-l1 .nav-item {
+    display: -moz-inline-stack;
+    display: inline-block;
+    *display: inline;
+    color: #333;
+    zoom: 1;
+  }
+  .nav-l1 > li > .nav-item {
+    border-bottom: 5px solid transparent;
+  }
+  .nav-l1 > li > .nav-item:hover,
+  .nav-l1 > li > .nav-item:focus,
+  .nav-l1 > li > .nav-item:active {
+    text-decoration: none;
+    color: #006082;
+    border-bottom: 5px solid #006082;
+  }
+  .nav-l1 > .nav-active > .nav-item,
+  .nav-l1 > .nav-active > .nav-item:hover,
+  .nav-l1 > .nav-active > .nav-item:focus,
+  .nav-l1 > .nav-active > .nav-item:active {
+    font-weight: bold;
+    color: #005F83;
+    border-bottom: 5px solid #005f83;
+  }
+  .nav-l1 li .nav-item {
+    padding: 10px 12px;
+  }
+  .nav-l1 > li > .nav-item {
+    padding: 5px 10px;
+    font-weight: bold;
+    color: #666;
+    text-transform: uppercase;
+  }
+  .nav-item span {
+    display: -moz-inline-stack;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+  }
+  .nav-l2,
+  .nav-ls {
+    position: absolute;
+    bottom: -37px;
+    left: 0;
+  }
+  .nav-l2 > .nav-active > .nav-item,
+  .nav-l2 a:focus,
+  .nav-l2 a:hover,
+  .nav-l2 a:active,
+  .nav-ls a:focus,
+  .nav-ls a:hover,
+  .nav-ls a:active {
+    text-decoration: none;
+    background-color: #f5f5f5;
+  }
+  .logo-cobrand {
+    float: right;
+  }
+  .logo-cobrand img {
+    max-width: 50px;
+  }
+  .nav-item,
+  .nav-item-cta {
+    display: -moz-inline-stack;
+    display: inline-block;
+    *display: inline;
+    border: none;
+    zoom: 1;
+  }
+  .mobile-login {
+    display: none;
+  }
+}
+
+@media (min-width: 968px) {
+  .nav-l1 li .nav-item {
+    padding: 10px 17px;
+  }
+  .nav-l1 > li > .nav-item {
+    padding: 5px 21px;
+  }
+  .logo-cobrand img {
+    width: auto;
+    max-width: none;
+    max-height: none;
+  }
+  .logo-cobrand {
+    margin-top: 0;
+  }
+  .header-eq-block {
+    font-size: 13px;
+    line-height: 1;
+  }
+}
+
+
+
+
+/* --------------------------------------------------------
+
+ Begin old hpt-sitelet.css code
+
+-------------------------------------------------------- */
+
+.hideAbove480 {display: none;}
+.hideAbove590 {display: none;}
+.hideAbove767 {display: none !important;}
+.hide {display: none;}
+
+header,
+.page-margins {
+    margin: 0 auto;
+    width: 93%;
+    max-width: 947px;
+}
+.nav-l1 {
+    padding-left: 85px;
+}
+.nav-l1 li {font-size:12px;}
+
+.nav-l1 > li > .nav-item {
+    padding: 5px 5px;
+}
+.nav-list-cntr {
+    margin-bottom: 0px;
+    border-bottom: none;
+}
+.site-cntr {
+    position: relative;
+}
+#top_nav {
+    height: 30px;
+    margin: 15px 0px 0 0;
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+#top_nav .top-nav-item {
+    display: inline-block;
+    height: 15px;
+    vertical-align: middle;
+    margin: 0 20px 0 0;
+    padding: 3px 0 0 0;
+}
+#top_nav .top-nav-item a,
+#top_nav .top-nav-item span {
+    text-decoration: none;
+}
+.top-nav-icon.phone-icon {
+    background-position: -32px 0px;
+}
+.top-nav-icon.branch-icon {
+    background-position: -15px 0px;
+}
+.top-nav-icon {
+    width: 15px;
+    height: 13px;
+    float: left;
+    background: url('http://activetrader.schwab.com/trading-services/master/img/top-nav-sprite.png') no-repeat 0 0 transparent;
+}
+#top_nav .top-nav-item.last {
+    margin-right: 0px;
+    padding: 0;
+}
+#top_nav .top-nav-item .top-nav-text {
+    float: left;
+    color: #979797;
+    font-size: 12px;
+    text-decoration: none;
+    vertical-align: top;
+    line-height: 16px;
+    margin: 0 0 0 3px;
+}
+.nav-item {
+    text-align: center;
+}
+.nav-l1 li {
+    display: inline-block;
+    float: none;
+}
+.hiddenHeaderBR {
+    display: none;
+}
+
+
+
+
+/*  ====== Media queries ====== */
+
+@media (max-width: 954px) {
+  .hiddenHeaderBR { display: inline; }
+  .schwab-logo img { width: 70px; }
+  .nav-l1 { margin-top: -14px; padding-left: 79px; }
+  .nav-list-cntr { margin-bottom: 14px; }
+  #top_nav .top-nav-item .top-nav-text { font-size: 11px; }
+}
+
+@media (max-width: 767px) {
+	/* Main CSS*/
+	.nav-list-cntr {
+    position: absolute;
+    top: 0;
+    left: -250px;
+    display: block;
+    width: 250px;
+    font-size: 12px;
+    line-height: 1.3em;
+  }
+  .nav-l1 .nav-hidden {
+    display: none;
+  }
+  .nav-next:hover,
+  .nav-next:focus,
+  .nav-next:active {
+    cursor: pointer;
+  }
+  .trigger-cntr {
+    display: inline-block;
+  }
+  .nav-l1 > li > .nav-item {
+    text-transform: uppercase;
+  }
+  .nav-item:hover,
+  .nav-item:focus,
+  .nav-item:active {
+    text-decoration: none;
+    background-color: #ececec;
+    border-right: 1px #d7d7d7 solid;
+  }
+  .nav-l1 .furl-open > a {
+    background-color: #ececec;
+    border-left: 10px solid #ccc;
+  }
+  .nav-l1 > li > .furl-open,
+  .nav-l1 > li > .furl-open + ul li > a {
+    border-left: 10px solid #ccc;
+  }
+  .nav-l2 .nav-active > a {
+    background-color: #ececec;
+    border-left: 10px solid #037dae !important;
+  }
+  .nav-l1 ul {
+    overflow: hidden;
+  }
+  .nav-item > span {
+    display: block;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+  }
+  .nav-list-cntr .furl-open {
+    font-weight: bold;
+  }
+  .nav-l1 > li > a > span {
+    border-top: 1px solid #ccc;
+  }
+  .nav-l1 > li > a > span {
+    padding-left: 25px;
+  }
+  .nav-l1 > li > .furl-open > span {
+    padding-left: 15px;
+  }
+  .nav-l2 li > a {
+    border-left: 10px solid transparent;
+  }
+  .nav-l2 > li > a > span {
+    padding-left: 25px;
+  }
+  .nav-ls li a > span {
+    padding-left: 35px;
+  }
+  .nav-ls li li a > span {
+    padding-left: 45px;
+  }
+  .nav-ls li li li a > span {
+    padding-left: 55px;
+  }
+  .nav-l1 > li > .furl-open {
+    border-bottom: 1px solid #ccc;
+  }
+  .schwab-logo h1 {
+    height: 50px;
+  }
+  .schwab-logo img {
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+  }
+  .hdr-list {
+    display: none;
+  }
+  .nav-item,
+  .nav-item-cta {
+    display: block;
+    color: #333;
+  }
+  .nav-item-cta {
+    padding: 10px 15px 10px 15px;
+    border-top: 1px solid #ccc;
+  }
+  .nav-active > .nav-item {
+    background-color: #ececec;
+  }
+  .nav-item-cta .btn-cta {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .nav-item-cta .btn-cta {
+    display: inline-block;
+    width: 100px;
+    padding: 6px 0;
+  }
+  .nav-item-cta .btn-org {
+    margin-right: 14px;
+  }
+  header .site-cntr {
+    padding-bottom: 10px;
+  }
+  .web-break {
+    display: none;
+  }
+  .logo-cobrand img {
+    display: none;
+  }
+  body {
+    position: relative;
+    left: 0;
+  }
+  .nav-list-cntr {
+    display: none;
+  }
+
+  /* Old Sitelet CSS*/
+  header { width: 100%; }
+  header .site-cntr { height: 50px; background-color: black; padding-bottom: 0; }
+  .site-cntr .mobile-nav { background-image: url('../images/nav-collapsed-light.png'); }
+  .nav-list-cntr { left: -250px;}
+  .nav-item-cta { padding-left: 15px; }
+  .nav-l1 { margin-top: -14px; padding-left: 0; }
+  .hideAbove767 { display: block !important; }
+  .menu-get-started { display: none !important; }
+  #top_nav { margin-right: 7.5%; }
+  #top_nav .top-nav-item .top-nav-text { color: #d1d1d1; }
+  #top_nav .top-nav-icon { display: none; }
+  #top_nav .top-nav-item { margin-right: 25px; }
+  .nav-item-cta { padding-top: 36px; }
+  .nav-item-cta .btn-cta {
+    font-size: 14px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0;
+    width: 204px;
+  }
+  .nav-item-cta .btn-cta .call-us { background-color: #71808a; margin-top: 12px; }
+  .schwab-logo img { width: 50px; }
+  
+  /* mobile nav menu */
+  .nav-l1 { margin-top: 0; }
+  .nav-l1 li { display: block; }
+  .nav-item-cta { padding-left: 25px; }
+  .nav-l1 > li > .nav-item { padding: 0; }
+  .nav-item { text-align: left; }
+  .hiddenHeaderBR { display: none; }
+}
+
+@media (max-width: 590px) {
+  .hideBelow590 { display: none !important; }
+  .hideAbove590 { display: inline-block; }
+  header .site-cntr { margin-bottom: 35px; }
+  .site-cntr #sts-text {
+    color: #fff;
+    float: right;
+    font-family: 'CharlesModern', Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 50px;
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hideBelow480 {display: none;}
+  .hideAbove480 {display: inline-block;}
+  .nav-item-cta .call-us { margin-top:12px;background-color: #6c7b84;}
+}
+
+@media (max-width: 340px) {
+  header .site-cntr { margin-bottom: 45px; }
+}
+
+
+
+/* --------------------------------------------------------
+
+  Fonts
+
+-------------------------------------------------------- */
+@font-face {
+  font-family: 'CharlesModern';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/EOT/CharlesModern-Light.eot');
+  src: url('../fonts/EOT/CharlesModern-Light.eot%3F') format('embedded-opentype'), url('../fonts/WOFF/CharlesModern-Light.woff') format('woff'), url('../fonts/TTF/CharlesModern-Light.ttf') format('truetype'), url('../fonts/SVG/CharlesModern-Light.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'CharlesModern';
+  font-style: italic;
+  font-weight: 300;
+  src: url('../fonts/EOT/CharlesModern-LightItalic.eot');
+  src: url('../fonts/EOT/CharlesModern-LightItalic.eot%3F') format('embedded-opentype'), url('../fonts/WOFF/CharlesModern-LightItalic.woff') format('woff'), url('http://make.co/clients/thirdrail/hpt-sitelet/build20140502/fonts/TTF/CharlesModern-LightItalic.ttf') format('truetype'), url('../fonts/SVG/CharlesModern-LightItalic.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'CharlesModern';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/EOT/CharlesModern-Regular.eot');
+  src: url('../fonts/EOT/CharlesModern-Regular.eot%3F') format('embedded-opentype'), url('../fonts/WOFF/CharlesModern-Regular.woff') format('woff'), url('../fonts/TTF/CharlesModern-Regular.ttf') format('truetype'), url('../fonts/SVG/CharlesModern-Regular.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'CharlesModern';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/EOT/CharlesModern-Italic.eot');
+  src: url('../fonts/EOT/CharlesModern-Italic.eot%3F') format('embedded-opentype'), url('../fonts/WOFF/CharlesModern-Italic.woff') format('woff'), url('http://make.co/clients/thirdrail/hpt-sitelet/build20140502/fonts/TTF/CharlesModern-Italic.ttf') format('truetype'), url('../fonts/SVG/CharlesModern-Italic.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'CharlesModern';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/EOT/CharlesModern-Bold.eot');
+  src: url('../fonts/EOT/CharlesModern-Bold.eot%3F') format('embedded-opentype'), url('../fonts/WOFF/CharlesModern-Bold.woff') format('woff'), url('http://make.co/clients/thirdrail/hpt-sitelet/build20140502/fonts/TTF/CharlesModern-Bold.ttf') format('truetype'), url('../fonts/SVG/CharlesModern-Bold.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'CharlesModern';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/EOT/CharlesModern-BoldItalic.eot');
+  src: url('../fonts/EOT/CharlesModern-BoldItalic.eot%3F') format('embedded-opentype'), url('../fonts/WOFF/CharlesModern-BoldItalic.woff') format('woff'), url('http://make.co/clients/thirdrail/hpt-sitelet/build20140502/fonts/TTF/CharlesModern-BoldItalic.ttf') format('truetype'), url('../fonts/SVG/CharlesModern-BoldItalic.svg') format('svg');
+}
+
