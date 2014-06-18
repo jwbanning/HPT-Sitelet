@@ -91,26 +91,32 @@
 			<h4 class="fontF selAcct">Select your account</h4>
 			<form>
 				<h4 class="fontG brokerage">Brokerage</h4>
-				<input type="radio" name="indv"/> Individual Accout<br />
-				<input type="radio" name="joint" />Joint Account<br />
+				<input type="radio" class="fontH twenty5Down" name="brokerage" value="indv"/>
+				<label for="indv">Individual Accout</label><br />
+				<input type="radio" class="fontH twenty5Down" name="brokerage" value="joint" />
+				<label for="joint">Joint Account</label><br />
 				<button class="">Apply Now</button>
 				<div class="hrLine"></div>
 			</form>
 			<form>
-				<h4 class="fontG retirement">Retirement(IRA)</h4>
-				<input type="radio" name="traditionalIRA"/>Traditional IRA<br />
-				<input type="radio" name="rothIRA" />Roth IRA<br />
-				<input type="radio" name="rolloverIRA" />Rollover IRA<br />
+				<h4 class="fontG retirement twenty5Down">Retirement(IRA)</h4>
+				<input type="radio" class="fontH twenty5Down" name="retirement" value="traditionalIRA"/>
+				<label for="traditionalIRA">Traditional IRA</label><br />
+				<input type="radio" class="fontH twenty5Down" name="retirement" value="rothIRA" />
+				<label for="rothIRA">Roth IRA</label><br />
+				<input type="radio" class="fontH twenty5Down" name="retirement" value="rolloverIRA" />
+				<label for="rolloverIRA">Rollover IRA</label><br />
 				<button class="">Apply Now</button>
 				<div class="hrLine"></div>
 			</form>
 			<form>
-				<h4 class="fontG fromSchwab">From Schwab Bank</h4>
-				<h4 class="fontG brokerage">Checking Linked to Brokerage</h4>
-				<input type="radio" name="indivAcct"/>Individual Account<br />
-				<input type="radio" name="jointAcct" />Joint Account<br />
+				<h4 class="fontI fromSchwab">From Schwab Bank</h4>
+				<h4 class="fontG brokerageOther">Checking Linked to Brokerage</h4>
+				<input type="radio" class="fontH twenty5Down" name="checkingLinked" value="indivAcct"/>
+				<label for="indivAcct">Individual Account</label><br />
+				<input type="radio" class="fontH twenty5Down" name="checkingLinked" value="jointAcct" />
+				<label for="jointAcct">Joint Account</label><br />
 				<button class="">Apply Now</button>
-				<div class="hrLine"></div>
 			</form>
 		</div>
 		<!-- end of form -->
@@ -131,33 +137,47 @@
 			<div class="filledHeader bgGrey">
 				<span class="hideAbove590 fontJ">Pricing for Online Traders</span>
 			</div>
-			<div class="module">
-				<div>
-					<div>Stocks</div>
-					<div class="flRight">$8.95</div>
-					<div>- Unlimited shares, market or limit</div>
+			<div class="">
+				<div class="pricingSectionContainer module">
+					<div class="" style="width:100%; display: inline-block;">
+						<div class="flLeft fontL">Stocks</div>
+						<div class="flRight fontM">$8.95</div>
+					</div>
+					<div class="fontL">- Unlimited shares, market or limit</div>
 				</div>
-				<div>
-					<div>ETFs</div>
-					<div>- Schwab ETF OneSource™</div>
-					<div class="flLeft">$0.00</div>
-					<div>(when traded in your Schwab account1)</div>
-					<div>- Non-Schwab ETFs</div>
-					<div class="flLeft">$8.95</div>
-				</div>
-				<div>
-					<div>Options</div>
-					<div class="flLeft">$8.95+$0.75
-						<br/><span>per contract</span>
+
+				<div class="pricingSectionContainer">
+					<div class="module">
+						<div class="flLeft">ETFs</div>
+						<div class="" style="width:100%; display: inline-block;">
+							<div class="flLeft fontL">- Schwab ETF OneSource™</div>
+							<div class="flRight fontM">$0.00</div>
+						</div>
+						
+						<div class="fontL">(when traded in your Schwab account <span>†</span>)</div>
+						<div class="" style="width:100%; display: inline-block;">
+							<div class="fontL flLeft">- Non-Schwab ETFs</div>
+							<div class="flRight fontM">$8.95</div>
+						</div>
 					</div>
 				</div>
 
+				<div class="pricingSectionContainer module">
+					<div class="" style="width:100%; display: inline-block;">
+						<div class="flLeft">Options</div>
+						<div class="flRight fontM">$8.95+$0.75</div>
+					</div>
+					<div class="flRight">per contract</div>
+				</div>
 
+				<div class="module">
 					<div class="fontC twenty5Up">Fees and Minimums</div>
 					<div class="fontN">Schwab Trading Services accounts have no account maintenance or platform fees, no trade minimum and require just $1,000 to open.</div>
 
 					<div class="fontN twenty5UpDown">At Schwab, we strive to make all of our pricing clear and transparent. Please see the Charles Schwab Pricing Guide for complete information on Schwab’s commissions, fees, and other possible charges to which you may be subject.</div>
 				</div>
+
+			</div>
 
 		</div>
 
