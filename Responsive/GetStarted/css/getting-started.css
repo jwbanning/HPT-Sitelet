@@ -13,39 +13,59 @@
   .module{
     padding: 0 15px;
   }
-/*fonts*/
+  .filledHeader{
+    font-size: 15px;
+    line-height: 17px;
+    padding-top: 2px;
+    margin: 25px 0;
+    height: 25px;
+  }
+  .filledHeader span{
+    padding-left:15px;
 
+  }
+  /*GLOBALS*/
 
-/*B: Charles Light, size: 26px, line-height: 32px, #111111
-C: arial regular, size: 13px, line-height: 17px, #333333 
-D: Charles bold, size: 19px, line-height 24px, #111111 (link) 
-E: arial regular, size: 12px, line-height: 16px, #111111 
-F: Charles reg, size: 16px, #111111
-G: arial bold, size: 14px, #111111
-H: arial regular, size: 14px, #111111
-I: arial regular, size:14px, line-height: 20px, #666666
-J: Charles reg, size: 15px, line-height: 25px, #ffffff 
-K: Charles reg, size: 15px, line-height: 21px, #111111
-L: arial regular, size: 13px, line-height 17px,#222222 
-M: arial bold, size: 13px, line-height 17px,#222222 
-N: arial reg, size: 12px, line-height 16px,#333333*/
+    /*FLOATS*/
+    .flRight{
+      float:right;
+    }
+    .flLeft{
+      float:left;
+    }
+    /*PADDING*/
+    .twenty5UpDown{
+      padding:25px 0;
+    }
+    .twenty5Up{
+      padding:25px 0 0;
+    }
+    .twenty5Down{
+      margin:0 0 25px;
+    }
+    /*COLORS*/
+    .bgBlue{
+      background-color: #425563;
+    }
+    .bgGrey{
+      background-color: #7a8891;
+    }
+    /*FONTS*/
+  .fontB{font-family:'CharlesModern';font-size:26px;line-height:32px;color:#111;font-weight:300;}
+  .fontC{font-family:'Arial';font-size:13px;line-height:17px;color:#333;}
+  .fontD{font-family:'CharlesModern';font-size:19px;line-height:24px;color:#111; font-weight:700;}
+  .fontE{font-family:'Arial';font-size:12px;line-height:16px;color:#111;}
+  .fontF{font-family:'CharlesModern';font-size:16px;line-height:16px;color:#111;font-weight:400;}
+  .fontG{font-family:'Arial';font-size:14px;line-height:14px;color:#111; font-weight:bold;}
+  .fontH{font-family:'Arial';font-size:14px;line-height:14px;color:#111;}
+  .fontI{font-family:'Arial';font-size:14px;line-height:14px;color:#666;}
+  .fontJ{font-family:'CharlesModern';font-size:15px;line-height:25px;color:#fff;font-weight:400;}
+  .fontK{font-family:'CharlesModern';font-size:15px;line-height:21px;color:#111;font-weight:400;}
+  .fontL{font-family:'Arial';font-size:13px;line-height:17px;color:#222;}
+  .fontM{font-family:'Arial';font-size:13px;line-height:17px;color:#222;font-weight:bold;}
+  .fontN{font-family:'Arial';font-size:12px;line-height:16px;color:#333;}
 
-
-.fontB{font-family:'CharlesModern';font-size:26px;line-height:32px;color:#111;font-weight:300;}
-.fontC{font-family:'Arial';font-size:13px;line-height:17px;color:#333;}
-.fontD{font-family:'CharlesModern';font-size:19px;line-height:24px;color:#111; font-weight:700;}
-.fontE{font-family:'Arial';font-size:12px;line-height:16px;color:#111;}
-.fontF{font-family:'CharlesModern';font-size:16px;line-height:16px;color:#111;font-weight:400;}
-.fontG{font-family:'Arial';font-size:14px;line-height:14px;color:#111; font-weight:bold;}
-.fontH{font-family:'Arial';font-size:14px;line-height:14px;color:#111;}
-.fontI{font-family:'Arial';font-size:14px;line-height:14px;color:#666;}
-.fontJ{font-family:'CharlesModern';font-size:15px;line-height:16px;line-height:25px;color:#fff;font-weight:400;}
-.fontK{font-family:'CharlesModern';font-size:15px;line-height:16px;line-height:21px;color:#111;font-weight:400;}
-.fontL{font-family:'Arial';font-size:13px;line-height:16px;line-height:17px;color:#222;}
-.fontM{font-family:'Arial';font-size:13px;line-height:16px;line-height:17px;color:#222;font-weight:bold;}
-.fontN{font-family:'Arial';font-size:12px;line-height:16px;line-height:16px;color:#333;}
-
- .earnContainer{
+  .earnContainer{
     margin-top:20px;
     padding-bottom: 15px;
   }
@@ -55,12 +75,27 @@ N: arial reg, size: 12px, line-height 16px,#333333*/
   .bckMustard{
   background-color: #ede04a;
   }
-
-
-  .formContainer{}
   .formContainer .selAcct{padding-top:25px;}
   .formContainer .brokerage{padding:30px 0 25px;}
+  .formContainer .brokerageOther{padding:8px 0 25px;}
+  .formContainer label{margin-left:8px;}
+  .formContainer .hrLine{border:solid 1px #bbb;margin:30px 0;}
 
+  .pricingSectionContainer{
+    /*width:100%;*/
+    padding-bottom:12px;
+  }
+  .pricingSectionContainer:nth-child(even){
+    background-color: #f1f1f1;
+    padding:12px 0;
+  }
+  .pricingSectionContainer:nth-child(3){
+    /*width:100%;*/
+    padding-top:12px;
+  }
+  /*.footer-connect.hideAbove590{
+    width: auto;
+  }*/
 /*
 
   .color{
