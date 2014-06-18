@@ -5,12 +5,14 @@
 .centered-content {
   margin: 0 auto;
   max-width: 850px;
-  height: 213px;
+  min-height: 213px;
+  overflow: hidden;
+  position: relative;
 }
 .column {
   width: 25%;
   float: left;
-  padding: 0 30px;
+  padding: 0 30px 0 15px;
   margin: 0;
   box-sizing:border-box;
 }
@@ -20,13 +22,25 @@
 .amount {
   height: auto;
   display: block;
+  white-space: nowrap;
 }
 .dollar-amount {
   font-size: 38px;
   color: #666;
   font-weight: 500;
   text-align: center;
+  position: relative;
 }
+.dollar-amount .option{
+  position: absolute;
+  left: 61%;
+  text-align:left;
+  top: 43px;
+  font-size: 10px;
+  text-transform: uppercase;
+  width: 67px;
+}
+
 .dollar-amount .dollar-sign {
   display: inline-block;
   vertical-align: top;
@@ -74,8 +88,177 @@
   bottom: 18px;
 }
 
+.content-image {
+  height: 550px;
+  width: 100%;
+  font-weight: 200;
+  font-family: 'CharlesModern';
+}
+
+.content-image h2 {
+  font-size: 38px;
+  color: #fff;
+  padding: 0 30px;
+  padding-top: 60px;
+  max-width: 600px;
+}
+.content-image h3 {
+  font-size: 20px;
+  color: #fff;
+  padding: 20px 30px 0 30px;
+  max-width: 600px;
+}
+.content-image .box-wrapper {
+  width: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  padding-top: 33px;
+}
+.content-image .box-wrapper .box {
+  display: inline-block;
+  margin: 0 8px;
+  box-sizing: border-box;
+  padding: 18px;
+  vertical-align: top;
+}
+
+/*SUPPORT */
+.content-image.support {
+  background: url("../main-images/HPTHome960_support.jpg") no-repeat 100% 100%;
+}
+
+.content-image.support h2 {
+  width: 476px;
+}
+.content-image.support h3 {
+  width: 400px;
+}
+
+.content-image.support .box-wrapper .box {
+  background-color: rgba(237, 224, 75, 0.85);
+  width: 200px;
+  height: 200px;
+}
+.box p {
+  font-size: 20px;
+  line-height: 25px;
+  color: #000;
+  text-align: left;
+}
+
+/*INSIGHT */
+.content-image.insight {
+  background: #414042;
+  -moz-box-shadow: inset 0 0 175px rgba(0, 0, 0, 0.59);
+  -webkit-box-shadow: inset 0 0 175px rgba(0, 0, 0, 0.59);
+  box-shadow: inset 0 0 175px rgba(0, 0, 0, 0.59);
+}
+
+.content-image.insight .box-wrapper .box {
+  width: 230px;
+  height: 200px;
+  background: #98a4ae;
+}
+.content-image.insight .box-wrapper .box p {
+  font-size: 16px;
+  line-height: 23px;
+  margin-top: 0;
+  color: #fff;
+}
+.content-image.insight .box-wrapper .box:first-child {
+  width: 300px;
+  height: 200px;
+  background: transparent;
+  padding:0 10px;
+  text-align: left;
+}
+.content-image.insight .box-wrapper h2{
+  width: 100%;
+  background: #98a4ae;
+  color: #fff;
+  padding:7px 5px;
+  font-size: 14px;
+  margin-bottom: 12px;
+  line-height:normal;
+}
+.content-image.insight .box-wrapper h2:nth-child(2n){
+ background-color: rgba(237, 224, 75, 0.85);
+ color: #111;
+}
+
+/*PLATFORM*/
+.content-image.platform {
+  background: url("../main-images/HPTHome960_platform.jpg") no-repeat 100% 100%;
+  overflow: hidden;
+}
+.content-image.platform .box{
+  padding-top: 10px;
+  background-color: rgba(237, 224, 75, 0.85);
+  margin-top: 60px;
+  margin-left: 20px;
+  width: 310px;
+  float: left;
+  padding: 35px;
+  box-sizing: border-box;
+}
+.content-image.platform .box.small{
+  padding: 27px 11px;
+  float: left;
+  background: #425563;
+  height: 110px;
+  width: 110px;
+  margin-top: 323px;
+  margin-left: 12px;
+}
+.content-image.platform h2{
+  padding:0;
+  color: #111;
+  font-size: 33px;
+  line-height: 38px;
+}
+.content-image.platform p{
+  font-size: 18px;
+  line-height: 23px;
+  color: #111;
+  margin: 0;
+  padding-top: 20px;
+}
+.content-image.platform .box.small p{
+  font-size: 14px;
+  color: #fff;
+  line-height: 18px;
+  vertical-align: bottom;
+  margin: 0;
+  padding: 0;
+}
+
+/*EDUCATION*/
+.content-image.education {
+  background: url("../main-images/HPTHome960_education.jpg") no-repeat 100% 100%;
+  overflow: hidden;
+}
+
+.content-image.education .box-wrapper .box {
+  background-color: #8e98a1;
+  width: 205px;
+  height: 205px;
+  padding:32px;
+}
+.content-image.education .box-wrapper .box  p {
+  font-size: 20px;
+  line-height: 25px;
+  color: #fff;
+  text-align: left;
+}
+
 
 @media (max-width: 768px) {
+  .centered-content {
+    min-height: 200px;
+    padding: 0 20px;
+  }
   .earn p {
     color: #fff;
     line-height: 18px;
@@ -86,8 +269,87 @@
     font-size: 27px;
     font-weight: 200;
   }
+  .content-image {
+    height: 450px;
+    }
+  .content-image h2 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .content-image h3 {
+    font-size: 18px;
+  }
+  .box p {
+    font-size: 15px;
+    line-height: 21px;
+    margin-top: 0;
+    color: #111;
+  }
+  .content-image.support .box-wrapper .box {
+    width: 151px;
+    height: 151px;
+  }
+  .content-image.platform .box.small {
+    margin-top: 270px;
+    padding: 20px 12px;
+  }
+  .content-image.support h2 {
+    width: 395px;
+    }
 
-}
+  .content-image.education .box-wrapper .box {
+    height: 151px;
+    width:151px;
+    padding: 15px;
+  }
+  .content-image.education .box-wrapper .box p {
+    font-size: 21px;
+    line-height: 29px;
+  }
+
+  .content-image.support {
+    background: url("../main-images/HPTHome768_support.jpg") no-repeat 100% 100%;
+  }
+  .content-image.platform {
+    background: url("../main-images/HPTHome768_platform.jpg") no-repeat 100% 100%;
+    overflow: hidden;
+  }
+  .content-image.education {
+    background: url("../main-images/HPTHome768_education.jpg") no-repeat 100% 100%;
+    overflow: hidden;
+  }
+  .content-image.insight {
+    background: #414042;
+    -moz-box-shadow: inset 0 0 175px rgba(0, 0, 0, 0.59);
+    -webkit-box-shadow: inset 0 0 175px rgba(0, 0, 0, 0.59);
+    box-shadow: inset 0 0 175px rgba(0, 0, 0, 0.59);
+  }
+  .content-image.insight .box-wrapper .box {
+    width: 207px;
+    height: 190px;
+    background: #98a4ae;
+    padding: 25px 20px;
+  }
+  .content-image.insight .box-wrapper .box p {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .content-image.platform h2 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .content-image.platform p {
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .content-image.platform .box {
+    padding: 25px 35px 25px 20px;
+    width: 250px;
+  }
+
+
+
 @media (max-width: 590px) {
   .earn {
     display: none;
