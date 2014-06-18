@@ -1,3 +1,4 @@
+.mobile { display: none; overflow: hidden;}
 .home-carousel {
   height: 400px;
   width: 100%;
@@ -255,6 +256,9 @@
 
 
 @media (max-width: 768px) {
+  #main-content {
+    width: 100%;
+  }
   .centered-content {
     min-height: 200px;
     padding: 0 20px;
@@ -271,7 +275,7 @@
   }
   .content-image {
     height: 450px;
-    }
+  }
   .content-image h2 {
     font-size: 32px;
     line-height: 36px;
@@ -316,6 +320,7 @@
   }
   .content-image.education {
     background: url("../main-images/HPTHome768_education.jpg") no-repeat 100% 100%;
+    background-position: top;
     overflow: hidden;
   }
   .content-image.insight {
@@ -355,5 +360,64 @@
     display: none;
   }
 }
-@media (max-width: 480px) {}
-@media (max-width: 340px) {}
+@media (max-width: 480px) {
+  .hideBelow480 { display: none !important;}
+  .mobile { 
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 65px;
+    padding:12px 10px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+  }
+  .mobile h2{ 
+    font-size: 17px;
+    padding: 0;
+    line-height: 22px;
+  }
+  .mobile h3{ 
+    font-size: 14px;
+    padding: 0;
+  }
+  .content-image {
+    height: 200px;
+    position: relative;
+  }
+  .content-image.support {
+    background: url("../main-images/HPTHome480_support.jpg") no-repeat 100% 100%;
+  }
+  .content-image.platform {
+    background: url("../main-images/HPTHome480_platform.jpg") no-repeat 100% 100%;
+    overflow: hidden;
+  }
+  .content-image.education {
+    background: url("../main-images/HPTHome480_education.jpg") no-repeat 100% 100%;
+    overflow: hidden;
+  }
+  .content-image.insight {
+    background: url("../main-images/HPTHome480_insight.jpg") no-repeat 100% 100%;
+    overflow: hidden;
+  }
+}
+@media (max-width: 320px) {
+  .content-image.support {
+    background: url("../main-images/HPTHome320_support.jpg") no-repeat 100% 100%;
+  }
+  .content-image.platform {
+    background: url("../main-images/HPTHome320_platform.jpg") no-repeat 100% 100%;
+    overflow: hidden;
+  }
+  .content-image.education {
+    background: url("../main-images/HPTHome320_education.jpg") no-repeat 100% 100%;
+    overflow: hidden;
+  }
+  .content-image.insight {
+    background: #414042;
+    -moz-box-shadow: inset 0 0 175px rgba(0, 0, 0, 0.59);
+    -webkit-box-shadow: inset 0 0 175px rgba(0, 0, 0, 0.59);
+    box-shadow: inset 0 0 175px rgba(0, 0, 0, 0.59);
+  }
+}
