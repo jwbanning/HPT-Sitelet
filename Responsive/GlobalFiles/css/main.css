@@ -989,6 +989,7 @@ p {
   margin-top: 10px;
   font-size: 18px;
   background: #fff;
+  overflow: hidden;
 }
 
 .footer-connect .hdln-connect {

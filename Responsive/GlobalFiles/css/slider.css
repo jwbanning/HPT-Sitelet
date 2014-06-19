@@ -1,0 +1,148 @@
+.dots {
+  position: absolute;
+  z-index: 9999;
+  width: 176px;
+  bottom: 15px;
+  right: 0;
+}
+
+.home-carousel .dots li.active {
+background: #e7dd63;
+opacity: 1;
+}
+
+.home-carousel .dots li {
+display: inline-block;
+width: 12px;
+height: 12px;
+margin: 0 4px;
+text-indent: -999em;
+background-color: #f6f1b8;
+cursor: pointer;
+opacity: .4;
+-webkit-transition: background .5s, opacity .5s;
+-moz-transition: background .5s, opacity .5s;
+transition: background .5s, opacity .5s;
+}
+
+.home-carousel .btn, .home-carousel .dot {
+/*-webkit-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+-moz-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+-ms-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+-o-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));*/
+}
+
+.home-carousel ul li {
+  padding-top: 50px;
+  box-sizing:border-box;
+}
+.home-carousel ul li p {
+  margin:0;
+}
+
+.yellowBox{
+  display: block;
+  background-color: rgba(237, 224, 75, 0.85);
+  width:235px;
+  height:225px;
+  color:#111;
+  font-family:'CharlesModern';
+  margin:0px 10px 0 37px;
+  padding: 25px 8px 0 11px;
+  box-sizing:border-box;
+  float: left;
+  font-size: 33px;
+  line-height: 38px;
+  font-weight: 300;
+}
+
+.slider-headline span {
+  display: block;
+  font-size: 21px;
+}
+
+.learning .yellowBox, .experience .yellowBox, .pursue .yellowBox {
+  font-size: 29px;
+  height:235px;
+}
+
+.greyBox {
+  font-family:'CharlesModern';
+  width: 160px;
+  height: 160px;
+  background: rgba(156, 167, 177, 0.93);
+  padding: 25px 7px 0 15px;
+  box-sizing:border-box;
+  overflow: hidden;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  position: relative;
+}
+
+.experience .greyBox, .learning .greyBox {
+  height:185px;
+}
+
+.get-started {
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+}
+
+
+.second .greyBox {
+  width: 182px;
+  height: 182px;
+}
+
+.blackBox {
+  font-family:'CharlesModern';
+  width: 72px;
+  height: 72px;
+  background: #000;
+  padding: 10px;
+  box-sizing:border-box;
+  float: left;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .yellowBox {
+    width: 221px;
+    height: 221px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+  .learning .yellowBox, .experience .yellowBox, .pursue .yellowBox {
+    font-size: 29px;
+    height:221px;
+  }
+  .learning .yellowBox {
+    font-size: 25px;
+    width:227px;
+  }
+  .greyBox {
+    width: 161px;
+  }
+  .learning .greyBox {
+    width:184px;
+  }
+  .landing .greyBox {
+    width:135px;
+    height: 137px;
+    padding-right: 10px;
+  }
+  .slider-headline span {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 590px) {
+ 
+}
+
