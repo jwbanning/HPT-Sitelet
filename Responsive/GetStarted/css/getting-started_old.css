@@ -3,7 +3,6 @@
     width: 100%;
     margin: 0 auto;
     font-family: 'Arial';
-    max-width: 960px;
   }
    h1{
     padding-bottom: 8px;
@@ -22,7 +21,7 @@
   .filledHeader span{
     padding-left:15px;
   }
-  .seven60ContentRight{
+  .seven60WrapperRight{
     display: none;
   }
   /*GLOBALS*/
@@ -126,7 +125,7 @@
   }
   .seven60ContentRight .heroCallout{
     background-color:#425563;
-    padding: 20px 11px 40px;
+    padding: 20px 11px 60px;
     border: solid 1px #c0c6cb;
   }
   .seven60ContentRight .heroCallout h4{
@@ -166,9 +165,10 @@
   .earnContainer{
     display:none;
   }
-  .filledHeader{
-    clear:both;
-  }
+
+  /*TO DO REMOVE*/
+  /*.filledHeaderContainer{display: none}
+  */
   .formContainer .selAcct{
     display: none;
 /*    padding-top:40px;
@@ -196,42 +196,7 @@
   form .hrLine{
     display:none;
   }
-  #fromSchwab .inputWrapper{
-    border-bottom: solid 1px #333333;
-    border-top: solid 1px #333333;
-    background-color:#ececec;
-    padding: 20px 10px;
-  }
-
-  .filledHeadersWrapper{
-    padding: 45px 0 0 40px;
-    clear: both;
-  }
-  .filledHeadersWrapper .filledHeaderContainer{
-    width: 50%;
-    float: right;
-    display: inline-block;
-    position: relative;
-  }
-  .filledHeadersWrapper .filledHeader {
-    background-color: transparent;
-  }
-  .filledHeadersWrapper .filledHeader span{
-  font-size: 14px;
-  line-height: 19px;
-  color:#111;
-  padding-left:0px;
-  }
-
-  .filledHeaderContainer .pricingSectionContainer,
-  .filledHeaderContainer .pricingSectionContainer .module{
-    padding: 0px;
-  }
-  .filledHeaderContainer .pricingSectionContainer:nth-child(even){
-    background-color: transparent;
-  }
-
-  #bottom-content{
+  .filledHeaderContainer, #bottom-content{
     clear:both;
   }
 
