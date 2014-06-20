@@ -1,5 +1,5 @@
-/*CSS that is specific to the getting started page. */
-  #GS-Wrapper{
+CSS that is specific to the getting started page. */
+  #GSWrapper{
     width: 100%;
     margin: 0 auto;
     font-family: 'Arial';
@@ -98,7 +98,21 @@
     padding-top:12px;
   }
 
+  .investorBizImgContainer{
+    padding-top: 8px;
+    padding-bottom:15px;
+  }
+  .investorBizImgContainer img{float:right;}
+/*********************/
+/*768 container*/
+/*********************/
 @media (min-width: 768px) {
+  #GSWrapper{
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Arial';
+    max-width: 960px;
+  }
   .fontG{
     font-family: 'CharlesModern';
     font-size: 15px;
@@ -221,6 +235,7 @@
   }
   .filledHeadersWrapper .filledHeader {
     background-color: transparent;
+    border-bottom: solid 1px #333;
   }
   .filledHeadersWrapper .filledHeader span{
   font-size: 14px;
@@ -284,4 +299,3 @@
     color:#111111;
     padding: 0 15px;
   }
-*/
