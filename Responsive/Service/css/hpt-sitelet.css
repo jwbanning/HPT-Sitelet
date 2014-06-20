@@ -1078,7 +1078,7 @@ header,
 		}
 		#bottom-content #bottom-menu {
 				background-color: #e4e4e4;
-				margin-left: -3.5%;
+				/*margin-left: -3.5%;*/
 				padding: 10px 0 10px 15px;
 				width: 100%;
 		}
@@ -1105,8 +1105,11 @@ header,
 				line-height: 19px;
 				padding: 0;
 				margin-bottom: 15px;
-				margin-left:15px;
+				/*margin-left:15px;*/
 				width:100%;
+		}
+		.footer-connect.hideAbove590 div:first-child{
+			margin-left:15px;
 		}
 		.footer-connect .hdln-connect {
 				display: block;
@@ -1316,7 +1319,7 @@ header,
 		#contactIcons { margin-top:25px;}
 		#contactWrapper .contactIcon { margin: 0 8px; }
 
-		#bottom-content #bottom-menu { padding:20px 0 15px 15px;}
+		#bottom-content #bottom-menu { padding:20px 0 15px 0px;}
 		#bottom-content #bottom-menu a {font-size:12px; line-height:30px;}
 
 		.footer-connect .hdln-connect {line-height: 19px; margin-bottom: 15px;}
