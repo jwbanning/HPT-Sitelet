@@ -113,7 +113,7 @@
     padding-bottom:22px;
   }
   .seven60WrapperLeft{
-    width:74%;
+    width:79%;
     float:left;
     margin-top: 30px;
   }
@@ -163,6 +163,8 @@
     line-height: 13px;
   }
 
+
+
   .earnContainer{
     display:none;
   }
@@ -210,8 +212,12 @@
   .filledHeadersWrapper .filledHeaderContainer{
     width: 50%;
     float: right;
-    display: inline-block;
     position: relative;
+    padding: 0 0px;
+    box-sizing: border-box;
+  }
+  .filledHeadersWrapper .filledHeaderContainer:nth-child(2){
+    padding: 0 60px 0 0;
   }
   .filledHeadersWrapper .filledHeader {
     background-color: transparent;
@@ -222,6 +228,10 @@
   color:#111;
   padding-left:0px;
   }
+
+  .filledHeadersWrapper #overallHeadline{padding:0px;}
+  .filledHeadersWrapper .investorBizImgContainer{padding-left: 140px;}
+  .filledHeadersWrapper #feesWrapper {padding:0px;}
 
   .filledHeaderContainer .pricingSectionContainer,
   .filledHeaderContainer .pricingSectionContainer .module{
