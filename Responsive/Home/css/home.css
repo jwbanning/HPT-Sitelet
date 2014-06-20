@@ -8,6 +8,13 @@
 .site-cntr {
   margin-bottom: 0 !important;
 }
+.page-margins {
+  width: 100%;
+}
+
+#bottom-content #large-tagline-wrapper {
+  width: 100%;
+}
 
 .mobile-landing {
   width: 100%;
@@ -69,7 +76,7 @@
 }
 .centered-content {
   margin: 0 auto;
-  max-width: 850px;
+  max-width: 915px;
   min-height: 213px;
   overflow: hidden;
   position: relative;
@@ -133,6 +140,8 @@
   float: right;
   width: 100%;
   position: relative;
+  font-family: 'CharlesModern';
+  width: 156px;
 }
 .earn p {
   color: #fff;
@@ -151,6 +160,7 @@
   padding-left: 10px;
   position: absolute;
   bottom: 18px;
+  font-size: 15px;
 }
 
 .content-image {
@@ -275,7 +285,10 @@
   height: 110px;
   width: 110px;
   margin-top: 323px;
-  margin-left: 12px;
+  margin-left: 12px; 
+}
+.content-image.platform .box.small:hover{
+  cursor: pointer;
 }
 .content-image.platform h2{
   padding:0;
@@ -367,6 +380,7 @@
     line-height: 18px;
     font-size: 14px;
     padding: 18px 0px 0 12px;
+
   }
   .earn b {
     font-size: 27px;

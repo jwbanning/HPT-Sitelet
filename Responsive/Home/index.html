@@ -284,8 +284,8 @@
 
 
 		<!-- Bottom Content -->
-		<div id="bottom-content">
-			<div id="large-tagline-wrapper">
+		<div id="bottom-content" class="page-margins">
+			<div id="large-tagline-wrapper" class="hideAbove590">
 				<span id="large-tagline">Investor’s Business Daily ranked Schwab best overall customer experience.</span>
 				<a href="index.html#" id="tagline-cta">Open an account ></a>
 			</div>
@@ -386,9 +386,6 @@
 
 			<div id="pageDisclaimer">
 				<div class="clrBoth pdTp30 mobileLine"></div>
-				<p class="legal">
-					Results based on an Investor's Business Daily ("IBD") and TechnoMetrica study of 31 online brokers as scored by 10,179 visitors to the IBD website between July and September 2013. The 12 brokers selected by 100 or more participants were ranked on 12 attributes based on a Customer Experience Index score. The overall ranking was based on a weighing of all 12 attributes and how well each broker scored for each. For further information on how the ratings were calculated, see 
-					<a href="http://news.investors.com/investing/112913-680736-best-online-brokerage-rating-method-explained.htm">IBD’s Criteria and Methodology.</a></p>
 				<div id="footer" style="float: none;">
 					<style type="text/css">
 						#footer {float:none;}
@@ -481,7 +478,9 @@
 
  <script src="https://www.schwabcdn.com/secure/asset/short/?cmsid=PS-CHOME-HEADER-SCRIPT" type="text/javascript"></script>
  <script type="text/javascript" src="../GlobalFiles/js/jquery-1.10.2.min.js"></script>
- <script type="text/javascript" src="../GlobalFiles/js/slider.js"></script>
+  <script type="text/javascript" src="../GlobalFiles/js/slider.js"></script>
+   <script type="text/javascript" src="../GlobalFiles/js/animation-jquery.js"></script>
+ <script type="text/javascript" src="../GlobalFiles/js/global-effects.js"></script>
  
 
  <script type="text/javascript">
@@ -489,7 +488,7 @@
 	$(document).ready(function() {
 	 $('.home-carousel').unslider({
 			speed: 500,               //  The speed to animate each slide (in milliseconds)
-			delay: 55500,              //  The delay between slide animations (in milliseconds)
+			delay: 10000,              //  The delay between slide animations (in milliseconds)
 			complete: function() {},  //  A function that gets called after every slide animation
 			keys: true,               //  Enable keyboard (left, right) arrow shortcuts
 			dots: true,               //  Display dot navigation
@@ -497,7 +496,7 @@
 		});
 
 	 //setupTracking();
-	 //addContactMenu();
+	 addContactMenu();
 	});
  </script>
 
