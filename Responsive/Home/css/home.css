@@ -339,6 +339,10 @@
   border: none;
   border-bottom: 1px solid #bbb;
   margin:5px 0 25px;
+  border-top: 1px solid #bbb;
+}
+#bottom-content #large-tagline-wrapper.bottom-border {
+  border-top: none;
 }
 
 
