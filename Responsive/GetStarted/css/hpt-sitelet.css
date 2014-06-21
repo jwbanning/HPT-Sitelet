@@ -458,7 +458,7 @@ header,
 .call-us:hover { background: linear-gradient(#5a676f, #4f5a61);}
 #bottom-content #pageDisclaimer {
 		padding: 0px;
-		margin: 0 15px 35px 15px;
+		margin: 0 0px 35px 0px;
 }
 .legal {
 		font-size: 11px;
@@ -748,6 +748,7 @@ header,
 			width: 100%;
 		}
 		#bottom-content #large-tagline { font-size: 16px;line-height:22px; color:#222;}
+		#bottom-content #pageDisclaimer{margin: 0 15px 35px 15px;}
 
 
 
