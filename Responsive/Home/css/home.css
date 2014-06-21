@@ -72,7 +72,7 @@
 }
 .centered-content {
   margin: 0 auto;
-  max-width: 915px;
+  max-width: 815px;
   min-height: 213px;
   overflow: hidden;
   position: relative;
@@ -137,7 +137,6 @@
   width: 100%;
   position: relative;
   font-family: 'CharlesModern';
-  width: 156px;
 }
 .earn p {
   color: #fff;
@@ -164,7 +163,16 @@
   width: 100%;
   font-weight: 200;
   font-family: 'CharlesModern';
+  color: #fff;
 }
+.content-image a {
+  color: #fff;
+}
+.content-image a:hover {
+  border:none;
+  text-decoration: none;
+}
+
 
 .content-image h2 {
   font-size: 38px;
@@ -369,7 +377,11 @@
   }
   .centered-content {
     min-height: 200px;
-    padding: 0 20px;
+    padding: 0 21px;
+    box-sizing:border-box;
+  }
+  .earn {
+    height:133px;
   }
   .earn p {
     color: #fff;
@@ -461,7 +473,22 @@
     padding: 25px 35px 25px 20px;
     width: 250px;
   }
+}
 
+@media (max-width: 730px) {
+  .earn {
+    right: 52px;
+    position: absolute;
+    width: 134px;
+  }
+  #info-box-content {
+    padding: 0;
+  }
+  .column {
+    width: 22%;
+    padding-right: 0;
+  }
+}
 
 
 @media (max-width: 590px) {
@@ -485,7 +512,13 @@
 }
 
 
-
+@media (max-width: 510px) {
+  .content-image.education .box-wrapper .box {
+    height: 140px;
+    width: 140px;
+    padding: 15px;
+  }
+}
 
 
 @media (max-width: 480px) {
@@ -530,6 +563,66 @@
     background: url("../main-images/HPTHome480_insight.jpg") no-repeat 100% 100%;
     overflow: hidden;
   }
+  .mobile-pricing {
+    float: left;
+  }
+  .mobile-pricing .title {
+    width: 100%;
+    font-family: 'CharlesModern';
+    font-weight: 200;
+    padding: 5px 15px;
+    font-size: 15px;
+    background: #435664;
+    box-sizing: border-box;
+    color: #fff;
+  }
+  .column {
+    width: 100%;
+    overflow: hidden;
+    padding: 0px 15px;
+    box-sizing:border-box;
+    height: 80px;
+  }
+  .column .amount {
+    float: left;
+    width: 92px;
+    text-align: left;
+    font-size: 30px;
+  }
+  .column .option {
+    position: relative;
+    float: left;
+    left: 0;
+    width: auto;
+    top: 0;
+   /* padding: 18px 0;*/
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: none;
+    padding: 5px 0;
+  }
+  .column .option  a{
+      display: block;
+      padding-top: 3px;
+   }
+  .column .dollar-amount {
+    overflow: hidden;
+    padding: 18px 0px 18px 10px;
+    border-bottom: 1px solid #bbb;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  .column:last-child .dollar-amount {
+    border-bottom:none;
+  }
+  .dollar-amount .dollar-sign {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .dollar-amount .first-number {
+    font-size: 45px;
+    line-height: 51px;
+  }
 }
 
 
@@ -538,7 +631,13 @@
 
 
 
-@media (max-width: 320px) {
+
+
+
+
+
+
+@media (max-width: 340px) {
   .content-image.support {
     background: url("../main-images/HPTHome320_support.jpg") no-repeat 100% 100%;
   }
@@ -567,8 +666,16 @@
     margin-left: 5px;
     font-size: 23px;
   }
+  .column {
+    padding: 0px 15px;
+  }
 }
 
+
+#bottom-content {
+    box-sizing: border-box;
+    padding: 0 23px;
+  }
  #bottom-content #large-tagline-wrapper {
     width: 100%;
     box-sizing: border-box;
@@ -577,6 +684,11 @@
     box-sizing: border-box;
     padding: 25px;
   }
+@media (max-width: 590px) {
+  #bottom-content {
+    padding: 0px;
+  }
+}
 @media (max-width: 480px) {
 /*Extensions from CSS HPT*/
   #bottom-content #large-tagline-wrapper {
@@ -586,4 +698,5 @@
     box-sizing: border-box;
     padding: 0px;
   }
+
 }

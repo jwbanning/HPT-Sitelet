@@ -39,6 +39,7 @@ filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));*/
 }
 .home-carousel ul li p {
   margin:0;
+  color: #fff;
 }
 
 .yellowBox{
@@ -48,7 +49,7 @@ filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));*/
   height:225px;
   color:#111;
   font-family:'CharlesModern';
-  margin:0px 10px 0 37px;
+  margin:0px 10px 0 82px;
   padding: 25px 8px 0 11px;
   box-sizing:border-box;
   float: left;
@@ -124,6 +125,7 @@ filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));*/
     height: 221px;
     font-size: 28px;
     line-height: 33px;
+    margin-left:50px;
   }
   .learning .yellowBox, .experience .yellowBox, .pursue .yellowBox {
     font-size: 29px;
