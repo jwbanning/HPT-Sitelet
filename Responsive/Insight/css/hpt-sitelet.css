@@ -514,7 +514,7 @@ header,
 		width: 36px;
 		height: 36px;
 		margin-right: 25px;
-		background: url('../images/social-sprite.png') no-repeat;
+		background: url('../../GlobalFiles/images/social-sprite.png') no-repeat;
 		text-indent: -9999px;
 }
 .footer-connect .social-sprite.youtube {
@@ -651,7 +651,7 @@ header,
 	header { width: 100%; }
 	header .site-cntr { height: 50px; background-color: black; padding-bottom: 0; }
 	.menu-get-started { display: none !important; }
-	.site-cntr .mobile-nav { background-image: url('../images/nav-collapsed-light.png'); }
+	.site-cntr .mobile-nav { background-image: url('../../GlobalFiles/images/nav-collapsed-light.png'); }
 	.nav-list-cntr { left: -250px;}
 	.nav-item-cta { padding-left: 15px; }
 	.nav-l1 { margin-top: -14px; padding-left: 0; }
