@@ -563,7 +563,7 @@ p {
   display: inline-block;
   *display: inline;
   vertical-align: middle;
-  background: url('../images/sprite-global.png') no-repeat;
+  background: url('../../GlobalFiles/images/sprite-global.png') no-repeat;
   zoom: 1;
 }
 
