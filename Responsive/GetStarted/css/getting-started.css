@@ -84,7 +84,29 @@ CSS that is specific to the getting started page. */
   .formContainer .brokerageOther{padding:8px 0 25px;}
   .formContainer label{margin-left:8px;}
   .formContainer .hrLine{border:solid 1px #bbb;margin:30px 0;}
-
+  .formContainer .commisionFreeContainer{
+    background-color: #f1f1f1;
+    margin: 0 0 25px 0; 
+    padding: 8px;
+  }
+  .formContainer .commisionFreeContainer input{
+    float: left;
+    margin-right: 11px;}
+  .formContainer .commisionFreeContainer label{margin-left: 0px;}
+  .formContainer .commisionFreeContainer #moreInfo{
+    width: 100%;
+    display: block;
+    margin-left: 25px;
+    text-decoration: none;
+    color:#0066cc;
+}
+  .formContainer .commisionFreeContainer p.hide{
+    display: none;
+  }
+  .formContainer .commisionFreeContainer p.show{
+    margin-left: 25px;
+    display: block;
+  }
   .pricingSectionContainer{
     /*width:100%;*/
     padding-bottom:12px;
@@ -177,8 +199,9 @@ CSS that is specific to the getting started page. */
     line-height: 13px;
   }
 
-
-
+  .formContainer .commisionFreeContainer{
+    display:none;
+  }
   .earnContainer{
     display:none;
   }
