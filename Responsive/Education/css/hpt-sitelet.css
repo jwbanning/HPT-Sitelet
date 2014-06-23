@@ -5,7 +5,9 @@
 .hideAbove767 {display: none !important;}
 .hide {display: none;}
 .bg-white { background-color:#fff !important; }
-body { overflow:visible;}
+body { 
+	overflow:visible;
+}
 
 
 /* Top Navigation Styling */
@@ -192,13 +194,14 @@ header,
 
 /* Middle Content */
 #middle-content {
-		margin: 44px auto;
-		margin-bottom: 0;
-		max-width: 875px;
+		margin: 50px auto 0;
+		max-width: 949px;
+		box-sizing:border-box;
+		padding: 0 100px;
 		font-family: 'CharlesModern', 'Helvetica', Arial, sans-serif;
 		font-weight: 300;
 		font-style: normal;
-		width: 72%;
+		width: 100%;
 }
 #middle-content .video-description {
 	color:#111;
@@ -206,9 +209,9 @@ header,
 	line-height: 31px;
 	display: inline-block;
 	vertical-align: middle;
-	width:100%;
+	width:99%;
 }
-#middle-content .video-description div { text-align:center; }
+#middle-content .video-description div { text-align:center; padding-right: 15px;}
 #middle-content #earn-trades {
 		background-color: #425563;
 		margin-left: 4%;
@@ -221,16 +224,28 @@ header,
 
 #info-box-content {
 		margin-top: 40px;
-		width: 100%;
-		display: inline-block;
 		text-align: center;
 }
 #info-box-content > * {vertical-align: top;}
 #info-box-content p {text-align: left;}
+
 .info-box-wrap {
-		width: 25%;
-		display: inline-block;
+	display: inline-block;	
+	text-align: left;
+	box-sizing:border-box;
+	width: 23%;
 }
+.mid-box { 
+	margin:0 11%;
+}
+
+.info-box-wrap a{
+		width: 150px;
+		display: block;
+}
+
+
+
 
 .info-box{
 		position: relative;
@@ -269,16 +284,36 @@ header,
 		color:#333;
 }
 .info-text p { margin-top:18px; color:#111;}
-.mid-box {margin: 0 12%;}
 
 
 
 /* Guest Pass */
 .guest-pass{
 	width: 100%;
-	margin-top: 45px;
+	background: #eddf4a;
+	height: 68px;
+	box-sizing:border-box;
+	padding: 22px 20px;
+	font-size: 18px;
+	font-weight: 700;
+	position: relative;
+	max-width: 808px;
+	margin: 45px auto 0;
+	font-family:'CharlesModern'; 
 }
-.guest-pass img { width:100%;}
+.guest-pass h2 { float: left; color: #111;}
+.guest-pass h2:last-child { 
+	margin-left: 20px; border-left: 1px solid #111; padding-left: 20px;
+}
+.guest-pass h2:last-child span {
+	background: url('../images/arrow2x.png') no-repeat; 
+	position: absolute;
+	height: 39px;
+	width: 48px;
+	background-size: contain;
+	top: 14px;
+	right: 20px;
+}
 
 .sign-up-text { }
 .sign-up-arrow{width:48px;}
@@ -305,7 +340,6 @@ header,
 .mid-info-text-wrap h1 {
 	font-family:'CharlesModern'; 
 	font-size:21px; 
-	font-weight:bold; 
 	color:#111;
 }
 .mid-info-text-wrap hr {
@@ -353,7 +387,7 @@ header,
 /* Bottom Content */
 #bottom-content {
 		margin: 0 auto 20px;
-		max-width: 950px;
+		max-width: 800px;
 		width: 100%;
 }
 #bottom-content #large-tagline-wrapper {
@@ -592,8 +626,17 @@ header,
 
 
 		/* Info Box Top Content 960 */
-		.info-box-wrap { width:24%;}
-		.mid-box { margin:0 12%;}
+		.info-box-wrap {
+
+		}
+		.info-box-wrap a {
+			width: 125px;
+			height: 125px;
+			
+		}
+		.mid-box {
+				margin: 0 14%;
+		 }
 		.info-box-text p { font-size: 18px; line-height: 23px;}
 		.info-text{ font-size: 12px; line-height: 16px; width:109%;}
 
@@ -678,7 +721,7 @@ header,
   768px
 
 -------------------------------------------------------- */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 		.hideAbove767 { display: block !important; }
 
 		body { border-left: 1px #d7d7d7 solid; margin-left: -1px; }
@@ -746,6 +789,7 @@ header,
 			margin-top: 25px;
 			margin-bottom: 0;
 			width: 100%;
+			padding: 0 93px;
 		}
 		#bottom-content #large-tagline { font-size: 16px;line-height:22px; color:#222;}
 
@@ -909,22 +953,22 @@ header,
 		}
 		.offer3-text-wrapper {
 				margin: 15px 0 6px 0;
-				padding-top: 10px;
-				height: 30px;
+				height: 40px;
 				width: 100%;
 				background-color: #ede04a;
+				font-family: 'CharlesModern', Arial, sans-serif;
+				padding: 10px 15px 0;
+				box-sizing: border-box;
 		}
 		.earn-cta {
 		}
-		.offer3-text-wrapper span {
+		.offer3-text-wrapper > span {
 			font-weight:700;
 			font-size:16px;
 			line-height:20px;
 			color:#111;
-			margin: 0 0 0 15px;
 		}
 		.offer3-text-wrapper .get-details{
-			margin: 0 15px 0 0;
 			font-size:15px;
 			font-weight:400;
 		}
@@ -975,9 +1019,9 @@ header,
 			width:14px;
 		}
 
-		.mobile-only-text { display:inline-block; width:90%;}
-		.mobile-only-text h1 { font-size:16px; line-height:20px; color:#111;}
-		.mobile-only-text p { font-size:13px;font-family:Arial;font-weight:bold;line-height: 17px;margin-bottom:0px;}
+		.mobile-only-text { display:inline-block; width:90%; font-family:Arial;}
+		.mobile-only-text h1 { font-size:16px; line-height:20px; color: #0066cc; font-family: 'CharlesModern', Arial, sans-serif;}
+		.mobile-only-text p { font-size:13px;font-family:Arial; line-height: 17px;margin-bottom:0px;}
 
 		#mid-info-1 { height:100%;}
 		#mid-info-2 { height:100%;}
@@ -985,14 +1029,12 @@ header,
 		.mid-info-text-wrap h1 { font-size:16px; line-height: 20px;}
 		.mid-info-text-wrap p { 
 			font-family:Arial;
-			font-weight:bold;
 			font-size:13px;
 			line-height:17px;
 			color:#111;
 		}
 		.mid-info-text-wrap li { 
 			font-family:Arial;
-			font-weight:bold;
 			font-size:13px;
 			line-height:17px;
 		}
@@ -1058,7 +1100,7 @@ header,
 		/* Bottom Offers 590 */
 		#bottom-content .offerBox2 {
 				width: 100%;
-				height:60px;
+				height:auto;
 				background-color: #f1f1f1;
 				float: none;
 				clear: both;
@@ -1069,9 +1111,9 @@ header,
 				margin-left: 15px;
 				background-color: #ede04a;
 				display:inline-block;
-				vertical-align: top;
+				vertical-align: middle;
 		}
-		.small-arrow{padding-top:16px; width:50px; padding-left:5px;}
+		.small-arrow{padding-top:10px; width:50px; padding-left:5px;}
 		#bottom-content .offerBox2 .number-block {
 				width: 62px;
 				height: 100%;
@@ -1081,10 +1123,14 @@ header,
 				font-weight: 300;
 				line-height: 57px;
 				text-align: center;
+				vertical-align: middle;
 		}
 		#bottom-content .offerBox2 .offer2-text-wrapper {
 				display: inline-block;
 				width: 78%;
+				padding: 7px 12px;
+				box-sizing: border-box;
+				vertical-align: middle;
 		}
 		.offerBox2 .earn-cta {
 			font-family: 'CharlesModern', Arial, sans-serif;
@@ -1217,7 +1263,7 @@ header,
 			margin: 0 15px;
 			height:100%;
 			width:100%;
-			max-width:92%;
+			max-width:93%;
 			height: 158px;
 		}
 		#main-tagline { font-size: 26px; line-height:32px; margin-bottom: 20px; }
@@ -1226,8 +1272,8 @@ header,
 
 
 		/* Top Offer 480 */
-		.offer3-text-wrapper { padding-top:20px; margin-bottom:0; height:55px;}
-		.offer3-text-wrapper .get-details { float:none; padding-left:0;}
+		.offer3-text-wrapper {  margin-bottom:0;}
+		.offer3-text-wrapper .get-details { float:right; padding-left:0; white-space: nowrap;}
 
 
 		/* Mid Information Boxes 480 */
@@ -1255,11 +1301,10 @@ header,
 		}
 
 		.mobile-only-text { display:inline-block; width:90%;}
-		.mobile-only-text h1 { font-size:16px; line-height:20px; color:#111;}
+		.mobile-only-text h1 { font-size:16px; line-height:20px;}
 		.mobile-only-text p { 
 			font-size:13px;
 			font-family:Arial;
-			font-weight:bold;
 			line-height:17px;
 			margin-bottom:0px;
 		}
@@ -1327,9 +1372,9 @@ header,
 		#bottom-content .offerBox2 .getDetailsButton {
 				display: block;
 		}
-		#bottom-content .offerBox2 .number-block {
+		/*#bottom-content .offerBox2 .number-block {
 				margin-bottom: 20px;
-		}
+		}*/
 		#contactWrapper .contactIcon {
 				margin: 0 4%;
 		}
@@ -1338,7 +1383,12 @@ header,
 		}
 }
 
-
+@media (max-width: 413px) {
+	.offer3-text-wrapper .get-details {
+		float: none;
+	}
+	.offer3-text-wrapper { width:100%; line-height:20px; padding-top:9px; margin-bottom:0; height:55px;}
+}
 
 
 /* --------------------------------------------------------
@@ -1364,7 +1414,7 @@ header,
 			text-align: center
 		}
 
-		.offer3-text-wrapper { width:100%; line-height:20px; padding-top:20px; margin-bottom:0; height:55px;}
+		.offer3-text-wrapper { width:100%; line-height:20px; padding-top:9px; margin-bottom:0; height:55px;}
 		.offer3-text-wrapper .earn-cta { font-size: 15px; }
 		.offer3-text-wrapper .get-details { font-size: 13px !important; float:none; padding-left:0;}
 		.get-details span { font-size:15px;}
@@ -1381,17 +1431,16 @@ header,
 		#bottom-content #offerBox1 { margin-bottom: 40px; }
 		#bottom-content #large-tagline-wrapper { margin-bottom:25px;}
 		#bottom-content #large-tagline { font-size:16px; line-height: 19px;}
-		#bottom-content #offerBanner { padding-top:35px;}
 		#bottom-content #offerBox1 #offerHeadline { font-size: 22px; line-height: 27px;}
 		#bottom-content #offerBox1 #contact-floats { margin-top: 22px;}
 
 		#bottom-content .offerBox2 { height:91px; }
-		#bottom-content .offerBox2 .arrow-block { height:75px; width:75px; margin-left: 15px;}
-		#bottom-content .offerBox2 .offer2-text-wrapper { margin-top:20px;}
+		#bottom-content .offerBox2 .arrow-block { height:75px; width:75px; margin-left: 15px; margin: 8px 0px 8px 15px;}
+		#bottom-content .offerBox2 .offer2-text-wrapper { }
 		#bottom-content .offerBox2 .getDetailsText { margin-top:8px;}
-		.small-arrow { width:60px; height:auto; padding-top:20px; padding-left:8px;}
+		.small-arrow { width:60px; height:auto; padding-top:14px; padding-left:8px;}
 		.earn-cta .getDetailsButton {  margin-top:5px;}
-		#bottom-content .offerBox2 .number-block {height:65px; width:69px; padding: 10px 0 0 6px; margin: 8px 15px; font-size:38px;}
+		#bottom-content .offerBox2 .number-block {box-sizing:border-box; height:75px; width:75px; padding: 10px 0 0 0px; margin: 8px 0px 8px 15px; font-size:38px; vertical-align: middle;}
 		
 		#contact-bar { font-size:15px; line-height: 17px; color:#222;padding-top:2px; height:25px;}
 		#contactIcons { margin-top:25px;}
@@ -1401,4 +1450,39 @@ header,
 		#bottom-content #bottom-menu a {font-size:12px; line-height:30px;}
 
 		.footer-connect .hdln-connect {line-height: 19px; margin-bottom: 15px;}
+}
+
+
+
+/*Miscilaneous Styles*/
+@media (max-width: 847px) {
+	.guest-pass {
+		font-size: 17px;
+	}
+}
+@media (max-width: 806px) {
+	.guest-pass {
+		font-size: 16px;
+		height: 63px;
+	}
+}
+@media (max-width: 740px) {
+	.guest-pass {
+		font-size: 15px;
+	}
+}
+@media (max-width: 730px) {
+	.guest-pass {
+		font-size: 14px;
+	}
+}
+@media (max-width: 690px) {
+	.guest-pass span{
+		display: none;
+	}
+}
+@media (max-width: 626px) {
+	.guest-pass {
+		padding: 20px 5px;
+	}
 }

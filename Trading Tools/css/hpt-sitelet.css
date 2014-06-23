@@ -221,6 +221,7 @@ header,
 		margin-top: 40px;
 		width: 100%;
 		display: inline-block;
+		text-align: center;
 }
 #info-box-content > * {vertical-align: top}
 .info-box-wrap {
