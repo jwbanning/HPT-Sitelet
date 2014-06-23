@@ -311,7 +311,7 @@ header,
 	height: 39px;
 	width: 48px;
 	background-size: contain;
-	top: 14px;
+	top: 13px;
 	right: 20px;
 }
 
@@ -391,7 +391,7 @@ header,
 		width: 100%;
 }
 #bottom-content #large-tagline-wrapper {
-		border: 1px black solid;
+		border: 1px #bbbbbb solid;
 		border-left: none;
 		border-right: none;
 		margin-top: 50px;
@@ -1052,9 +1052,10 @@ header,
 				line-height:28px;
 		}
 		#bottom-content #large-tagline-wrapper {
-				margin: 25px 0;
-				text-align: left;
-				padding-left:15px;
+			margin: 0 0 25px;
+			text-align: left;
+			padding-left: 15px;
+			border-top: none;
 		}
 		#bottom-content #offerBanner {
 				border: none;
