@@ -641,7 +641,7 @@
 
 
 
-@media (max-width: 340px) {
+@media (max-width: 320px) {
   .content-image.support {
     background: url("../main-images/HPTHome320_support.jpg") no-repeat 100% 100%;
   }
@@ -675,6 +675,11 @@
   }
 }
 
+
+
+
+
+/*OVERRIDING MAIN STYLES*/
 
 #bottom-content {
     box-sizing: border-box;
