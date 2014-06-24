@@ -11,6 +11,11 @@
 .page-margins {
   width: 100%;
 }
+#bottom-content {
+  width: 93%;
+  margin: 45px auto;
+  overflow: hidden;
+}
 
 .mobile-landing {
   width: 100%;
@@ -513,6 +518,54 @@
     height: 147px;
     padding: 14px;
   }
+  .offerBox2 .earn-cta {
+    font-weight: 500;
+    padding-top: 15px;
+  }
+  #bottom-content .offerBox2 .getDetailsButton {
+    display: block;
+    margin: 0px 0px 5px 0px;
+  }
+  #bottom-content .offerBox2 {
+    height: auto;
+    overflow: hidden;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  .small-arrow {
+    padding-top: 19px;
+    width: 60px;
+    padding-left: 7px;
+  }
+  #bottom-content .offerBox2 .number-block {
+    box-sizing: border-box;
+    height: 75px;
+    width: 75px;
+    padding: 10px 0 0 0px;
+    font-size: 38px;
+    vertical-align: middle;
+    margin-left: 0;
+  }
+  #bottom-content .offerBox2 .arrow-block {
+    height: 75px;
+    width: 75px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  #bottom-content .offerBox2 .offer2-text-wrapper {
+    font-size: 21px;
+    width: 65%;
+    padding: 0 12px;
+  }
+  #bottom-content .offerBox2 .offer2-text-wrapper h2 {
+    font-size: 21px;
+    line-height: 27px;
+    padding-top: 0;
+  }
+  #bottom-content {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 
@@ -627,11 +680,8 @@
     font-size: 45px;
     line-height: 51px;
   }
+   
 }
-
-
-
-
 
 
 
@@ -680,32 +730,3 @@
 
 
 /*OVERRIDING MAIN STYLES*/
-
-#bottom-content {
-    box-sizing: border-box;
-    padding: 0 23px;
-  }
- #bottom-content #large-tagline-wrapper {
-    width: 100%;
-    box-sizing: border-box;
-  }
-  #bottom-content #offerBanner {
-    box-sizing: border-box;
-    padding: 25px;
-  }
-@media (max-width: 590px) {
-  #bottom-content {
-    padding: 0px;
-  }
-}
-@media (max-width: 480px) {
-/*Extensions from CSS HPT*/
-  #bottom-content #large-tagline-wrapper {
-    width: 100%;
-  }
-  #bottom-content #offerBanner {
-    box-sizing: border-box;
-    padding: 0px;
-  }
-
-}
