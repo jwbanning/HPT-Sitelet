@@ -378,7 +378,7 @@ header,
 #bottom-content .getDetailsText {
     color: #111;
     position: relative;
-    bottom: 10px;
+    bottom: 14px;
     margin-right: 5px;
 }
 .getDetailsArrow {width:55px;}
@@ -414,9 +414,9 @@ header,
 }
 #bottom-content .offerBox2 .getDetailsButton {
     display: block;
-    margin-top: 60px;
+    margin-top: 50px;
 }
-#bottom-content .offerBox2 .getDetailsButton:hover { text-decoration: underline;}
+/*#bottom-content .offerBox2 .getDetailsButton:hover { text-decoration: underline;}*/
 #bottom-content #phoneNumber {
     margin-right: 45px;
     margin-left: 10px;
@@ -425,19 +425,56 @@ header,
     color:#111;
     text-decoration: none;
 }
+
+
 #accountButton { text-decoration: none; color:#fff;}
 .acct-btn {
-    background: linear-gradient(#b95e04, #a25203);
     border-radius:2px;
     text-decoration: none;
     font-family: Arial;
     font-size: 14px;
     padding: 6px 20px;
     line-height:24px;
+    background: #b95e04; /* Old browsers */
+    background: -moz-linear-gradient(top,  #b95e04 0%, #a25203 99%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b95e04), color-stop(99%,#a25203)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #b95e04 0%,#a25203 99%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #b95e04 0%,#a25203 99%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #b95e04 0%,#a25203 99%); /* IE10+ */
+    background: linear-gradient(to bottom,  #b95e04 0%,#a25203 99%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b95e04', endColorstr='#a25203',GradientType=0 ); /* IE6-9 */    
 }
-.acct-btn:hover{background: linear-gradient(#a05103, #864403);}
-.call-us { background: linear-gradient(#70808a, #5a676f);}
-.call-us:hover { background: linear-gradient(#5a676f, #4f5a61);}
+.acct-btn:hover{
+    background: #a05103; /* Old browsers */
+    background: -moz-linear-gradient(top,  #a05103 0%, #864403 99%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a05103), color-stop(99%,#864403)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #a05103 0%,#864403 99%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #a05103 0%,#864403 99%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #a05103 0%,#864403 99%); /* IE10+ */
+    background: linear-gradient(to bottom,  #a05103 0%,#864403 99%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a05103', endColorstr='#864403',GradientType=0 ); /* IE6-9 */
+
+}
+.call-us { 
+    background: #70808a; /* Old browsers */
+    background: -moz-linear-gradient(top,  #70808a 0%, #5a676f 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#70808a), color-stop(100%,#5a676f)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #70808a 0%,#5a676f 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #70808a 0%,#5a676f 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #70808a 0%,#5a676f 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #70808a 0%,#5a676f 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#70808a', endColorstr='#5a676f',GradientType=0 ); /* IE6-9 */
+}
+.call-us:hover { 
+    background: #5a676f; /* Old browsers */
+    background: -moz-linear-gradient(top,  #5a676f 0%, #4f5a61 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5a676f), color-stop(100%,#4f5a61)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #5a676f 0%,#4f5a61 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #5a676f 0%,#4f5a61 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #5a676f 0%,#4f5a61 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #5a676f 0%,#4f5a61 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a676f', endColorstr='#4f5a61',GradientType=0 ); /* IE6-9 */
+}
 #bottom-content #pageDisclaimer {
     padding: 0px;
     margin: 0 15px 35px 15px;
