@@ -1,91 +1,3 @@
-.hideAbove340 {display: none;}
-.hideAbove480 {display: none;}
-.hideAbove590 {display: none;}
-.hideAbove730 {display: none;}
-.hideAbove767 {display: none !important;}
-.hide {display: none;}
-.bg-white { background-color:#fff !important; }
-body { overflow:visible;}
-
-
-/* Top Navigation Styling */
-header,
-.page-margins {
-		margin: 0 auto;
-		width: 93%;
-		max-width: 947px;
-}
-.nav-l1 {
-		padding-left: 85px;
-}
-.nav-l1 > li > .nav-item {
-		padding: 5px 5px;
-}
-.nav-list-cntr {
-		margin-bottom: 0px;
-		border-bottom: none;
-}
-.site-cntr {
-		position: relative;
-}
-#top_nav {
-		height: 30px;
-		margin: 15px 0px 0 0;
-		display: inline-block;
-		vertical-align: top;
-		position: absolute;
-		top: 0px;
-		right: 0px;
-}
-#top_nav .top-nav-item {
-		display: inline-block;
-		height: 15px;
-		vertical-align: middle;
-		margin: 0 20px 0 0;
-		padding: 3px 0 0 0;
-}
-#top_nav .top-nav-item a,
-#top_nav .top-nav-item span {
-		text-decoration: none;
-}
-.top-nav-icon.phone-icon {
-		background-position: -32px 0px;
-}
-.top-nav-icon.branch-icon {
-		background-position: -15px 0px;
-}
-.top-nav-icon {
-		width: 15px;
-		height: 13px;
-		float: left;
-		background: url('http://activetrader.schwab.com/trading-services/master/img/top-nav-sprite.png') no-repeat 0 0 transparent;
-}
-#top_nav .top-nav-item.last {
-		margin-right: 0px;
-		padding: 0;
-}
-#top_nav .top-nav-item .top-nav-text {
-		float: left;
-		color: #979797;
-		font-size: 12px;
-		text-decoration: none;
-		vertical-align: top;
-		line-height: 16px;
-		margin: 0 0 0 3px;
-}
-.nav-item {
-		text-align: center;
-}
-.nav-l1 li {
-		display: inline-block;
-		float: none;
-}
-.hiddenHeaderBR {
-		display: none;
-}
-
-
-
 /* Hero Image */
 #hero-wrapper {
 	width:100%;
@@ -133,62 +45,6 @@ header,
 }
 
 
-
-/* Video */
-.video-link {
-		cursor: pointer;
-}
-#video-overlay {
-		display: none;
-		width: 100%;
-		height: 100%;
-		opacity: 0;
-		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-		position: fixed;
-		background-color: #CCC;
-		background-color: rgba(204,204,204,0.5);
-		top:0;
-		left:0;
-		z-index: 999999;
-}
-#video-overlay #video-border {
-		background: url("../images/transparent.png");
-		-webkit-border-radius: 3px;
-		-moz-border-radius: 3px;
-		border-radius: 3px;
-		margin: 100px auto;
-		max-width: 480px;
-		width: 90%;
-		padding: 15px;
-}
-#video-overlay #video-header {
-		height: 30px;
-		background-color: #005cb3;
-}
-#video-overlay #video-close {
-		background: url("../images/video-close.png") no-repeat right 4px;
-		color: white;
-		cursor: pointer;
-		float: right;
-		font: 13px/30px Arial, sans-serif;
-		margin-right: 6px;
-		padding-right: 22px;
-}
-#video-overlay #video-screen {
-		width: 100%;
-}
-.vjs-default-skin { color: #f5f5f5; }
-.vjs-default-skin .vjs-play-progress,
-.vjs-default-skin .vjs-volume-level { background-color: #4f4f4f }
-.vjs-default-skin .vjs-big-play-button { display: none;}
-.vjs-default-skin .vjs-control-bar { background: rgba(0,92,171,0.8); display: block; }
-.vjs-default-skin .vjs-slider { background: rgba(0,92,171,0.2333333333333333) }
-.vjs-default-skin .vjs-control-bar { font-size: 80% }
-.video-js {padding-top: 56.25%}
-.vjs-fullscreen {padding-top: 0px}
-.nav-l1 li {font-size:12px;}
-
-
 /* Middle Content */
 #middle-content {
 		margin: 44px auto;
@@ -197,45 +53,41 @@ header,
 		font-family: 'CharlesModern', 'Helvetica', Arial, sans-serif;
 		font-weight: 300;
 		font-style: normal;
-		width: 85%;
-}
-#middle-content .video-description {
-	color:#111;
-	font-size: 23px;
-	line-height: 31px;
-	display: inline-block;
-	vertical-align: middle;
-	width:100%;
-}
-#middle-content .video-description div { text-align:center; }
-#middle-content #earn-trades {
-		background-color: #425563;
-		margin-left: 4%;
-		vertical-align: middle;
-		width: 21%;
+		width: 100%;
+		padding: 0;
 }
 
 
 /* Info Box Content */
 
-#info-box-content {
-		margin-top: 40px;
-		width: 100%;
-		display: inline-block;
-		text-align: center;
-}
-#info-box-content > * {vertical-align: top}
 .info-box-wrap {
-		width: 240px;
-		display: inline-block;
-		text-align: left;
+	width: 240px;
+	display: inline-block;
+	text-align: left;
 }
+.info-box-wrap a {
+	width: 100%;
+	display: block;
+	font-family: 'CharlesModern', Arial, sans-serif;
+	font-weight: 400;
+	}
 .info-box {
-		position: relative;
-		overflow: hidden;
-		width: 232px;
-		height:167px;
+	background: transparent;
+	width: 232px;
+	height: 167px;
 }
+.info-box img{
+	display: block;
+	margin: 0 auto;
+}
+.right-box .info-box img{
+	padding-top: 20px;
+}
+
+.info-box:before {
+	display: none;
+}
+
 .info-text {
 		font-family: Arial;
 		font-size: 14px;
@@ -243,10 +95,11 @@ header,
 		color:#333;
 		width:250px;
 }
+
 .info-text-headings {height:100px;}
 .info-text h1 { font-size:17px; margin-top:20px;}
 .info-text hr { margin: 25px 0 15px 0;}
-.info-box-btm-wrap { }
+
 .info-box-subwrap {
 	display: inline-block;
 	height:60px;
@@ -271,227 +124,12 @@ header,
 
 
 
-/* Guest Pass */
-.guest-pass{
-	width: 100%;
-	margin-top: 45px;
-}
-.guest-pass img { width:100%;}
-.sign-up-arrow { width:48px;}
-
-
-
-
-/* Bottom Content */
-#bottom-content {
-		margin: 0 auto 20px;
-		max-width: 950px;
-		width: 100%;
-}
-#bottom-content #large-tagline-wrapper {
-		border: 1px black solid;
-		border-left: none;
-		border-right: none;
-		margin-top: 50px;
-		margin-bottom: 50px;
-		padding: 20px 33px;
-		text-align: center;
-}
-#bottom-content #large-tagline {
-		color: #111;
-		font-size: 21px;
-		font-family: 'CharlesModern', 'Helvetica', Arial, sans-serif;
-		line-height: 24px;
-		font-style: normal;
-}
-#bottom-content #large-tagline span {color: #7f8a92;}
-#bottom-content #tagline-cta {
-		display: none;
-		float: right;
-		margin-top: 10px;
-}
-#bottom-content #offerBanner {
-		color: #111;
-		font-family: 'CharlesModern', Arial, sans-serif;
-		font-style: normal;
-		font-weight: 300;
-		font-size: 18px;
-		padding-bottom: 20px;
-		overflow: auto;
-		clear:both;
-}
-#bottom-content #offerHeadline {
-		font-weight: normal;
-		font-size: 21px;
-		color:#111;
-}
-#bottom-content .getDetailsText {
-		color: #111;
-		position: relative;
-		bottom: 10px;
-		margin-right: 5px;
-}
-.getDetailsArrow {width:55px;}
-#bottom-content #offerBox1 {
-		color: #111;
-		float: left;
-		font-family: 'CharlesModern', Arial, sans-serif;
-		font-style: normal;
-		font-weight: 300;
-}
-#bottom-content #offerSubLine {
-		color: #7f8a92;
-		display: block;
-}
-.earn-cta {
-		font-size: 17px;
-		font-weight: 400;
-		line-height: 22px;
-		color:#111;
-}
-.earn-cta a {text-decoration:none;}
-#bottom-content #offerBox1 #telephone-wrapper {
-		display: inline-block;
-		margin-top: 25px;
-}
-#bottom-content #offerBox1 #telephone-image {
-		vertical-align: text-bottom;
-		width: 29px;
-}
-#bottom-content .offerBox2 {
-		margin-bottom:8px;
-		float: right;
-}
-#bottom-content .offerBox2 .getDetailsButton {
-		display: block;
-		margin-top: 60px;
-}
-#bottom-content .offerBox2 .getDetailsButton:hover { text-decoration: underline;}
-#bottom-content #phoneNumber {
-		margin-right: 45px;
-		margin-left: 10px;
-		font-family: Arial;
-		font-size:17px;
-		color:#111;
-		text-decoration: none;
-}
-#accountButton { text-decoration: none; color:#fff;}
-.acct-btn {
-		background: linear-gradient(#b95e04, #a25203);
-		border-radius:2px;
-		text-decoration: none;
-		font-family: Arial;
-		font-size: 14px;
-		padding: 6px 20px;
-		line-height:24px;
-}
-.acct-btn:hover{background: linear-gradient(#a05103, #864403);}
-.call-us { background: linear-gradient(#70808a, #5a676f);}
-.call-us:hover { background: linear-gradient(#5a676f, #4f5a61);}
-#bottom-content #pageDisclaimer {
-		padding: 0px;
-		margin: 0 15px 35px 15px;
-}
-.legal {
-		font-size: 11px;
-}
-.legal.bold {
-		font-weight: bold;
-}
-.fltLt {
-		float: left;
-}
-.no-wrap {
-		white-space: nowrap;
-}
-#ftCnt { margin-top:20px;}
-.ftLnks ul {
-		overflow: hidden;
-		list-style: none outside none;
-		margin: 0;
-		padding: 0;
-}
-.ftLnks li {
-		float: left;
-		padding-right: 3px;
-}
-.ftLnks a {
-		color: #333;
-}
-.footer-lock {
-		background-position: 0 -439px;
-		padding-left: 12px;
-}
-.footer-connect {
-		float: right;
-		display: -moz-inline-stack;
-		display: inline-block;
-		zoom: 1;
-		font-size: 13px;
-		position: static !important;
-		margin-top:20px;
-}
-.footer-connect.hideAbove590 {
-		display: none;
-}
-.footer-connect .hdln-connect {
-		display: -moz-inline-stack;
-		display: inline-block;
-		zoom: 1;
-		line-height: 26px;
-		float: left;
-		margin-top:5px;
-		margin-right: 15px;
-		padding: 0;
-		font-weight: normal;
-}
-.footer-connect .social-sprite {
-		float: left;
-		width: 36px;
-		height: 36px;
-		margin-right: 25px;
-		background: url('../../GlobalFiles/images/social-sprite.png') no-repeat;
-		text-indent: -9999px;
-}
-.footer-connect .social-sprite.youtube {
-		margin-right: 0;
-		background-position: -123px 0;
-}
-.footer-connect .social-sprite.twitter {
-		background-position: -62px 0;
-}
-.footer-connect .social-sprite.facebook {
-		background-position: 0 0;
-}
-.footer-connect.hideBelow590 .social-sprite {
-		margin-right: 10px;
-}
-#sitemapSection {font-family:Arial; font-size:11px; line-height: 14px; color:#111;}
-
-
-
-
-
 /* --------------------------------------------------------
 
   960px
 
 -------------------------------------------------------- */
 @media (max-width: 954px) {
-	.hiddenHeaderBR {
-		display: inline;
-	}
-	.schwab-logo img {
-		width: 70px;
-	}
-	.nav-l1 {
-		margin-top: -14px;
-		padding-left: 79px;
-	}
-	.nav-list-cntr {
-		margin-bottom: 14px;
-	}
-
 	/* Info Box Top Content 960 */
 	#middle-content { width: 100%;}
 
@@ -535,51 +173,7 @@ header,
 	.mid-info-text-wrap h1 { font-size:15px; line-height: 21px;}
 	.mid-info-text-wrap p { font-size:13px; line-height: 17px; color:#333;}
 	.mid-info-text-wrap li { font-size:13px; line-height: 17px; color:#111;}
-
-	#bottom-content #offerBanner {
-			font-size: 17px;
-			width: 100%;
-	}
-	#bottom-content #offerBox1 {
-			padding: 0;
-			margin: 0;
-			width: 65%;
-	}
-	#bottom-content #offerHeadline {
-			font-weight: normal;
-			font-size: 18px;
-			line-height:23px;
-	}
-	#bottom-content #offerSubLine {
-			font-size: 18px;
-			line-height: 23px;
-	}
-	.earn-cta { font-size: 15px;line-height: 21px;}
-	#bottom-content .offerBox2 {
-			float: right;
-			width: 31%;
-			font-weight:400;
-	}
-	#bottom-content .offerBox2 .getDetailsButton {
-			margin-top: 30px;
-	}
-	#bottom-content #phoneNumber {
-			margin-right: 20px;
-	}
-	.legal {
-			font-family:Arial;
-			font-size: 11px;
-			line-height: 14px;
-			color:#111;
-	}
-	#top_nav .top-nav-item .top-nav-text {
-			font-size: 11px;
-	}
-
-	#middle-content .video-description {
-			font-size: 19px;
-			line-height: 26px;
-	}
+		
 	#middle-content .features-list {
 			margin-top: 20px;
 	}
@@ -594,14 +188,6 @@ header,
 	#middle-content #learn-more-tagline {
 			font-size: 13px;
 	}
-
-	#bottom-content #large-tagline-wrapper {
-			padding: 25px 0;
-	}
-	#bottom-content #large-tagline { font-size: 19px; line-height: 22px; }
-	#bottom-content #tagline-cta {
-			display: none;
-	}
 }
 
 
@@ -613,33 +199,6 @@ header,
 
 -------------------------------------------------------- */
 @media (max-width: 767px) {
-	.hideAbove767 { display: block !important; }
-
-	body { border-left: 1px #d7d7d7 solid; margin-left: -1px; }
-	header { width: 100%; }
-	header .site-cntr { height: 50px; background-color: black; padding-bottom: 0; }
-	.menu-get-started { display: none !important; }
-	.site-cntr .mobile-nav { background-image: url('../../GlobalFiles/images/nav-collapsed-light.png'); }
-	.nav-list-cntr { left: -250px;}
-	.nav-item-cta { padding-left: 15px; }
-	.nav-l1 { margin-top: -14px; padding-left: 0; }
-	#top_nav { margin-right: 7.5%; }
-	#top_nav .top-nav-item .top-nav-text { color: #d1d1d1; }
-	#top_nav .top-nav-icon { display: none; }
-	#top_nav .top-nav-item { margin-right: 25px; }
-	.active { background-color: #d9d9d9;}
-	.nav-item-cta { padding-top: 36px; }
-	.nav-item-cta .btn-cta {
-		font-size: 14px;
-		height: 36px;
-		line-height: 36px;
-		padding: 0;
-		width: 204px;
-	}
-	.nav-item-cta .btn-cta .call-us { margin-top: 12px; }
-	.schwab-logo img { width: 50px; }
-
-
 	/* Hero 768 */
 	#hero-wrapper {
 		margin-left:-2px;
@@ -679,19 +238,10 @@ header,
 		margin-bottom: 0;
 		width: 100%;
 	}
-	#bottom-content #large-tagline { font-size: 16px;line-height:22px; color:#222;}
-
+	
 	.mid-info-pad-right {margin-right:2%;}
 	.mid-info-text-wrap h1 { font-weight:normal; color:#111;}
 
-	/* mobile nav menu */
-	.nav-l1 { margin-top: 0; }
-	.nav-l1 li { display: block; }
-	.nav-item-cta { padding-left: 25px; }
-	.nav-l1 > li > .nav-item { padding: 0; }
-	.nav-item { text-align: left; }
-	.hiddenHeaderBR { display: none; }
-	.chevron {font-size: 1.1em;}
 }
 
 
@@ -703,52 +253,11 @@ header,
 
 -------------------------------------------------------- */
 @media (max-width: 590px) {
-		.hideBelow590 { display: none !important; }
-		.hideAbove590 { display: inline-block; }
-
-		.page-margins { margin: 0; width: 100%; }
-
-		header .site-cntr { margin-bottom: 35px; }
-		.site-cntr #sts-text {
-				color: #fff;
-				float: right;
-				font-family: 'CharlesModern', Arial, sans-serif;
-				font-style: normal;
-				font-weight: bold;
-				font-size: 13px;
-				line-height: 50px;
-				margin-right: 15px;
-		}
-		.nav-item-cta .call-us { margin-top:12px; }
-
-		#taglines { width:100%;}
-		#main-tagline {
-				color: #111;
-				display: block;
-				font-family: 'CharlesModern', Arial, sans-serif;
-				font-style: normal;
-				font-weight: 300;
-				font-size: 26px;
-				line-height: 32px;
-				margin-bottom: 5px;
-				padding-left: 15px;
-				width:94%;
-		}
-		#main-subline {
-				color: #333;
-				display: block;
-				font: 13px/17px Arial, sans-serif;
-				margin-bottom: 15px;
-				margin-left: 15px;
-				width:94%;
-		}
-
-
 		/* Hero 590px */
 		#hero-wrapper {
 			overflow:visible;
 			width: 100%;
-			max-width:94%;
+			max-width:91%;
 			height: 100%;
 			margin: 0 15px;
 			/*background: url("../images/hero-480.jpg") no-repeat 100% 40%;*/
@@ -763,66 +272,9 @@ header,
 				margin: 58px auto;
 				z-index: 2;
 		}
-		#earn-trades-wrapper {
-				background-color: #ede04a;
-				color: #111;
-				display: block;
-				font-family: 'CharlesModern', Arial, sans-serif;
-				font-style: normal;
-				font-weight: 700;
-				font-size: 16px;
-				margin: 10px 0;
-				overflow: auto;
-				padding: 12px 15px;
-		}
-
-
-		/* Offer3 590 */
-		#earn-trades-wrapper #earn-trades-text { display: block; float: left; }
-		#earn-trades-wrapper #earn-trades-link {
-				color: #111;
-				float: right;
-				font-weight: 300;
-		}
-		.offer3-text-wrapper {
-				margin: 15px 0 6px 0;
-				padding-top: 10px;
-				height: 30px;
-				width: 100%;
-				background-color: #ede04a;
-		}
-		.earn-cta {
-		}
-		.offer3-text-wrapper span {
-			font-weight:700;
-			font-size:16px;
-			line-height:20px;
-			color:#111;
-			margin: 0 0 0 15px;
-		}
-		.offer3-text-wrapper .get-details{
-			margin: 0 15px 0 0;
-			font-size:15px;
-			font-weight:400;
-		}
-		.get-details span { font-size:1.05em; font-weight:400; margin-left:0; color:#111;}
-
-		.offerBox2 { 
-				height:50px;
-		}
+		
 
 		/* Mid Page Content 590 */
-		#middle-content .video-description {
-				background-color: #f1f1f1;
-				font-size: 15px;
-				line-height: 22px;
-				height: 125px;
-				margin-bottom: 25px;
-				padding: 30px 30% 30px 4%;
-				position: relative;
-				width: 66%;
-		}
-
 		.mid-info-box{
 			padding: 20px 0 20px 10px;
 			margin-top:6px;
@@ -845,236 +297,6 @@ header,
 			display:inline-block;
 			padding-bottom:10px;
 		}
-		.plus-minus {
-			display:inline-block;
-			vertical-align: top;
-			margin: -6px 5px 0 0;
-			width:14px;
-		}
-
-		.mobile-only-text { display:inline-block; width:90%;}
-		.mobile-only-text h1 { font-size:16px; line-height:20px; color:#111;}
-		.mobile-only-text p { font-size:13px;font-family:Arial;font-weight:bold;line-height: 17px;margin-bottom:0px;}
-
-		#mid-info-1 { height:100%;}
-		#mid-info-2 { height:100%;}
-		.mid-info-text-wrap { padding-left:24px; margin-right:0; }
-		.mid-info-text-wrap h1 { font-size:16px; line-height: 20px;}
-		.mid-info-text-wrap p { 
-			font-family:Arial;
-			font-weight:bold;
-			font-size:13px;
-			line-height:17px;
-			color:#111;
-		}
-		.mid-info-text-wrap li { 
-			font-family:Arial;
-			font-weight:bold;
-			font-size:13px;
-			line-height:17px;
-		}
-		.mid-info-text-wrap hr { display:none;}
-		.mid-info-text-swap { margin-left: 0; }
-
-
-		/* Bottom Content 590 */
-		#bottom-content {
-				width: 100%;
-		}
-		.acct-btn {
-				font-size: 17px;
-				padding: 10px 20px;
-				line-height:28px;
-		}
-		#bottom-content #large-tagline-wrapper {
-				margin: 25px 0;
-				text-align: left;
-				padding-left:15px;
-		}
-		#bottom-content #offerBanner {
-				border: none;
-				margin-bottom: 20px;
-				padding-bottom: 0;
-				padding-top: 0;
-				overflow: visible;
-		}
-		#bottom-content #offerBox1 {
-				margin-left: 15px;
-				margin-bottom: 30px;
-				width: 94%;
-		}
-		#bottom-content #offerBox1 #offerHeadline {
-				font-size: 20px;
-		}
-		#bottom-content #offerBox1 #offerSubLine {
-				font-size: 18px;
-				margin-top: 2px;
-		}
-		#bottom-content #offerBox1 #contact-floats {
-				float: left;
-				margin-top: 25px;
-		}
-		#bottom-content #offerBox1 #telephone-wrapper {
-				float: right;
-				margin-top: -23px;
-		}
-		#bottom-content #offerBox1 #accountButton {
-				float: right;
-				margin-right: 80px;
-		}
-		#bottom-content #offerBox1 #telephone-image {
-				display: block;
-				margin: 5px auto;
-		}
-		#bottom-content #phoneNumber {
-				display: block;
-				margin-right: 0;
-				color:#0066cc;
-		}
-
-		/* Bottom Offers 590 */
-		#bottom-content .offerBox2 {
-				width: 100%;
-				height:60px;
-				background-color: #f1f1f1;
-				float: none;
-				clear: both;
-		}
-		#bottom-content .offerBox2 .arrow-block {
-				width: 62px;
-				height: 60px;
-				margin-left: 15px;
-				background-color: #ede04a;
-				display:inline-block;
-				vertical-align: top;
-		}
-		.small-arrow{padding-top:16px; width:50px; padding-left:5px;}
-		#bottom-content .offerBox2 .number-block {
-				width: 62px;
-				height: 100%;
-				margin: 0 0 0 15px;
-				background-color: #ede04a;
-				font-size: 29px;
-				font-weight: 300;
-				line-height: 57px;
-				text-align: center;
-		}
-		#bottom-content .offerBox2 .offer2-text-wrapper {
-				display: inline-block;
-				width: 78%;
-		}
-		.offerBox2 .earn-cta {
-			font-family: 'CharlesModern', Arial, sans-serif;
-			font-weight: 700;
-			font-size: 13px;
-			line-height: 18px;
-			color: #111;
-		}
-		.vert-align { vertical-align:middle; }
-		#bottom-content .offerBox2 .getDetailsButton {
-				display: inline-block;
-				margin-top: 0;
-		}
-		#bottom-content .offerBox2 .getDetailsText {
-				color: #0066cc;
-				font-size: 13px;
-				font-weight: normal;
-				position: static;
-				margin-right: 0;
-		}
-
-	 #contact-bar {
-				width:100%;
-				height:25px;
-				background-color: #ede04a;
-				margin-top:10px;
-				padding-top:2px;
-				display: block;
-		}
-		#contact-bar span {
-				padding-left: 15px;
-				color: #111;
-				font-size: 15px;
-				font-weight: normal;
-				line-height: 26px;
-			
-		}
-		#contactWrapper {
-				display: block;
-				margin-bottom:20px;
-		}
-		#contactIcons {
-				margin-top: 20px;
-				text-align: center;
-		}
-		.contactIcon {
-				display: inline-block;
-				margin-right: 13%;
-				width: 78px;
-		}
-		.contactIcon.last {
-				margin-right: 0;
-		}
-		#contactWrapper span {
-				display: block;
-				margin-top: 10px;
-				white-space: nowrap;
-		}
-		#bottom-content #intl-info {
-				color: #333;
-				font-size: 12px;
-				line-height: 16px;
-				margin-bottom: 25px;
-				margin-left:15px;
-		}
-		#bottom-content #intl-info > span {
-				font-weight: bold;
-				display: block;
-		}
-		#bottom-content #bottom-menu {
-				background-color: #e4e4e4;
-				/*margin-left: -3.5%;*/
-				padding: 10px 0 10px 15px;
-				width: 100%;
-		}
-		#bottom-content #bottom-menu .bottom-menu-column {
-				float: left;
-				width: 45%;
-				margin-left:17px;
-		}
-		#bottom-content #bottom-menu a {
-				color: #111;
-				font-size: 13px;
-				font-weight: bold;
-				line-height: 33px;
-		}
-
-		.footer-connect.hideAbove590 {
-				color: #222;
-				float: none;
-				display: block;
-				font-family: 'CharlesModern', Arial, sans-serif;
-				font-style: normal;
-				font-weight: 300;
-				font-size: 15px;
-				line-height: 19px;
-				padding: 0;
-				margin-bottom: 15px;
-				/*margin-left:15px;*/
-				width:100%;
-		}
-		.footer-connect.hideAbove590 div:first-child{
-				margin-left:15px;
-		}
-		.footer-connect .hdln-connect {
-				display: block;
-				float: none;
-				margin-bottom: 15px;
-		}
-		.footer-connect.hideAbove590 .sprite-g {
-				margin-right: 20px;
-		}
-		#pageDisclaimer { margin-left:15px;}
 }
 
 
@@ -1087,26 +309,7 @@ header,
 
 -------------------------------------------------------- */
 @media (max-width: 480px) {
-		.hideBelow480 { display: none;}
-		.hideAbove480 { display: inline-block;}
-
-		#hero-wrapper {
-			margin: 0 15px;
-			height:100%;
-			width:100%;
-			max-width:92%;
-			height: 158px;
-		}
-		#main-tagline { font-size: 26px; line-height:32px; margin-bottom: 20px; }
-		#main-subline { font-size: 13px; margin-bottom: 15px; }
-		#mobile-play-button { margin: 52px auto; width: 60px; }
-
-
-		/* Top Offer 480 */
-		.offer3-text-wrapper { padding-top:20px; margin-bottom:0; height:55px;}
-		.offer3-text-wrapper .get-details { float:none; padding-left:0;}
-
-
+		
 		/* Mid Information Boxes 480 */
 		.mid-info-box{
 			padding: 20px 0 20px 10px;
@@ -1130,30 +333,6 @@ header,
 			margin: -6px 5px 0 0;
 			width:14px;
 		}
-
-		.mobile-only-text { display:inline-block; width:90%;}
-		.mobile-only-text h1 { font-size:16px; line-height:20px; color:#111;}
-		.mobile-only-text p { 
-			font-size:13px;
-			font-family:Arial;
-			font-weight:bold;
-			line-height:17px;
-			margin-bottom:0px;
-		}
-
-		.mid-info-wrapper { width:100%;}
-		.mid-info-text-wrap { padding-left:24px;}
-		.mid-info-text-wrap hr { display:none;}
-
-		/* Bottom Offers 480 */
-		#offerBanner { padding-top:0; border:none;}
-		#earn-trades-wrapper { font-size: 14px; }
-		#earn-trades-wrapper #earn-trades-text { float: none; }
-		#earn-trades-wrapper #earn-trades-link {
-				display: block;
-				float: none;
-				font-size: 13px;
-		}
 		#middle-content .video-description {
 				font-size: 12px;
 				line-height: 18px;
@@ -1176,43 +355,6 @@ header,
 				/*border-top: 1px #e1e1e1 solid;*/
 				/*padding-top: 25px;*/
 		}
-		#bottom-content #offerBox1 {
-				margin-bottom: 25px;
-		 }
-		#bottom-content #offerBox1 #offerHeadline {
-				font-size: 20px;
-				line-height: 25px;
-				font-weight: normal;
-		}
-		#bottom-content #offerBox1 #offerSubLine {
-				font-size: 16px;
-		}
-		#bottom-content #offerBox1 #contact-floats {
-				margin-top: 25px;
-		}
-		#bottom-content #phoneNumber {
-				font-size: 16px;
-		}
-		#bottom-content #offerBox1 #accountButton {
-				float: none;
-		}
-		.offerBox2 .earn-cta { font-size:13px; line-height:17px;}
-		#bottom-content .offerBox2 .offer2-text-wrapper {
-				font-size: 15px;
-				width: 65%;
-		}
-		#bottom-content .offerBox2 .getDetailsButton {
-				display: block;
-		}
-		#bottom-content .offerBox2 .number-block {
-				margin-bottom: 20px;
-		}
-		#contactWrapper .contactIcon {
-				margin: 0 4%;
-		}
-		#bottom-content #intl-info > span {
-				display: block;
-		}
 }
 
 
@@ -1225,27 +367,6 @@ header,
 -------------------------------------------------------- */
 
 @media (max-width: 340px) {
-		.hideAbove340 { display: inline-block; }
-		header .site-cntr { margin-bottom: 45px; }
-		#main-tagline { margin-bottom: 18px; }
-		#main-subline { margin-bottom: 20px; line-height: 17px; }
-
-		/* Hero 340px */
-		#hero-wrapper {
-			overflow:visible;
-			width: 100%;
-			max-width:91%;
-			height: 100%;
-			background: url("../images/hero-320.jpg") no-repeat 100% 40%;
-			background-size: cover;
-			text-align: center
-		}
-
-		.offer3-text-wrapper { width:100%; line-height:20px; padding-top:20px; margin-bottom:0; height:55px;}
-		.offer3-text-wrapper .earn-cta { font-size: 15px; }
-		.offer3-text-wrapper .get-details { font-size: 13px !important; float:none; padding-left:0;}
-		.get-details span { font-size:15px;}
-
 		.mid-info-box { margin-top:8px; }
 		.mobile-only-info { padding-bottom:0;}
 		.mobile-only-text h1 { font-size:16px; color:#06c;}
@@ -1254,29 +375,5 @@ header,
 		.mid-info-text-wrap p { font-size:13px; font-weight:400;}
 		.mid-info-text-wrap li { font-size:13px; font-weight:400;}
 		.mid-info-text-wrap li a { font-size:13px; font-weight:400;}
-
-		#bottom-content #offerBox1 { margin-bottom: 40px; }
-		#bottom-content #large-tagline-wrapper { margin-bottom:25px;}
-		#bottom-content #large-tagline { font-size:16px; line-height: 19px;}
-		#bottom-content #offerBanner { padding-top:35px;}
-		#bottom-content #offerBox1 #offerHeadline { font-size: 22px; line-height: 27px;}
-		#bottom-content #offerBox1 #contact-floats { margin-top: 22px;}
-
-		#bottom-content .offerBox2 { height:91px; }
-		#bottom-content .offerBox2 .arrow-block { height:75px; width:75px; margin-left: 15px;}
-		#bottom-content .offerBox2 .offer2-text-wrapper { margin-top:20px;}
-		#bottom-content .offerBox2 .getDetailsText { margin-top:8px;}
-		.small-arrow { width:60px; height:auto; padding-top:20px; padding-left:8px;}
-		.earn-cta .getDetailsButton {  margin-top:5px;}
-		#bottom-content .offerBox2 .number-block {height:65px; width:69px; padding: 10px 0 0 6px; margin: 8px 15px; font-size:38px;}
-		
-		#contact-bar { font-size:15px; line-height: 17px; color:#222;padding-top:2px; height:25px;}
-		#contactIcons { margin-top:25px;}
-		#contactWrapper .contactIcon { margin: 0 8px; }
-
-		#bottom-content #bottom-menu { padding:20px 0 15px 0px;}
-		#bottom-content #bottom-menu a {font-size:12px; line-height:30px;}
-
-		.footer-connect .hdln-connect {line-height: 19px; margin-bottom: 15px;}
 }
 
