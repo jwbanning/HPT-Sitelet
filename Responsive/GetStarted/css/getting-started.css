@@ -1,99 +1,22 @@
-.hideAbove340 {display: none;}
-.hideAbove480 {display: none;}
-.hideAbove590 {display: none;}
-.hideAbove730 {display: none;}
-.hideAbove767 {display: none !important;}
-.hide {display: none;}
-.bg-white { background-color:#fff !important; }
-body { overflow:visible;}
 
-
-/* Top Navigation Styling */
-header,
-.page-margins {
-    margin: 0 auto;
-    width: 93%;
-    max-width: 947px;
-}
-.nav-l1 {
-    padding-left: 85px;
-}
-.nav-l1 > li > .nav-item {
-    padding: 5px 5px;
-}
-.nav-list-cntr {
-    margin-bottom: 0px;
-    border-bottom: none;
-}
-.site-cntr {
-    position: relative;
-}
-#top_nav {
-    height: 30px;
-    margin: 15px 0px 0 0;
-    display: inline-block;
-    vertical-align: top;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-}
-#top_nav .top-nav-item {
-    display: inline-block;
-    height: 15px;
-    vertical-align: middle;
-    margin: 0 20px 0 0;
-    padding: 3px 0 0 0;
-}
-#top_nav .top-nav-item a,
-#top_nav .top-nav-item span {
-    text-decoration: none;
-}
-.top-nav-icon.phone-icon {
-    background-position: -32px 0px;
-}
-.top-nav-icon.branch-icon {
-    background-position: -15px 0px;
-}
-.top-nav-icon {
-    width: 15px;
-    height: 13px;
-    float: left;
-    background: url('http://activetrader.schwab.com/trading-services/master/img/top-nav-sprite.png') no-repeat 0 0 transparent;
-}
-#top_nav .top-nav-item.last {
-    margin-right: 0px;
-    padding: 0;
-}
-#top_nav .top-nav-item .top-nav-text {
-    float: left;
-    color: #979797;
-    font-size: 12px;
-    text-decoration: none;
-    vertical-align: top;
-    line-height: 16px;
-    margin: 0 0 0 3px;
-}
-.nav-item {
-    text-align: center;
-}
-.nav-l1 li {
-    display: inline-block;
-    float: none;
-}
-.hiddenHeaderBR {
-    display: none;
-}
-
-
-CSS that is specific to the getting started page. */
+/*CSS that is specific to the getting started page. */
   #GSWrapper{
     width: 100%;
     margin: 0 auto;
     font-family: 'Arial';
     max-width: 960px;
   }
-   h1{
+   
+  h1{
     padding-bottom: 8px;
+  }
+
+  header .site-cntr {
+    margin-bottom: 35px;
+  }
+
+  header h1 {
+    padding-bottom: 0;
   }
 
   .module{
@@ -142,7 +65,7 @@ CSS that is specific to the getting started page. */
       background-color: #7a8891;
     }
     /*FONTS*/
-  .fontB{font-family:'CharlesModern';font-size:26px;line-height:32px;color:#111;font-weight:300;}
+  .fontB{font-family:'CharlesModern';font-size:26px;line-height:32px;color:#111;font-weight:300; clear: both;}
   .fontC{font-family:'Arial';font-size:13px;line-height:17px;color:#333;}
   .fontD{font-family:'CharlesModern';font-size:19px;line-height:24px;color:#111; font-weight:700;}
   .fontE{font-family:'Arial';font-size:12px;line-height:16px;color:#111;}
@@ -222,6 +145,10 @@ CSS that is specific to the getting started page. */
     font-family: 'Arial';
     max-width: 960px;
   }
+  header .site-cntr {
+    margin-bottom: 0;
+  }
+
   .fontG{
     font-family: 'CharlesModern';
     font-size: 15px;

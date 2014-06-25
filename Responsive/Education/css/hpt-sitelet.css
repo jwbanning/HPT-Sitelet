@@ -1,48 +1,181 @@
 /* Hero Image */
+/* Hero Image */
 #hero-wrapper {
-	width:100%;
-	height:390px;
-	background: url("../images/hero-960.jpg") no-repeat 100% 100%;
-	padding:1px;
+  width:100%;
+  height:390px;
+  background: url("../images/hero-960.jpg") no-repeat 100% 100%;
+  padding:1px;
 }
 
 #hero-info-wrapper {
-	margin-left:80px;
-	margin-top:40px;
-	width: 375px;
-	height: 375px;
+  margin-left:80px;
+  margin-top:40px;
+  width: 375px;
+  height: 375px;
 }
 #hero-yellow-box{
-	display:inline-block;
-	background-color: rgba(237, 224, 75, 0.85);
-	width:285px;
-	height:285px;
+  display:inline-block;
+  background-color: rgba(237, 224, 75, 0.85);
+  width:285px;
+  height:285px;
 }
 #hero-text-wrap {
-	display:inline-block;
-	color:#111;
-	font-family:'CharlesModern';
-	width: 180px;
-	margin:40px 0 30px 18px;
+  display:inline-block;
+  color:#111;
+  font-family:'CharlesModern';
+  width: 180px;
+  margin:40px 0 30px 18px;
 }
 #hero-headline{
-	font-size: 33px;
-	line-height: 40px;
-	font-weight: 300;
+  font-size: 33px;
+  line-height: 40px;
+  font-weight: 300;
 }
 #hero-subline {
-	font-size: 17px;
-	line-height: 21px;
-	margin-top:18px;
+  font-size: 17px;
+  line-height: 21px;
+  margin-top:18px;
 }
 #video-play {
-	display:inline-block;
-	padding: 220px 18px 0 18px;
+  display:inline-block;
+  padding: 220px 18px 0 18px;
 }
 
 #hero-STS-image {
-	margin-left: 2%;
-	width: 20%;
-	vertical-align: top;
+  margin-left: 2%;
+  width: 20%;
+  vertical-align: top;
 }
+
+@media (max-width: 954px) {
+  /* Hero 960 */
+    #hero-wrapper {
+      background-position: top left;
+      width: 100%;
+      height: 350px;
+      overflow:hidden;
+    }
+    #hero-yellow-box{
+      width:275px;
+      height:275px;
+    }
+    #hero-text-wrap {
+      width: 175px;
+      margin:30px 0 0 18px;
+    }
+    #hero-headline{
+      font-size: 30px;
+      line-height: 37px;
+    }
+    #hero-subline {
+      font-size: 15px;
+      line-height: 19px;
+    }
+    #video-play {
+      padding-top:213px;
+      padding-right:16px;
+    }
+}
+
+@media (max-width: 768px) {
+/* Hero 768 */
+    #hero-wrapper {
+      margin-left:-2px;
+      height: 320px;
+      width: 768px;
+      background: url("../images/hero-768.jpg") no-repeat 100% 40%;
+      background-size: cover;
+    }
+    #hero-yellow-box{
+      width:230px;
+      height:230px;
+    }
+    #hero-text-wrap {
+      width: 145px;
+      margin: 25px 0 0 18px;
+    }
+    #hero-headline{
+      font-size: 27px;
+      line-height: 32px;
+    }
+    #hero-subline {
+      font-size: 14px;
+      line-height: 18px;
+      margin-top:14px;
+    }
+    #video-play {
+      padding-top: 188px;
+    }
+    #video-play img {
+      width: 27px;
+    }
+    #hero-STS-image { width:17%;}
+
+}
+
+@media (max-width: 730px) {
+/* Hero 768 */
+    #hero-wrapper {
+      height: 280px;
+    }
+    #hero-yellow-box{
+      width:200px;
+      height:200px;
+    }
+    #hero-text-wrap {
+      width: 125px;
+      margin: 20px 0 0 14px;
+    }
+    #hero-headline{
+      font-size: 23px;
+      line-height: 27px;
+    }
+    #hero-subline {
+      font-size: 12px;
+      line-height: 16px;
+      margin-top: 12px;
+    }
+    #video-play {
+      padding: 158px 15px 0 10px;
+    }
+}
+
+@media (max-width: 590px) {
+/* Hero 590px */
+    #hero-wrapper {
+      overflow:visible;
+      width: 100%;
+      max-width:94%;
+      height: 100%;
+      margin: 0 15px;
+      /*background: url("../images/hero-480.jpg") no-repeat 100% 40%;*/
+      background-size: cover;
+      text-align: center;
+    }
+    #hero-image { z-index:-1; }
+
+    #mobile-play-button {
+        background-color: rgb(66, 85, 99);
+        background-color: rgba(66, 85, 99, 0.8);
+        margin: 58px auto;
+        z-index: 2;
+    }
+}
+
+
+@media (max-width: 340px) {
+    /* Hero 340px */
+    #hero-wrapper {
+      overflow:visible;
+      width: 100%;
+      max-width:91%;
+      height: 100%;
+      background: url("../images/hero-320.jpg") no-repeat 100% 40%;
+      background-size: cover;
+      text-align: center
+    }
+}
+
+
+
 
