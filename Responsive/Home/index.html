@@ -91,8 +91,8 @@
 
 
 
-	<div class="home-carousel page-margins hideBelow480">	
-		<ul>
+	<div class="home-carousel page-margins hideBelow480 flexslider">	
+		<ul class="slides">
 			<li class="first landing">
 				<div class="yellowBox">
 					<h2 class="slider-headline">Your trading inspiration can come from anywhere.</h2>
@@ -509,14 +509,14 @@
  <script type="text/javascript">
 	//Setting up the minimum scripts
 	$(document).ready(function() {
-	 $('.home-carousel').unslider({
-			speed: 500,               //  The speed to animate each slide (in milliseconds)
-			delay: 10000,              //  The delay between slide animations (in milliseconds)
-			complete: function() {},  //  A function that gets called after every slide animation
-			keys: true,               //  Enable keyboard (left, right) arrow shortcuts
-			dots: true,               //  Display dot navigation
-			fluid: true              //  Support responsive design. May break non-responsive designs
-		});
+		$('.home-carousel').flexslider({
+	    animation: "slide",
+	    slideshowSpeed: 7000,           //Integer: Set the speed of the slideshow cycling, in milliseconds
+			animationSpeed: 600,
+			pauseOnHover: true,
+			touch: true, 
+			keyboard: true, 
+	  });
 
 	 //setupTracking();
 	 addContactMenu();
