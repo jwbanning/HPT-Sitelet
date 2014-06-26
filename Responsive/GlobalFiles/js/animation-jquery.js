@@ -1,5 +1,5 @@
 var cssAnimation = (function($) {
-  var speed = 500,
+  var speed = 300,
     easing = 'linear',
     cssTransition = 'cubic-bezier(0.39, 0.575, 0.565, 1)';
 

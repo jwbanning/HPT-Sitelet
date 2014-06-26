@@ -7,6 +7,17 @@ $(document).ready(function() {
 	// $("#video-overlay").click(closeVideoPlayer);
 	$(".video-link").click(openVideoPlayer);
 	$("#video-close").click(closeVideoPlayer);
+	$("#video-overlay").click(closeVideoPlayer);
+	$("#video-screen").click(function(e) {
+		e.stopPropagation()
+		e.preventDefault();
+		return;
+	});
+	$("#video-header").click(function(e) {
+		e.stopPropagation()
+		e.preventDefault();
+		return;
+	});
 });
 
 function openVideoPlayer() {

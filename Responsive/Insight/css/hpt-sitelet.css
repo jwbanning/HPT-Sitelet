@@ -25,6 +25,7 @@
   font-family:'CharlesModern';
   width: 245px;
   margin:40px 0 0 18px;
+  float: left;
 }
 #hero-headline{
   font-size: 25px;
@@ -75,12 +76,14 @@
     margin-top: 14px;
   }
   #video-play {
-    margin-top:-25px;
+    margin-top:0;
+    padding: 182px 15px 0 10px;
   }
   #video-play img {
     width: 27px;
   }
   #hero-STS-image { width:17%;}
+
 }
 
 @media (max-width: 590px) {
