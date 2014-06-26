@@ -7,6 +7,10 @@
 .bg-white { background-color:#fff !important; }
 body { overflow:visible;}
 
+.nav-open {
+    overflow: hidden;
+}
+
 
 /* Top Navigation Styling */
 header,

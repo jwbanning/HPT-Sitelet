@@ -20,6 +20,7 @@ var cssAnimation = (function($) {
       var $element = $(element);
       if (!$element.is(":animated")){
       if(this._isCssAnimation()) {
+        $('body').toggleClass('nav-open');
         if (!$('.mobile-nav').hasClass('furl-open')){
           $element.css(this._getVendorPrefix('transition-duration'), speed + 'ms ');
           $element.css(this._getVendorPrefix('transform'), 'translate3d(' + 0 + 'px, 0, 0)');
