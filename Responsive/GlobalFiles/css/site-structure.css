@@ -734,11 +734,19 @@ header,
     }
     .site-cntr .mobile-nav.furl-open span:first-of-type { 
         -webkit-transform: translate3d(0, 8px, 0) rotate(315deg);
+        -moz-transform: translate3d(0, 8px, 0) rotate(315deg);
+        -ms-transform: translate3d(0, 8px, 0) rotate(315deg);
+        -o-transform: translate3d(0, 8px, 0) rotate(315deg);
+        transform: translate3d(0, 8px, 0) rotate(315deg);
+
     }
-   .site-cntr .mobile-nav.furl-open span:last-of-type {
--webkit-transform: translate3d(0, -10px, 0) rotate(-315deg);
-transform: translate3d(0, -10px, 0) rotate(-315deg);
-}
+    .site-cntr .mobile-nav.furl-open span:last-of-type {
+        -webkit-transform: translate3d(0, -10px, 0) rotate(-315deg);
+        -moz-transform: translate3d(0, -10px, 0) rotate(-315deg);
+        -ms-transform:translate3d(0, -10px, 0) rotate(-315deg);
+        -o-transform:translate3d(0, -10px, 0) rotate(-315deg);
+        transform: translate3d(0, -10px, 0) rotate(-315deg);
+    }
 
     .nav-list-cntr { left: -250px;}
     .nav-item-cta { padding-left: 15px; }

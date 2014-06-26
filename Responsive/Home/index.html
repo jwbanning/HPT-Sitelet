@@ -102,7 +102,7 @@
 					<a href=""><p class="get-started">Get started ></p></a>
 				</div>
 				<div class="blackBox">
-					<p class="slider-headline">Schwab Trading Services.</p>
+					<p class="slider-headline">Schwab Trading Services</p>
 				</div>
 			</li>
 			<li class="second experience">
@@ -114,7 +114,7 @@
 					<a href=""><p class="get-started">Get started ></p></a>
 				</div>
 				<div class="blackBox">
-					<p class="slider-headline">Schwab Trading Services.</p>
+					<p class="slider-headline">Schwab Trading Services</p>
 				</div>
 			</li>
 			<li class="third learning">
@@ -126,7 +126,7 @@
 					<a href=""><p class="get-started">Start Now ></p></a>
 				</div>
 				<div class="blackBox">
-					<p class="slider-headline">Schwab Trading Services.</p>
+					<p class="slider-headline">Schwab Trading Services</p>
 				</div>
 			</li>
 			<li class="fourth">
@@ -138,7 +138,7 @@
 					<a href=""><p class="get-started">Get started ></p></a>
 				</div>
 				<div class="blackBox">
-					<p class="slider-headline">Schwab Trading Services.</p>
+					<p class="slider-headline">Schwab Trading Services</p>
 				</div>
 			</li>
 			<li class="fifth pursue">
@@ -150,7 +150,7 @@
 					<a href=""><p class="get-started">Learn More ></p></a>
 				</div>
 				<div class="blackBox">
-					<p class="slider-headline">Schwab Trading Services.</p>
+					<p class="slider-headline">Schwab Trading Services</p>
 				</div>
 			</li>
 	</ul>
@@ -170,7 +170,7 @@
 			<div class="info-box-wrap column">
 				<div class="dollar-amount">
 					<h2 class="amount"><span class="dollar-sign">$</span><span class="first-number">0</span>75</h2>
-					<h3 class="option">Option Pricing</h3>
+					<h3 class="option">Options Pricing</h3>
 				</div>
 				<p class="description">
 					Per contract + $8.95 options commission on single and two-legged orders, including spreads, straddles, and rollouts.
@@ -179,7 +179,7 @@
 			<div class="info-box-wrap column">
 				<div class="dollar-amount">
 					<h2 class="amount"><span class="dollar-sign">$</span><span class="first-number">0</span><span class="visbility-hidden">00</span></h2>
-					<h3 class="option">Schwab ETF Onesource Pricing</h3>
+					<h3 class="option">Schwab ETF Onesource <span>TM</span> Pricing</h3>
 				</div>
 				<p class="description">
 					Clients can trade over 100 ETFs commission-free in their Schwab accounts online through Schwab ETF OneSource.2
@@ -225,7 +225,7 @@
 			</div>
 			<div class="box-wrapper hideBelow480">
 				<div class="box">
-					<h2>Schwab’s proprietary research and ratings</h2>
+					<h2 class="active">Schwab’s proprietary research and ratings</h2>
 					<h2>Market insight from our experts</h2>
 					<h2>Third-party research and commentary</h2>
 				</div>
@@ -314,7 +314,7 @@
 					<div class="info-box-wrap column">
 						<div class="dollar-amount">
 							<h2 class="amount"><span class="dollar-sign">$</span><span class="first-number">0</span><span class="visbility-hidden">00</span></h2>
-							<h3 class="option">Schwab ETF Onesource Pricing <a href="#">+ More info</a></h3>
+							<h3 class="option">Schwab ETF Onesource <span>TM</span> Pricing <a href="#">+ More info</a></h3>
 						</div>
 				</div>
 				</div>
@@ -384,7 +384,7 @@
 			</span>
 
 			<div id="large-tagline-wrapper" class="hideBelow590 hideAbove768">
-				<span id="large-tagline">Schwab's education resources ranked #1 <br class="hideAbove480"><nobr><span>by Investor's Business Daily.</span></nobr></span>
+				<span id="large-tagline">Investor’s Business Daily ranked Schwab best overall customer experience.</span>
 				<a href="index.html#" id="tagline-cta">Open an account &gt;</a>
 			</div>
 
@@ -499,29 +499,28 @@
 
 
 
- <script src="https://www.schwabcdn.com/secure/asset/short/?cmsid=PS-CHOME-HEADER-SCRIPT" type="text/javascript"></script>
- <script type="text/javascript" src="../GlobalFiles/js/jquery-1.10.2.min.js"></script>
-  <script type="text/javascript" src="../GlobalFiles/js/slider.js"></script>
-   <script type="text/javascript" src="../GlobalFiles/js/animation-jquery.js"></script>
- <script type="text/javascript" src="../GlobalFiles/js/global-effects.js"></script>
- 
+	<script src="https://www.schwabcdn.com/secure/asset/short/?cmsid=PS-CHOME-HEADER-SCRIPT" type="text/javascript"></script>
+	<script type="text/javascript" src="../GlobalFiles/js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="../GlobalFiles/js/slider.js"></script>
+	<script type="text/javascript" src="../GlobalFiles/js/animation-jquery.js"></script>
+	<script type="text/javascript" src="../GlobalFiles/js/global-effects.js"></script>
+	<script type="text/javascript" src="js/home.js"></script>
+	<script type="text/javascript">
+		//Setting up the minimum scripts
+		$(document).ready(function() {
+			$('.home-carousel').flexslider({
+		    animation: "slide",
+		    slideshowSpeed: 7000,           //Integer: Set the speed of the slideshow cycling, in milliseconds
+				animationSpeed: 600,
+				pauseOnHover: true,
+				touch: true, 
+				keyboard: true, 
+		  });
 
- <script type="text/javascript">
-	//Setting up the minimum scripts
-	$(document).ready(function() {
-		$('.home-carousel').flexslider({
-	    animation: "slide",
-	    slideshowSpeed: 7000,           //Integer: Set the speed of the slideshow cycling, in milliseconds
-			animationSpeed: 600,
-			pauseOnHover: true,
-			touch: true, 
-			keyboard: true, 
-	  });
-
-	 //setupTracking();
-	 addContactMenu();
-	});
- </script>
+		 //setupTracking();
+		 addContactMenu();
+		});
+	</script>
 
 </body>
 </html>

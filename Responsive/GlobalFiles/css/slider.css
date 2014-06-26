@@ -10,12 +10,12 @@
 .yellowBox{
   display: block;
   background-color: rgba(237, 224, 75, 0.85);
-  width:235px;
-  height:225px;
+  width:255px;
+  height:255px;
   color:#111;
   font-family:'CharlesModern';
   margin:0px 10px 0 82px;
-  padding: 25px 8px 0 11px;
+  padding: 25px 15px 0 25px;
   box-sizing:border-box;
   float: left;
   font-size: 33px;
@@ -72,8 +72,8 @@
 
 .blackBox {
   font-family:'CharlesModern';
-  width: 72px;
-  height: 72px;
+  width: 80px;
+  height: 80px;
   background: #000;
   padding: 10px;
   box-sizing:border-box;

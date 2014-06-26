@@ -30,6 +30,7 @@
   font-size: 26px;
   line-height: 32px;
   margin-left: 20px;
+  padding: 15px;
 }
 .landing-tagline {
   width: 100%;
@@ -113,6 +114,13 @@
   text-transform: uppercase;
   width: 67px;
 }
+.dollar-amount .option span {
+    font-size: 6px;
+    white-space: nowrap;
+    position: absolute;
+    right: -8px;
+    top: 15px;
+   }
 
 .dollar-amount .dollar-sign {
   display: inline-block;
@@ -202,10 +210,10 @@
 }
 .content-image .box-wrapper .box {
   display: inline-block;
-  margin: 0 8px;
   box-sizing: border-box;
   padding: 18px;
   vertical-align: top;
+  margin: 0 8px;
 }
 
 /*SUPPORT */
@@ -252,25 +260,38 @@
   color: #fff;
 }
 .content-image.insight .box-wrapper .box:first-child {
-  width: 300px;
+  width: 310px;
   height: 200px;
   background: transparent;
-  padding:0 10px;
+  padding:0 0px 0 10px;
   text-align: left;
+  margin-right: 2px;
+  box-sizeing:border-box;
 }
 .content-image.insight .box-wrapper h2{
   width: 100%;
   background: #98a4ae;
   color: #fff;
-  padding:7px 5px;
+  padding:7px 10px;
   font-size: 14px;
   margin-bottom: 12px;
   line-height:normal;
+  box-sizing:border-box;
+  cursor: pointer;
 }
-.content-image.insight .box-wrapper h2:nth-child(2n){
+.content-image.insight .box-wrapper h2.active {
  background-color: rgba(237, 224, 75, 0.85);
  color: #111;
+ position: relative;
 }
+
+.content-image.insight .box-wrapper h2.active:after {
+ content:'>';
+ position: absolute;
+ right:10px;
+}
+
+
 
 /*PLATFORM*/
 .content-image.platform {
