@@ -315,7 +315,7 @@ header,
 }
 .mid-info-text-wrap ul { list-style-type:disc; margin-left:15px;}
 .mid-info-text-wrap a { 
-    font-size:15px;
+    font-size:13px;
     font-family: Arial;
     line-height: 18px;
     color:#0066cc;
@@ -382,7 +382,7 @@ header,
 #bottom-content .getDetailsText {
     color: #111;
     position: relative;
-    bottom: 14px;
+    bottom: 10px;
     margin-right: 5px;
 }
 .getDetailsArrow {width:55px;}
@@ -638,11 +638,6 @@ header,
     .info-box-wrap {
 
     }
-    .info-box-wrap a {
-      width: 125px;
-      height: 125px;
-      
-    }
     .mid-box {
         margin: 0 14%;
      }
@@ -694,10 +689,6 @@ header,
         font-size: 11px;
     }
 
-    #middle-content .video-description {
-        font-size: 19px;
-        line-height: 26px;
-    }
     #middle-content .features-list {
         margin-top: 20px;
     }
@@ -740,7 +731,7 @@ header,
     /*.site-cntr .mobile-nav { background-image: url('../../GlobalFiles/images/nav-collapsed-light.png'); }*/
 
     .site-cntr .mobile-nav span { 
-        width: 27px;
+        width: 24px;
         height: 3px;
         border-radius: 1px;
         background:#fff;
@@ -822,14 +813,8 @@ header,
 
     /* Middle Content 768 */
     .info-box-text { padding: 18px 18px 0 18px;}
-    #middle-content {
-      margin-top: 25px;
-      margin-bottom: 0;
-      width: 100%;
-      padding: 0 93px;
-    }
-    #bottom-content #large-tagline { font-size: 16px;line-height:22px; color:#222;}
 
+    #bottom-content #large-tagline { font-size: 16px;line-height:22px; color:#222;}
 
 
     /* Guest Pass 768 */
@@ -849,6 +834,23 @@ header,
     .nav-l1 > li > .nav-item { padding: 0; }
     .nav-item { text-align: left; }
     .hiddenHeaderBR { display: none; }
+}
+
+@media (max-width: 768px) {
+    #middle-content {
+        margin-top: 25px;
+        margin-bottom: 0;
+        width: 100%;
+        padding: 0 93px;
+    }
+    #middle-content .video-description {
+        font-size: 19px;
+        line-height: 26px;
+    }
+    .info-box-wrap a {
+        width: 126px;
+        height: 126px;
+    }
 }
 
 
@@ -1120,6 +1122,7 @@ header,
     #bottom-content #offerBox1 #telephone-wrapper {
         float: right;
         margin-top: -23px;
+        margin-right: 6px;
     }
     #bottom-content #offerBox1 #accountButton {
         float: right;

@@ -465,7 +465,7 @@ i {
 a,
 .link-style {
   color: #0066cc;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 a:hover,
@@ -1673,7 +1673,7 @@ top: 0;
 left: 0;
 display: block;
 width: 50px;
-padding: 10px;
+padding: 10px 13px;
 height: 50px;
 /* background: url('../images/nav-collapsed.png') no-repeat center center; */
 box-sizing: border-box;

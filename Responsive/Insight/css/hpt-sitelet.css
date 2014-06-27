@@ -47,8 +47,6 @@
   vertical-align: top;
 }
 
-
-
 @media (max-width: 768px) {
 /* Hero 768 */
   #hero-wrapper {
@@ -61,28 +59,36 @@
   #hero-yellow-box{
     width:230px;
     height:230px;
+    position: relative;
   }
   #hero-text-wrap {
     width: 210px;
     margin: 18px 0 0 18px;
+    padding-right: 20px;
+    box-sizing: border-box;
   }
   #hero-headline{
-    font-size: 28px;
-    line-height: 33px;
+    font-size: 27px;
+    line-height: 32px;
   }
   #hero-subline {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 13px;
+    line-height: 17px;
     margin-top: 14px;
   }
   #video-play {
-    margin-top:0;
-    padding: 182px 15px 0 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 13px;
+    padding: 0;
   }
   #video-play img {
     width: 27px;
   }
   #hero-STS-image { width:17%;}
+  .info-box-text {  
+    padding: 18px 13px 0 13px;
+  }
 
 }
 
