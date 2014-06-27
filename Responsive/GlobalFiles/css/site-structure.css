@@ -809,6 +809,9 @@ header,
     }
     .nav-item-cta .btn-cta .call-us { margin-top: 12px; }
     .schwab-logo img { width: 50px; }
+    .nav-l1 > li > .secondary-nav.active {
+       display: none !important;
+    }
 
 
     /* Hero 768 */
