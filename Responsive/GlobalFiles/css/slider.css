@@ -1,6 +1,7 @@
 .home-carousel ul li {
   padding-top: 50px;
   box-sizing:border-box;
+  position: relative;
 }
 .home-carousel ul li p {
   margin:0;
@@ -84,7 +85,20 @@
   margin-top: 10px;
 }
 
+.own-tomorrow {
+  background: url("../images/own-tomorrow.png") no-repeat;
+  position: absolute;
+  bottom: 14px;
+  left: 77px;
+  width: 220px;
+  background-size: 217.5px 35.5px;
+  height: 40px;
+}
+
 @media (max-width: 768px) {
+  .home-carousel ul li {
+    height: 356px;
+  }
   .yellowBox {
     width: 221px;
     height: 221px;
@@ -93,7 +107,7 @@
     margin-left:50px;
   }
   .learning .yellowBox, .experience .yellowBox, .pursue .yellowBox {
-    font-size: 29px;
+    font-size: 26px;
     height:221px;
   }
   .learning .yellowBox {
@@ -111,24 +125,23 @@
     height: 137px;
     padding-right: 10px;
   }
+
   .slider-headline span {
     padding-top: 10px;
   }
+  .own-tomorrow {
+    left: 50px;
+  }
 }
+
 
 .hideAbove480 {
   display: none;
 }
-
-@media (max-width: 590px) {
-
- 
-}
-
 @media (max-width: 480px) {
  .hideAbove480 {
-  display: block;
-}
+    display: block;
+  }
 }
 
 

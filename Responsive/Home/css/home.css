@@ -791,10 +791,11 @@
     padding-top:30px;
   }
   .mobile-landing .yellowBox {
-    height: 168px;
-    width:168px;
-    margin-left: 5px;
+    height: 172px;
+    width:172px;
+    margin-left: 10px;
     font-size: 23px;
+    padding: 12px;
   }
   .column {
     padding: 0px 15px;
