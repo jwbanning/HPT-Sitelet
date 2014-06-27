@@ -160,7 +160,7 @@
 	<div id="info-box-content">
 			<div class='info-box-wrap column'>
 				<div class="dollar-amount">
-					<h2 class="amount"><span class="dollar-sign">$</span><span class="first-number">8</span>95</h2>
+					<h2 class="amount"><span class="dollar-sign">$</span><span class="first-number">8</span>95<i>†</i></h2>
 					<h3 class="option">Online Equity Trades</h3>
 				</div>
 				<p class="description">
@@ -178,8 +178,8 @@
 			</div>
 			<div class="info-box-wrap column">
 				<div class="dollar-amount">
-					<h2 class="amount"><span class="dollar-sign">$</span><span class="first-number">0</span><span class="visbility-hidden">00</span></h2>
-					<h3 class="option">Schwab ETF Onesource <span>TM</span> Pricing</h3>
+					<h2 class="amount"><span class="dollar-sign"><sup>$</span><span class="first-number">0</span><span class="visbility-hidden">00</span></h2>
+					<h3 class="option">Schwab ETF Onesource™ Pricing</h3>
 				</div>
 				<p class="description">
 					Clients can trade over 100 ETFs commission-free in their Schwab accounts online through Schwab ETF OneSource.2
@@ -224,12 +224,16 @@
 				<h3>Schwab provides its own expert market insight plus independent perspectives so you get the full picture. <a href="">Learn more ></a></h3>
 			</div>
 			<div class="box-wrapper hideBelow480">
-				<div class="box">
-					<h2 class="active">Schwab’s proprietary research and ratings</h2>
-					<h2>Market insight from our experts</h2>
-					<h2>Third-party research and commentary</h2>
+				<div class="box selector">
+					<h2 class="active" data-id="1">Schwab’s proprietary research and ratings</h2>
+					<h2 data-id="2">Market insight from our experts</h2>
+					<h2 data-id="3">Third-party research and commentary</h2>
 				</div>
-				<div class="box"><p>Gain more understanding with timely analysis and commentary from Schwab experts like Randy Frederick and Liz Ann Sonders.</p></div>
+				<div class="box selected">
+					<p class="first active" data-id="1">Access fundamental data, custom screeners, Schwab Equity Ratings®, and more.</p>
+					<p class="second" data-id="2">Gain more understanding with timely analysis and commentary from Schwab experts like Randy Frederick and Liz Ann Sonders.</p>
+					<p class="third" data-id="3">Broaden your scope of the market with Market Edge®, Briefing.com, and other sources – without leaving your trading platform.</p>
+				</div>
 			</div>
 			<div class="mobile">
 				<h2>Insight & Expertise</h2>
@@ -286,13 +290,17 @@
 					<span id="offerSubLine">No trade minimum required.</span>
 
 					<div id="contact-floats">
-						<div id="telephone-wrapper">
+						<div id="telephone-wrapper" class="hideBelow590">
 							<img id="telephone-image" src="../GlobalFiles/images/Telephoneicon.png" />
 							<a href="tel:877-811-6300" id="phoneNumber">877-811-6300</a>
 						</div>
 						<a id="accountButton" href="http://activetrader.schwab.com/trading-services/get-started/default.aspx">
 							<span class='acct-btn'>Open an Account</span>
 						</a>
+						<div class="telephone-wrapper hideAbove590">
+							<p>Talk to a Trading Service specialist</p>
+							<a href="tel:877-811-6300" id="phoneNumber">877-811-6300</a>
+						</div>
 					</div>
 				</div>
 
@@ -301,22 +309,34 @@
 					<h2 class="title">Pricing for online traders</h2>
 					<div class='info-box-wrap column'>
 						<div class="dollar-amount">
-							<h2 class="amount"><span class="dollar-sign">$</span><span class="first-number">8</span>95</h2>
-							<h3 class="option">Online Equity Trades <a href="#">+ More info</a></h3>
+							<h2 class="amount"><span class="dollar-sign"><sup>$</sup></span><span class="first-number">8</span><sup>95</sup><span><i>†</i></span></h2>
+							<h3 class="option">Online Equity Trades </h3>
+							<h4></h4>
+						</div>
+						<div class="extended-content">
+							<p>Flat pricing per executed online trade of stocks and non-Schwab OneSource ETFs.</p>
 						</div>
 					</div>
 					<div class="info-box-wrap column">
 						<div class="dollar-amount">
-							<h2 class="amount"><span class="dollar-sign">$</span><span class="first-number">0</span>75</h2>
-							<h3 class="option">Option Pricing <a href="#">+ More info</a></h3>
+							<h2 class="amount"><span class="dollar-sign"><sup>$</sup></span><span class="first-number">0</span><sup>75</sup></h2>
+							<h3 class="option">Option Pricing </h3>
+							<h4></h4>
+						</div>
+						<div class="extended-content">
+							<p>Per contract + $8.95 options commission on single and two-legged orders, including spreads, straddles, and rollouts.</p>
 						</div>
 					</div>
 					<div class="info-box-wrap column">
 						<div class="dollar-amount">
-							<h2 class="amount"><span class="dollar-sign">$</span><span class="first-number">0</span><span class="visbility-hidden">00</span></h2>
-							<h3 class="option">Schwab ETF Onesource <span>TM</span> Pricing <a href="#">+ More info</a></h3>
+							<h2 class="amount"><span class="dollar-sign"><sup>$</sup></span><span class="first-number">0</span><span class="visbility-hidden"><sup>00</sup></span></h2>
+							<h3 class="option">Schwab ETF Onesource™ Pricing </h3>
+							<h4></h4>
 						</div>
-				</div>
+						<div class="extended-content">
+							<p>Clients can trade over 100 ETFs commission-free in their Schwab accounts online through Schwab ETF OneSource.2</p>
+						</div>
+					</div>
 				</div>
 
 

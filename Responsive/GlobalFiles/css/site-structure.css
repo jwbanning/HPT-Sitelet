@@ -408,6 +408,22 @@ header,
     display: inline-block;
     margin-top: 25px;
 }
+
+#bottom-content #offerBox1 .telephone-wrapper p{
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: 300;
+    color: #111;
+}
+#bottom-content #offerBox1 .telephone-wrapper a{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+}
+
+
 #bottom-content #offerBox1 #telephone-image {
     vertical-align: text-bottom;
     width: 29px;
@@ -534,6 +550,7 @@ header,
     margin-top:5px;
     margin-right: 15px;
     padding: 0;
+    font-size: 14px;
     font-weight: normal;
 }
 .footer-connect .social-sprite {
@@ -556,6 +573,9 @@ header,
 }
 .footer-connect.hideBelow590 .social-sprite {
     margin-right: 10px;
+}
+.footer-connect.hideBelow590 .social-sprite:nth-child(4) {
+    margin-right: 0px;
 }
 #sitemapSection {font-family:Arial; font-size:11px; line-height: 14px; color:#111;}
 
@@ -1445,7 +1465,7 @@ header,
     .mid-info-text-wrap li { font-size:13px; font-weight:400;}
     .mid-info-text-wrap li a { font-size:13px; font-weight:400;}
 
-    #bottom-content #offerBox1 { margin-bottom: 40px; }
+    #bottom-content #offerBox1 { margin-bottom: 35px; }
     #bottom-content #large-tagline-wrapper { margin-bottom:25px;}
     #bottom-content #large-tagline { font-size:16px; line-height: 19px;}
     #bottom-content #offerBox1 #offerHeadline { font-size: 22px; line-height: 27px;}
