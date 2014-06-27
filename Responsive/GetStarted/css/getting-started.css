@@ -10,6 +10,9 @@
   h1{
     padding-bottom: 8px;
   }
+  .bold {
+    font-weight: 600;
+  }
 
   header .site-cntr {
     margin-bottom: 35px;
@@ -35,6 +38,7 @@
   .seven60ContentRight{
     display: none;
   }
+
   /*GLOBALS*/
 
     /*FLOATS*/
@@ -98,7 +102,12 @@
     background-color: #f1f1f1;
     margin: 0 0 25px 0; 
     padding: 8px;
+    display: none;
   }
+  .formContainer .commisionFreeContainer.active{
+    display: block;
+  }
+
   .formContainer .commisionFreeContainer input{
     float: left;
     margin-right: 11px;}
@@ -135,6 +144,11 @@
     padding-bottom:15px;
   }
   .investorBizImgContainer img{float:right;}
+
+  .fund-earn {
+    display: none;
+  }
+
 /*********************/
 /*768 container*/
 /*********************/
@@ -147,6 +161,10 @@
   }
   header .site-cntr {
     margin-bottom: 0;
+  }
+
+  .formContainer .commisionFreeContainer.active{
+    display: none;
   }
 
   .fontG{
@@ -255,10 +273,18 @@
     background-color:#ececec;
     padding: 20px 10px;
   }
+  #fromSchwab {
+    box-sizing: border-box;
+    padding-left: 13px;
+    border-left: 1px solid #bbb;
+  }
 
   .filledHeadersWrapper{
     padding: 45px 0 0 40px;
+    width: 100%;
     clear: both;
+    padding-right: 40px;
+    box-sizing:border-box;
   }
   .filledHeadersWrapper .filledHeaderContainer{
     width: 50%;
@@ -267,8 +293,11 @@
     padding: 0 0px;
     box-sizing: border-box;
   }
+  .filledHeadersWrapper .filledHeaderContainer:nth-child(3){
+    padding: 0 30px 0 0;
+  }
   .filledHeadersWrapper .filledHeaderContainer:nth-child(2){
-    padding: 0 60px 0 0;
+    padding: 0 0 0 30px;
   }
   .filledHeadersWrapper .filledHeader {
     background-color: transparent;
@@ -288,6 +317,7 @@
   .filledHeaderContainer .pricingSectionContainer,
   .filledHeaderContainer .pricingSectionContainer .module{
     padding: 0px;
+    margin-bottom: 15px;
   }
   .filledHeaderContainer .pricingSectionContainer:nth-child(even){
     background-color: transparent;
@@ -297,42 +327,35 @@
     clear:both;
   }
 
-}
-@media (min-width: 590px) {
-}
-@media (min-width: 480px) {
-}
-
-  /*.footer-connect.hideAbove590{
-    width: auto;
-  }*/
-/*
-
-  .color{
-    width:100%;
-    padding: 20px 0;
-    background-color: yellow;
+  .fund-earn {
+    display: block;
+    height: 0px;
+    overflow: hidden;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
   }
-  .color .module h3{
-    font-size: 19px;
+  .fund-earn h2{
+    font-size: 15px;
+    font-weight: bold;
   }
-  .color .module p{
-    font-size: 11px;
-    letter-spacing: 0.8px;
+  .fund-earn p{
+    font-size: 13px;
+    line-height: 17px;
   }
-  .filledHeader{
-      font-size: 15px;
-      font-family: 'Charles';
-  }
-  .filledHeader h3{
-    background-color: #425563;
-    color:#fff;
-    padding: 0 15px;
-    line-height: 28px;
-    font-family:'Charles';
+  .fund-earn.active {
+    height: 100px;
   }
 
-  .filledHeader .something{
-    color:#111111;
-    padding: 0 15px;
+}
+
+@media (min-width: 960px) {
+  .filledHeadersWrapper{
+    width: 79%;
+    clear: both;
+    padding-right: 0;
+    overflow: hidden;
   }
+}
