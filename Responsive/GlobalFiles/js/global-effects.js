@@ -27,6 +27,10 @@ function setupNavigation() {
     }
   });
 
+  $('.has-secondary').on('mouseenter mouseleave', function(e){
+    $(e.currentTarget).children('.secondary-nav').toggleClass('active');
+  });
+
   cssAnimation.setup(element);
 
   //Navigation setup

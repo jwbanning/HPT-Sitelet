@@ -25,6 +25,34 @@ header,
 .nav-l1 > li > .nav-item {
     padding: 5px 5px;
 }
+.nav-l1 > li > .secondary-nav {
+    display: block;
+    height: 0px;
+    overflow: hidden;
+    width: 197px;
+    background: red;
+    position: absolute;
+    background:rgba(211, 213, 218, 0.96);
+    box-sizing:border-box;
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -ms-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.nav-l1 > li > .secondary-nav.active {
+    height: 100px;
+    border: none;
+}
+.nav-l1 > li > .secondary-nav li {
+    color: blue;
+    width: 100%;
+    height: auto;
+    display: block;
+    float: none;
+    margin: 10px;
+}
 .nav-list-cntr {
     margin-bottom: 0px;
     border-bottom: none;
@@ -738,6 +766,10 @@ header,
         display: block;
         margin: 6px 0;
         -webkit-transition: -webkit-transform 0.45s ease-in-out, opacity 0.45s ease-in-out;
+        -moz-transition: -webkit-transform 0.45s ease-in-out, opacity 0.45s ease-in-out;
+        -ms-transition: -webkit-transform 0.45s ease-in-out, opacity 0.45s ease-in-out;
+        -o-transition: -webkit-transform 0.45s ease-in-out, opacity 0.45s ease-in-out;
+        transition: -webkit-transform 0.45s ease-in-out, opacity 0.45s ease-in-out;
     }
 
     .site-cntr .mobile-nav.furl-open span:nth-child(2) { 
