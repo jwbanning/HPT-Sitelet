@@ -60,6 +60,9 @@
 
 
 .mobile { display: none; overflow: hidden; position: relative;}
+.mobile a {
+  display: block;
+}
 .mobile span { 
   font-family: 'CharlesModern';
   position: absolute;

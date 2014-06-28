@@ -32,6 +32,7 @@ header,
     width: 197px;
     background: red;
     position: absolute;
+    z-index: 999;
     background:rgba(211, 213, 218, 0.96);
     box-sizing:border-box;
     -webkit-transition: all 0.15s ease-in-out;
@@ -410,7 +411,7 @@ header,
 #bottom-content .getDetailsText {
     color: #111;
     position: relative;
-    bottom: 10px;
+    bottom: 13px;
     margin-right: 5px;
 }
 .getDetailsArrow {width:55px;}
