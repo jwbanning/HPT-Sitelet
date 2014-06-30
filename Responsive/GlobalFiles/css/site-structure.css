@@ -1046,6 +1046,7 @@ header,
     .offer3-text-wrapper .get-details{
       font-size:15px;
       font-weight:400;
+      color: #111;
     }
     .get-details span { font-size:1.05em; font-weight:400; margin-left:0; color:#111;}
 
@@ -1506,7 +1507,7 @@ header,
 
     #bottom-content #offerBox1 { margin-bottom: 35px; }
     #bottom-content #large-tagline-wrapper { margin-bottom:25px;}
-    #bottom-content #large-tagline { font-size:16px; line-height: 19px;}
+    #bottom-content #large-tagline { font-size:15px; line-height: 19px;}
     #bottom-content #offerBox1 #offerHeadline { font-size: 22px; line-height: 27px;}
     #bottom-content #offerBox1 #contact-floats { margin-top: 22px;}
 
