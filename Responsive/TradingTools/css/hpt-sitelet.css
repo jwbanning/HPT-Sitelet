@@ -97,7 +97,7 @@
 		width:250px;
 }
 
-.info-text-headings {height:auto;}
+.info-text-headings {height:115px;}
 .info-text h1 { font-size:17px; margin-top:20px;}
 .info-text hr { margin: 20px 0 20px 0;}
 
@@ -207,7 +207,7 @@
   768px
 
 -------------------------------------------------------- */
-@media (max-width: 767px) {
+@media (max-width: 768px) and (min-width: 591px) {
 	/* Hero 768 */
 	#hero-wrapper {
 		margin-left:-2px;
@@ -239,18 +239,96 @@
 	}
 	#hero-STS-image { width:17%;}
 
-
 	/* Middle Content 768 */
-	.info-box-text { padding: 18px 18px 0 18px;}
 	#middle-content {
 		margin-top: 25px;
 		margin-bottom: 0;
 		width: 100%;
+		padding: 0 40px;
+		box-sizing:border-box;
 	}
+
+	.info-box-wrap {
+		width: 189px;
+	}
+	#info-box-content .left-box {
+		margin-left: 0;
+	}
+	#info-box-content .right-box {
+		margin-right: 0;
+	}
+	.info-text {
+		width: 100%;
+	}
+	.info-box {
+		width: 100%;
+		height: 135px;
+	}
+
+	.left-box .info-box > img, .mid-box .info-box > img {
+		width: 100%;
+		height: auto
+	}
+	.info-box-sub-img {
+		width: 50px;
+		height:50px;
+	}
+	.info-box-sub-text {
+		width: 123px;
+		margin-left: 9px;
+	}
+	.info-box-subwrap {
+		height: auto;
+		min-height: 60px;
+		margin-bottom: 15px;
+	}
+
+	.info-box-text { padding: 18px 18px 0 18px;}
+	
 	
 	.mid-info-pad-right {margin-right:2%;}
 	.mid-info-text-wrap h1 { font-weight:normal; color:#111;}
 
+}
+
+@media (max-width: 768px) {
+	.info-box-wrap {
+		width: 200px;
+	}
+	#middle-content {
+		padding: 0 10px;
+	}
+	.info-box-sub-text {
+		width: 130px;
+	}
+	.info-text-headings {
+		height: 120px;
+		}
+	.mid-box {
+		margin: 0 10px;
+	}
+	.info-box {
+		width: 100%;
+		height: 149px;
+	}
+}
+
+@media (max-width: 690px) {
+	.info-box-wrap {
+		width: 170px;
+	}
+	#middle-content {
+		padding: 0 10px;
+	}
+	.info-box-sub-text {
+		width: 96px;
+	}
+	.info-text-headings {
+		height: 120px;
+		}
+	.mid-box {
+		margin: 0 10px;
+	}
 }
 
 
@@ -281,6 +359,7 @@
 				margin: 58px auto;
 				z-index: 2;
 		}
+	
 		#info-box-content {
 			padding: 0 15px;
 			margin-top: 0px;
@@ -289,6 +368,10 @@
 			width: 100%;
 			margin-left: 0;
 		}
+		.info-box {
+			min-height: 171px;
+		}
+
 		.info-box-btm-wrap {
 			display: none;
 		}
@@ -309,11 +392,12 @@
 			height: auto;
 			margin-bottom: 5px;
 		}
+		.info-text-headings {
+			height: auto;
+		}
 		.info-text p {
 			margin-top: 11px;
 		}
-
-
 
 		/* Mid Page Content 590 */
 		#middle-content {
