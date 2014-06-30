@@ -1,10 +1,9 @@
 /* Hero Image */
-/* Hero Image */
 #hero-wrapper {
-  width:100%;
   height:390px;
   background: url("../images/hero-960.jpg") no-repeat 100% 100%;
   padding:1px;
+  max-width: 100%;
 }
 
 #hero-info-wrapper {
@@ -23,7 +22,7 @@
   display:inline-block;
   color:#111;
   font-family:'CharlesModern';
-  width: 180px;
+  width: 80%;
   margin:40px 0 30px 18px;
 }
 #hero-headline{
@@ -44,7 +43,7 @@
 #hero-STS-image {
   margin-left: 2%;
   width: 20%;
-  vertical-align: top;
+  vertical-align: bottom;
 }
 #middle-content {
   overflow: hidden;
@@ -58,6 +57,7 @@
   display: table-cell;
   vertical-align: middle;
 }
+
 
 .earn {
   background-color: #425563;
@@ -78,12 +78,17 @@
   font-size: 25px;
   font-weight: 200;
 }
-.earn span {
+.earn > span {
   color: #fff;
   display: block;
   padding-left: 10px;
-  position: absolute;
+  float: right;
   bottom: 18px;
+  font-size: 15px;
+}
+.earn > a{
+  color:#fff;
+  padding-left: 10px;
   font-size: 15px;
 }
 
@@ -92,12 +97,14 @@
 }
 
 .web-trading {
-  padding: 0 100px;
+  max-width: 800px;
+  width: 100%;
   box-sizing:border-box;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
-  display: inline-block;
-  margin-top: 20px;
+  display:block;
+  margin: 20px auto;
+  overflow: hidden;
 }
 
 .web-trading li {
@@ -166,6 +173,13 @@
 
 @media (max-width: 768px) {
 /* Hero 768 */
+    #middle-content {
+      padding: 0 50px;
+    }
+    #middle-content h2 {
+      font-size: 17px;
+      line-height: 25px;
+    }
     #hero-wrapper {
       margin-left:-2px;
       height: 320px;
@@ -174,26 +188,26 @@
       background-size: cover;
     }
     #hero-yellow-box{
-      width:230px;
-      height:230px;
+      width:240px;
+      height:240px;
     }
     #hero-text-wrap {
-      width: 145px;
+      width: 190px;
       margin: 25px 0 0 18px;
     }
     #hero-headline{
-      font-size: 27px;
-      line-height: 32px;
+      font-size: 30px;
+      line-height: 34px;
     }
     #hero-subline {
       font-size: 14px;
       line-height: 18px;
       margin-top:14px;
     }
-    #hero-STS-image { width:17%;}
 
   .earn {
     height:133px;
+    width: 133px;
   }
   .earn p {
     color: #fff;
@@ -206,6 +220,22 @@
     font-size: 27px;
     font-weight: 200;
   }
+  .web-trading {
+    padding: 0;
+  }
+
+  .page-margins {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 50px;
+  }
+  .web-trading li {
+    font-size: 13px;
+  }
+  .web-trading li img {
+    width: 75px;
+  }
+
 
 }
 

@@ -202,6 +202,7 @@ header,
 
 #hero-wrapper {
     z-index: 1;
+    box-sizing: border-box;
 }
 
 /* Middle Content */
