@@ -1315,6 +1315,7 @@ header,
         /*margin-left: -3.5%;*/
         padding: 10px 0 10px 15px;
         width: 100%;
+        box-sizing: border-box;
     }
     #bottom-content #bottom-menu .bottom-menu-column {
         float: left;
@@ -1497,7 +1498,7 @@ header,
   .offer3-text-wrapper .get-details {
     float: none;
   }
-  .offer3-text-wrapper { width:100%; line-height:20px; padding-top:9px; margin-bottom:0; height:55px;}
+  .offer3-text-wrapper { width:100%; line-height:20px; padding-top:16px; margin-bottom:0; height:73px;}
 }
 
 
