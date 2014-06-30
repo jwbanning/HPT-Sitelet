@@ -279,6 +279,9 @@
     .web-trading {
     padding: 0 15px;
     }
+    #bottom-content #large-tagline-wrapper {
+      border-top: 1px solid #bbbbbb;
+    }
 }
 
 

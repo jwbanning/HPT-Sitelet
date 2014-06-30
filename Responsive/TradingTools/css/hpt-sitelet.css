@@ -443,7 +443,7 @@
 			font-weight: 500;
 		}
 		#bottom-content #large-tagline-wrapper {
-			border-top: 1px #bbbbbb solid;
+			border-top: 1px solid #bbbbbb;
 		}
 }
 
