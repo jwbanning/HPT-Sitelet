@@ -144,6 +144,12 @@
   margin-top: 6px;
 }
 
+#learn-more-tagline {
+  font-family:  Arial, Helvetica, sans-serif;
+  line-height: 17px;
+  font-size: 13px;
+}
+
 
 @media (max-width: 954px) {
   /* Hero 960 */
@@ -166,14 +172,19 @@
       background: url("../images/hero-768.jpg") no-repeat 100% 40%;
       background-size: cover;
     }
-   
-    #hero-yellow-box{
-      width:222px;
-      height:222px;
+    #hero-info-wrapper {
+      margin-left: 50px;
+      margin-top: 30px;
     }
     #hero-text-wrap {
-     
+      margin: 60px 0 25px 15px;
     }
+   
+    #hero-yellow-box{
+      width:248px;
+      height:248px;
+    }
+   
     #hero-headline{
       font-size: 27px;
       line-height: 32px;
@@ -217,10 +228,11 @@
   }
   .web-trading li {
     font-size: 13px;
+    line-height: 17px;
     height: auto;
   }
   .web-trading li img {
-    width: 75px;
+    width: 73px;
     margin-bottom: 14px;
   }
 
