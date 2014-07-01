@@ -7,22 +7,22 @@
 }
 
 #hero-info-wrapper {
-  margin-left:150px;
-  margin-top:40px;
+  margin-left:60px;
+  margin-top:50px;
   width: 375px;
 }
 #hero-yellow-box{
   display:inline-block;
   background-color: rgba(237, 224, 75, 0.85);
-  width:285px;
-  height:285px;
+  width:270px;
+  height:270px;
 }
 #hero-text-wrap {
   display:inline-block;
   color:#111;
   font-family:'CharlesModern';
-  width: 80%;
-  margin:40px 0 30px 18px;
+  width: 72%;
+  margin:28px 0 25px 18px;
 }
 #hero-headline{
   font-size: 33px;
@@ -32,7 +32,7 @@
 #hero-subline {
   font-size: 17px;
   line-height: 21px;
-  margin-top:18px;
+  margin-top:10px;
 }
 
 
@@ -40,6 +40,7 @@
   margin-left: 2%;
   width: 20%;
   vertical-align: bottom;
+  margin-bottom: -30px;
 }
 .tag {
   overflow: hidden;
@@ -154,48 +155,29 @@
     #hero-image {
       background-position: top left;
     }
-    #hero-yellow-box{
-      width:275px;
-      height:275px;
-    }
-    #hero-text-wrap {
-      width: 175px;
-      margin:30px 0 0 18px;
-    }
-    #hero-headline{
-      font-size: 30px;
-      line-height: 37px;
-    }
-    #hero-subline {
-      font-size: 15px;
-      line-height: 19px;
-    }
 }
 
 @media (max-width: 768px) {
 /* Hero 768 */
     #hero-wrapper {
-      height: 320px;
-      width: 768px;
+      width: 100%;
+      padding: 0;
     }
     #hero-image {
       background: url("../images/hero-768.jpg") no-repeat 100% 40%;
       background-size: cover;
     }
-    #hero-info-wrapper {
-      margin-left: 140px;
-    }
+   
     #hero-yellow-box{
-      width:240px;
-      height:240px;
+      width:222px;
+      height:222px;
     }
     #hero-text-wrap {
-      width: 190px;
-      margin: 25px 0 0 18px;
+     
     }
     #hero-headline{
-      font-size: 30px;
-      line-height: 34px;
+      font-size: 27px;
+      line-height: 32px;
     }
     #hero-subline {
       font-size: 14px;
@@ -278,7 +260,6 @@
       background-color: rgba(66, 85, 99, 0.8);
       margin: 58px auto;
       z-index: 2;
-      opacity: 0;
     }
     .earn {
       display: none;

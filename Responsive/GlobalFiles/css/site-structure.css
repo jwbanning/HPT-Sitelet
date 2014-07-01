@@ -8,34 +8,10 @@
 body { 
     overflow:visible;
 }
-body:after {
-    opacity: 0;
-    content: '';
-    position: absolute;
-    top: 0;
-    -webkit-transition: all .25s ease;
-    -moz-transition: all .25s ease;
-    -ms-transition: all .25s ease;
-    -o-transition: all .25s ease;
-    transition: all .25s ease;
-}
 
 .nav-open {
     overflow: hidden;
 }
-.nav-open:after {
-    opacity: 1;
-    content:'';
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    min-height: 100%;
-    min-width: 100%;
-    background: rgba(0,0,0,0.4);
-}
-
 
 /* Top Navigation Styling */
 header,
@@ -43,7 +19,7 @@ header,
     margin: 0 auto;
     width: 93%;
     max-width: 947px;
-    z-index: 9999;
+    z-index: 500;
     position: relative;
 }
 .nav-l1 {
@@ -59,7 +35,7 @@ header,
     width: 197px;
     background: red;
     position: absolute;
-    z-index: 999;
+    z-index: 400;
     background:rgba(211, 213, 218, 0.96);
     box-sizing:border-box;
     -webkit-transition: all 0.15s ease-in-out;
@@ -160,7 +136,7 @@ header,
     background-color: rgba(204,204,204,0.5);
     top:0;
     left:0;
-    z-index: 999999;
+    z-index: 9999;
 }
 #video-overlay #video-border {
     background: url("../images/transparent.png");
@@ -188,6 +164,12 @@ header,
 #video-overlay #video-screen {
     width: 100%;
 }
+#video-play {
+    position: absolute;
+    bottom: 12px;
+    right: 15px;
+    padding: 0;
+}
 .vjs-default-skin { color: #f5f5f5; }
 .vjs-default-skin .vjs-play-progress,
 .vjs-default-skin .vjs-volume-level { background-color: #4f4f4f }
@@ -199,10 +181,13 @@ header,
 .vjs-fullscreen {padding-top: 0px}
 .nav-l1 li {font-size:12px;}
 
-
 #hero-wrapper {
+    height: 390px;
     z-index: 1;
     box-sizing: border-box;
+}
+#hero-yellow-box {
+    position: relative;
 }
 
 /* Middle Content */
@@ -649,7 +634,7 @@ header,
   960px
 
 -------------------------------------------------------- */
-@media (max-width: 954px) {
+
     .hiddenHeaderBR {
         display: inline;
     }
@@ -663,37 +648,6 @@ header,
     .nav-list-cntr {
         margin-bottom: 14px;
     }
-
-
-    /* Hero 960 */
-/*    #hero-wrapper {
-      background-position: top left;
-      width: 100%;
-      height: 350px;
-      overflow:hidden;
-    }
-    #hero-yellow-box{
-      width:275px;
-      height:275px;
-    }
-    #hero-text-wrap {
-      width: 175px;
-      margin:30px 0 0 18px;
-    }
-    #hero-headline{
-      font-size: 30px;
-      line-height: 37px;
-    }
-    #hero-subline {
-      font-size: 15px;
-      line-height: 19px;
-    }
-    #video-play {
-      padding-top:213px;
-      padding-right:16px;
-    }*/
-
-
 
     /* Info Box Top Content 960 */
     .info-box-wrap {
@@ -772,7 +726,6 @@ header,
     #bottom-content #tagline-cta {
         display: none;
     }
-}
 
 
 
@@ -847,50 +800,11 @@ header,
     }
 
 
-    /* Hero 768 */
-    #hero-wrapper {
-      margin-left:-2px;
-      height: 315px;
-      width: 768px;
-    }
-    #hero-yellow-box{
-      width:230px;
-      height:230px;
-    }
-    #hero-text-wrap {
-      width: 145px;
-      margin: 25px 0 0 18px;
-    }
-    #hero-headline{
-      font-size: 27px;
-      line-height: 32px;
-    }
-    #hero-subline {
-      font-size: 14px;
-      line-height: 18px;
-      margin-top:14px;
-    }
-    #video-play {
-      padding-top: 188px;
-    }
-    #video-play img {
-      width: 27px;
-    }
-    #hero-STS-image { width:17%;}
-
 
     /* Middle Content 768 */
     .info-box-text { padding: 18px 18px 0 18px;}
 
     #bottom-content #large-tagline { font-size: 16px;line-height:22px; color:#222;}
-
-
-    /* Guest Pass 768 */
-    /*.guest-pass { height:55px;}
-    .guest-pass-text { font-size:14px; margin-top:7px;}
-    .guest-pass-sign-up { font-size:14px; margin-top:6px;}*/
-    /*.sign-up-arrow { width:45px; height: 20px; width: auto; margin-bottom:4px;}
-    .getDetailsText { margin-top:15px;}*/
 
     .mid-info-pad-right {margin-right:2%;}
     .mid-info-text-wrap h1 { font-weight:normal; color:#111;}
@@ -919,6 +833,15 @@ header,
         width: 126px;
         height: 126px;
     }
+    #hero-wrapper {
+      height: 320px;
+    }
+    #video-play img {
+      width: 33px;
+    }
+    #video-play  {
+      bottom: 9px;
+    }
 }
 
 
@@ -932,39 +855,6 @@ header,
 @media (max-width: 730px) {
     .hideBelow730 { display:none; }
     .hideAbove730 { display:inline-block;}
-
-    /* Hero 768 */
-    #hero-wrapper {
-      height: 280px;
-    }
-    #hero-yellow-box{
-      width:200px;
-      height:200px;
-    }
-    #hero-text-wrap {
-      width: 125px;
-      margin: 20px 0 0 14px;
-    }
-    #hero-headline{
-      font-size: 23px;
-      line-height: 27px;
-    }
-    #hero-subline {
-      font-size: 12px;
-      line-height: 16px;
-      margin-top: 12px;
-    }
-    #video-play {
-      padding: 158px 15px 0 10px;
-    }
-
-    .chevron {font-size: 1.1em;}
-    /* Guest Pass */
-    /*.guest-pass-text { 
-      font-size: 12px;
-    }
-    .guest-pass-sign-up { font-size:12px;}
-    .guest-pass-arrow { padding-top: 4px; float:none;}*/
 }
 
 
@@ -1022,14 +912,11 @@ header,
     #hero-wrapper {
       overflow:visible;
       width: 100%;
-      max-width:94%;
       height: 100%;
       margin: 0 15px;
       /*background: url("../images/hero-480.jpg") no-repeat 100% 40%;*/
-      background-size: cover;
       text-align: center;
     }
-    #hero-image { z-index:-1; }
 
     #mobile-play-button {
         background-color: rgb(66, 85, 99);
@@ -1374,10 +1261,9 @@ header,
       margin: 0 15px;
       height:100%;
       width:100%;
-      max-width:93%;
       height: 158px;
     }
-    #main-tagline { font-size: 26px; line-height:32px; margin-bottom: 20px; }
+    #main-tagline { font-size: 26px; line-height:32px; margin-bottom: 8px; }
     #main-subline { font-size: 13px; margin-bottom: 15px; }
     #mobile-play-button { margin: 52px auto; width: 60px; }
 
@@ -1524,7 +1410,7 @@ header,
       text-align: center
     }
 
-    .offer3-text-wrapper { width:100%; line-height:20px; padding-top:9px; margin-bottom:0; height:55px;}
+    .offer3-text-wrapper { width:100%; line-height:20px; margin-bottom:0;}
     .offer3-text-wrapper .earn-cta { font-size: 15px; }
     .offer3-text-wrapper .get-details { font-size: 13px !important; float:none; padding-left:0;}
     .get-details span { font-size:15px;}
@@ -1560,6 +1446,12 @@ header,
     #bottom-content #bottom-menu a {font-size:12px; line-height:30px;}
 
     .footer-connect .hdln-connect {line-height: 19px; margin-bottom: 15px;}
+}
+
+@media (max-width: 340px) {
+    #hero-wrapper {
+        height: 160px;
+    }
 }
 
 

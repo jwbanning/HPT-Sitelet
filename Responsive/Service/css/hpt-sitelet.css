@@ -1,12 +1,15 @@
 /*SERVICE*/
-/* Hero Image */
 
 /* Hero Image */
 #hero-wrapper {
   width:100%;
-  height:390px;
+}
+#hero-image {
   background: url("../images/hero-960.jpg") no-repeat 100% 100%;
-  padding:1px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-position: top left;
 }
 
 #hero-info-wrapper {
@@ -38,10 +41,6 @@
   line-height: 21px;
   margin-top:18px;
 }
-#video-play {
-  padding: 0 18px 18px 0;
-  margin-top: -25px;
-}
 
 #hero-STS-image {
   margin-left: 2%;
@@ -52,10 +51,7 @@
 
 @media (max-width: 768px) {
 /* Hero 768 */
-  #hero-wrapper {
-    margin-left:-2px;
-    height: 320px;
-    width: 768px;
+#hero-image {
     background: url("../images/hero-768.jpg") no-repeat 100% 40%;
     background-size: cover;
   }
@@ -76,12 +72,6 @@
     line-height: 18px;
     margin-top:15px;
   }
-  #video-play {
-    margin-top:-30px;
-  }
-  #video-play img {
-    width: 27px;
-  }
   #hero-STS-image { width:17%;}
 
 }
@@ -92,14 +82,11 @@
     #hero-wrapper {
       overflow:visible;
       width: 100%;
-      max-width:94%;
-      height: 100%;
-      margin: 0 15px;
-      /*background: url("../images/hero-480.jpg") no-repeat 100% 40%;*/
-      background-size: cover;
+      max-width:100%;
+      margin: 0;
+      padding: 0 15px;
       text-align: center;
     }
-    #hero-image { z-index:-1; }
 
     #mobile-play-button {
         background-color: rgb(66, 85, 99);
@@ -116,12 +103,13 @@
     #hero-wrapper {
       overflow:visible;
       width: 100%;
-      max-width:91%;
-      height: 100%;
-      background: url("../images/hero-320.jpg") no-repeat 100% 40%;
-      background-size: cover;
+      max-width:100%;
       text-align: center
     }
+    #hero-image {
+      background: url("../images/hero-320.jpg") no-repeat 100% 40%;
+       background-size: cover;
+     }
   }
 
 
